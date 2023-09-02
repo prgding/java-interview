@@ -1,0 +1,15 @@
+export const pagesRoutes = [
+  ["v-8daa1a0e","/",{"y":"h","t":"项目主页","i":"home"},["/README.md"]],
+  ["v-a4e563c0","/docker.html",{"y":"a","t":"Docker"},[":md"]],
+  ["v-6d0a1dc4","/java.html",{"y":"a","t":"Java"},[":md"]],
+  ["v-b30035a0","/mysql.html",{"y":"a","t":"MySQL"},[":md"]],
+  ["v-04d02653","/spring.html",{"y":"a","t":"Spring"},[":md"]],
+  ["v-61a24cec","/question/23.08.15.html",{"y":"a","t":"23.08.15"},[":md"]],
+  ["v-c8b1dbec","/question/23.08.28.html",{"y":"a","t":"23.08.28"},[":md"]],
+  ["v-c5482aae","/question/23.08.29.html",{"y":"a","t":"23.08.29"},[":md"]],
+  ["v-7a32ef5a","/question/23.08.30.html",{"y":"a","t":"23.08.30"},[":md"]],
+  ["v-76c93e1c","/question/23.08.31.html",{"y":"a","t":"23.08.31"},[":md"]],
+  ["v-8ba5c3a0","/question/23.09.01.html",{"y":"a","t":"23.09.01"},[":md"]],
+  ["v-d78cd3a0","/question/",{"y":"a","t":"题目"},["/question/README.md"]],
+  ["v-3706649a","/404.html",{"y":"p","t":""},[]],
+]
