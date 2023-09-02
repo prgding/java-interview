@@ -102,7 +102,7 @@
 <li>用什么方式实现多线程</li>
 <li>拒绝策略有哪些</li>
 <li>线程安全的 List 和 Map</li>
-<li>说说 concurrentHashMap</li>
+<li>说说 ConcurrentHashMap</li>
 <li>Java 的双亲委派</li>
 <li>打破双亲委派的方式</li>
 <li>Java 的 SPI</li>

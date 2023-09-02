@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/prgding/java-interview",
 
   docsDir: "src",
 
@@ -26,7 +26,7 @@ export default hopeTheme({
 
   footer: "默认页脚",
 
-  displayFooter: true,
+  displayFooter: false,
 
   encrypt: {
     config: {
