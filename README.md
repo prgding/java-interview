@@ -1,6 +1,6 @@
 # java-interview
 
-在线访问：https://prgding.github.io/java-interview
+在线访问：https://prgding.github.io/java-interview/
 
 # 关于网站
 
