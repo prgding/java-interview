@@ -234,10 +234,8 @@
 </li>
 <li>Map：存放键值对
 <ul>
-<li>HashMap
+<li>HashMap：数组 + 链表 / 红黑树（链表长度 &gt;= 8，且数组长度 &gt;= 64 时，转化为红黑树）
 <ul>
-<li>1.7：数组 + 链表</li>
-<li>1.8：数组 + 链表 / 红黑树</li>
 <li>LinkedHashMap：数组 + 链表 / 红黑树 + 双向链表</li>
 </ul>
 </li>
@@ -245,6 +243,16 @@
 <li>TreeMap：红黑树（自平衡的排序二叉树）</li>
 </ul>
 </li>
+</ul>
+<h3 id="arraylist-和-linkedlist-的区别" tabindex="-1"><a class="header-anchor" href="#arraylist-和-linkedlist-的区别" aria-hidden="true">#</a> ArrayList 和 LinkedList 的区别?</h3>
+<ul>
+<li>存储结构
+<ul>
+<li>ArrayList：Object [] 数组</li>
+<li>LinkedList：双向链表</li>
+</ul>
+</li>
+<li></li>
 </ul>
 </div></template>
 

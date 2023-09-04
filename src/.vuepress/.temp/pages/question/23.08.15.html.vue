@@ -10,11 +10,11 @@
 <li><a href="https://javaguide.cn/java/basis/java-basic-questions-01.html#java-%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BA%86%E8%A7%A3%E4%B9%88" target="_blank" rel="noopener noreferrer">Java 数据类型及包装类<ExternalLinkIcon/></a></li>
 <li><RouterLink to="/java.html#%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E5%8C%BA%E5%88%AB">重写和重载区别</RouterLink></li>
 <li><RouterLink to="/java.html#%E5%92%8C-equals-%E7%9A%84%E5%8C%BA%E5%88%AB">equals() 和 == 区别</RouterLink></li>
-<li>List 和 Set 区别</li>
+<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">List 和 Set 区别</RouterLink></li>
 <li>Java 实现线程几种方式</li>
 <li>Redis 说一下，几种数据结构常用 API</li>
-<li>Spring 、Spring MVC、Spring Boot、Spring Cloud</li>
-<li>Spring Boot 常用注解</li>
+<li><RouterLink to="/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">Spring、Spring MVC、Spring Boot、Spring Cloud</RouterLink></li>
+<li><RouterLink to="/spring.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">Spring Boot 常用注解</RouterLink></li>
 <li><RouterLink to="/spring.html#aop">AOP 说一下</RouterLink></li>
 <li>Nacos，Gateway，OpenFeign 说一下 Gateway 原理</li>
 <li>RabbitMQ 原理说一下，用来干嘛了</li>
@@ -27,7 +27,7 @@
 <li>自我介绍</li>
 <li>项目背景（为什么会想做这个项目）</li>
 <li>JVM 运行流程</li>
-<li>Java 两大容器了解吗 (Collection 和 Map)</li>
+<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">Java 两大容器了解吗 (Collection 和 Map)</RouterLink></li>
 <li>你学的框架之间有什么区别？</li>
 <li>了解过 SVN 吗？</li>
 <li>Linux 的常用命令</li>
@@ -89,9 +89,9 @@
 <h2 id="货拉拉的测开" tabindex="-1"><a class="header-anchor" href="#货拉拉的测开" aria-hidden="true">#</a> 货拉拉的测开</h2>
 <p>面试官很好 他自己还开视频了 不会的就不深问 会的就循序渐进的问 不会的还教你 前面的有几个忘记录音了</p>
 <ol>
-<li>AOP 的实现方式</li>
+<li><RouterLink to="/spring.html#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">AOP 的实现方式</RouterLink></li>
 <li>有了解过用 Java Agent 实现 AOP 嘛</li>
-<li>用 AOP 来干嘛</li>
+<li><RouterLink to="/spring.html#aop-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88">用 AOP 来干嘛</RouterLink></li>
 <li>IO 的方式有哪些</li>
 <li>常用的设计模式有哪些</li>
 <li>为什么要设计成单例</li>
@@ -101,7 +101,7 @@
 <li>两个有序链表合并成一个有序链表</li>
 <li>用什么方式实现多线程</li>
 <li>拒绝策略有哪些</li>
-<li>线程安全的 List 和 Map</li>
+<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">线程安全的 List 和 Map</RouterLink></li>
 <li>说说 ConcurrentHashMap</li>
 <li>Java 的双亲委派</li>
 <li>打破双亲委派的方式</li>
@@ -123,15 +123,15 @@
 <li>Dubbo 框架有了解过吗?</li>
 <li>Dubbo 基础环境搭建具体怎么做?</li>
 <li>注册中心如果挂了如何应对?</li>
-<li>数据库用的啥?为啥选择 MySQL?大致讲一下你对 MySQL 的理解</li>
-<li>事务隔离级别?默认是哪种?</li>
+<li>数据库用的啥? 为啥选择 MySQL? 大致讲一下你对 MySQL 的理解</li>
+<li>事务隔离级别? 默认是哪种?</li>
 <li>MySOL 索引有了解过吗?</li>
 <li>索引的原理大致有了解吗</li>
 <li>讲下 MySOL 主从复制</li>
 <li>MyBatis 了解过多少</li>
 <li>Gateway 网关路由控制，请求分发具体怎么实现</li>
 <li>讲一下责任链模式</li>
-<li>Spring 核心模块</li>
+<li><RouterLink to="/spring.html#spring-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97">Spring 核心模块</RouterLink></li>
 <li>Spring 事务有了解吗</li>
 <li>Spring 事务有哪几种传播级别</li>
 <li>讲下 IoC</li>

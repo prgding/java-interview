@@ -21,6 +21,8 @@ export const pagesData = {
   "v-76c93e1c": () => import(/* webpackChunkName: "v-76c93e1c" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/23.08.31.html.js").then(({ data }) => data),
   // path: /question/23.09.01.html
   "v-8ba5c3a0": () => import(/* webpackChunkName: "v-8ba5c3a0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/23.09.01.html.js").then(({ data }) => data),
+  // path: /question/23.09.04.html
+  "v-8168afe6": () => import(/* webpackChunkName: "v-8168afe6" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/23.09.04.html.js").then(({ data }) => data),
   // path: /question/
   "v-d78cd3a0": () => import(/* webpackChunkName: "v-d78cd3a0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/index.html.js").then(({ data }) => data),
   // path: /404.html

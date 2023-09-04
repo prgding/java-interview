@@ -180,7 +180,6 @@
   - 无法重写父类的 private / final / static 方法
   - 无法重写构造方法
 
-
 ## 集合
 
 - Collection：存放元素值
@@ -194,9 +193,14 @@
     - TreeSet：TreeMap 实现
   - Queue：有序、可重复
 - Map：存放键值对
-  - HashMap
-    - 1.7：数组 + 链表
-    - 1.8：数组 + 链表 / 红黑树
+  - HashMap：数组 + 链表 / 红黑树（链表长度 >= 8，且数组长度 >= 64 时，转化为红黑树）
     - LinkedHashMap：数组 + 链表 / 红黑树 + 双向链表
   - Hashtable：数组 + 链表，线程安全
   - TreeMap：红黑树（自平衡的排序二叉树）
+
+### ArrayList 和 LinkedList 的区别?
+
+- 存储结构
+  - ArrayList：Object [] 数组
+  - LinkedList：双向链表
+- 

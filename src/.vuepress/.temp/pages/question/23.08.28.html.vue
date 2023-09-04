@@ -15,7 +15,7 @@
 <li>延迟双删。</li>
 </ol>
 </li>
-<li>讲一下 HashMap<br>
+<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink><br>
 分 1.7 和 1.8 讲<br>
 数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）<br>
 1.7 并发扩容头插存在死循环<br>

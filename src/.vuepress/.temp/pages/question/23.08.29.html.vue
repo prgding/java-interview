@@ -4,7 +4,7 @@
 <li>自我介绍</li>
 <li>项目 (10分钟)</li>
 <li>对封装. 继承. 多态怎么理解的?</li>
-<li>Java 的集合类有哪些?</li>
+<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
 <li>ArrayList 和 LinkedList 的区别?</li>
 <li>HashMap 说一下? (初始化，put 流程，扩容)</li>
 <li>说下 JVM 的运行时数据区(各部分存储内容)</li>

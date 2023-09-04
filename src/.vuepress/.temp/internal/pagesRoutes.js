@@ -10,6 +10,7 @@ export const pagesRoutes = [
   ["v-7a32ef5a","/question/23.08.30.html",{"y":"a","t":"23.08.30"},[":md"]],
   ["v-76c93e1c","/question/23.08.31.html",{"y":"a","t":"23.08.31"},[":md"]],
   ["v-8ba5c3a0","/question/23.09.01.html",{"y":"a","t":"23.09.01"},[":md"]],
+  ["v-8168afe6","/question/23.09.04.html",{"y":"a","t":"23.09.04"},[":md"]],
   ["v-d78cd3a0","/question/",{"y":"a","t":"题目"},["/question/README.md"]],
   ["v-3706649a","/404.html",{"y":"p","t":""},[]],
 ]
