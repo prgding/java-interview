@@ -1,7 +1,7 @@
 <template><div><h1 id="mysql" tabindex="-1"><a class="header-anchor" href="#mysql" aria-hidden="true">#</a> MySQL</h1>
 <h2 id="mysql-常见字段类型" tabindex="-1"><a class="header-anchor" href="#mysql-常见字段类型" aria-hidden="true">#</a> MySQL 常见字段类型</h2>
 <figure><img src="@source/mysql.assets/fields.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
-<h2 id="mysql-常用语句" tabindex="-1"><a class="header-anchor" href="#mysql-常用语句" aria-hidden="true">#</a> mysql 常用语句</h2>
+<h2 id="mysql-常用语句" tabindex="-1"><a class="header-anchor" href="#mysql-常用语句" aria-hidden="true">#</a> MySQL 常用语句</h2>
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">table</span> <span class="token identifier"><span class="token punctuation">`</span>tname<span class="token punctuation">`</span></span><span class="token punctuation">(</span>
 	<span class="token identifier"><span class="token punctuation">`</span>column_name<span class="token punctuation">`</span></span> <span class="token keyword">type</span><span class="token punctuation">,</span>
   <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
@@ -10,7 +10,7 @@
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">update</span> tname <span class="token keyword">set</span> f1<span class="token operator">=</span>v1<span class="token punctuation">,</span> f2<span class="token operator">=</span>v2 <span class="token punctuation">[</span><span class="token keyword">where</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">delete</span> <span class="token keyword">from</span> tname <span class="token punctuation">[</span><span class="token keyword">where</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 </code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">select</span> f1 <span class="token keyword">from</span> tname <span class="token keyword">where</span> f1 <span class="token operator">like</span> condition<span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="mysql-函数" tabindex="-1"><a class="header-anchor" href="#mysql-函数" aria-hidden="true">#</a> mysql 函数</h2>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><h2 id="mysql-函数" tabindex="-1"><a class="header-anchor" href="#mysql-函数" aria-hidden="true">#</a> MySQL 函数</h2>
 <h3 id="字符串" tabindex="-1"><a class="header-anchor" href="#字符串" aria-hidden="true">#</a> 字符串</h3>
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code>char_length<span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
 concat<span class="token punctuation">(</span>str1<span class="token punctuation">,</span>str2<span class="token punctuation">)</span><span class="token punctuation">;</span>
@@ -47,16 +47,16 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <ol>
 <li><a href="https://mp.weixin.qq.com/s/lEx6iRRP3MbwJ82Xwp675w" target="_blank" rel="noopener noreferrer">6 种失效情况<ExternalLinkIcon/></a></li>
 </ol>
-<figure><img src="@source/mysql.assets/640.png" alt="图片" tabindex="0" loading="lazy"><figcaption>图片</figcaption></figure>
+<figure><img src="@source/mysql.assets/640.png" alt="" tabindex="0" loading="lazy"><figcaption></figcaption></figure>
 <ol start="2">
 <li><a href="https://www.xiaolincoding.com/mysql/index/index_interview.html#%E9%98%B2%E6%AD%A2%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88" target="_blank" rel="noopener noreferrer">防止索引失效<ExternalLinkIcon/></a></li>
 </ol>
-<h2 id="慢查询优化" tabindex="-1"><a class="header-anchor" href="#慢查询优化" aria-hidden="true">#</a> <a href="https://chat.openai.com/c/b37ae682-d06e-48d3-b1d6-2d8fae025ada" target="_blank" rel="noopener noreferrer">慢查询优化<ExternalLinkIcon/></a></h2>
+<h2 id="慢查询优化" tabindex="-1"><a class="header-anchor" href="#慢查询优化" aria-hidden="true">#</a> <a href="https://chat.openai.com/share/83dc5682-4652-425b-b543-d27348a8d334" target="_blank" rel="noopener noreferrer">慢查询优化<ExternalLinkIcon/></a></h2>
 <ol>
 <li>使用 explain 分析执行计划</li>
 <li>为经常查询的字段创建索引</li>
 <li>尽量避免 select *</li>
-<li>调整mysql缓存大小配置，定期检查慢查询日志</li>
+<li>调整 MySQL 缓存大小配置，定期检查慢查询日志</li>
 <li>硬件升级</li>
 </ol>
 <h2 id="表连接查询种类及区别" tabindex="-1"><a class="header-anchor" href="#表连接查询种类及区别" aria-hidden="true">#</a> 表连接查询种类及区别</h2>
@@ -67,7 +67,7 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <li>全外查询</li>
 <li>交叉查询。笛卡尔积</li>
 </ol>
-<h2 id="mybatis-xml-标签" tabindex="-1"><a class="header-anchor" href="#mybatis-xml-标签" aria-hidden="true">#</a> mybatis xml 标签</h2>
+<h2 id="mybatis-xml-标签" tabindex="-1"><a class="header-anchor" href="#mybatis-xml-标签" aria-hidden="true">#</a> MyBatis XML 标签</h2>
 <ol>
 <li><strong>&lt;mapper&gt;</strong>：映射文件的根元素。它通常包含一个或多个 SQL 映射语句。</li>
 <li><strong>&lt;select&gt;</strong>：定义一个 SELECT 语句。</li>

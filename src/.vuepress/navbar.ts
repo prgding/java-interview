@@ -9,7 +9,7 @@ export default navbar([
   {
     text: "题目",
     icon: "ph:seal-question",
-    link: "/question/",
+    link: "/question/23.08.15",
   },
   {
     text: "Java",

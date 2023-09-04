@@ -10,12 +10,12 @@ bgImageStyle:
 heroText: 后端面试经验
 tagline: 以 Java 为主
 actions:
-  - text: 开始阅读
-    link: ./java/
+  - text: 题目
+    link: question/23.08.15
     type: primary
 
-  - text: GitHub
-    link: https://github.com/prgding
+  - text: 总结
+    link: java
 
 copyright: false
 footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议, 版权所有 © 2019-present Mr.Hope

@@ -178,10 +178,28 @@
 <ol>
 <li>异常的种类</li>
 </ol>
-<h2 id="exception-和-error-有什么区别" tabindex="-1"><a class="header-anchor" href="#exception-和-error-有什么区别" aria-hidden="true">#</a> Exception 和 Error 有什么区别？</h2>
+<h3 id="exception-和-error-有什么区别" tabindex="-1"><a class="header-anchor" href="#exception-和-error-有什么区别" aria-hidden="true">#</a> Exception 和 Error 有什么区别？</h3>
 <ul>
 <li>Exception：程序本身可以处理的异常</li>
 <li>Error：程序无法处理的错误</li>
+</ul>
+<h2 id="重写和重载区别" tabindex="-1"><a class="header-anchor" href="#重写和重载区别" aria-hidden="true">#</a> 重写和重载区别</h2>
+<ul>
+<li>
+<p>重写</p>
+<ul>
+<li>是子类继承父类后，对父类的方法体进行重写。</li>
+<li>遵循&quot;两同两小一大&quot;，即方法名、参数列表相同，返回值类型和异常小于等于父类，访问权限大于父类。</li>
+<li>发生在运行期。</li>
+</ul>
+</li>
+<li>
+<p>重载</p>
+<ul>
+<li>多个方法名相同但是参数列表必须不同（类型、个数、顺序）、返回值部分有所不同。</li>
+<li>发生在编译期。</li>
+</ul>
+</li>
 </ul>
 </div></template>
 

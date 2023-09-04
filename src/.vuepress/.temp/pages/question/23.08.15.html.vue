@@ -3,19 +3,19 @@
 <ol>
 <li>自我介绍</li>
 <li>上段实习干啥了</li>
-<li>MySQL 数据类型</li>
-<li>MySQL 常用语句、函数、索引失效、查询用时很长优化、表连接查询有哪些，区别呢</li>
+<li><RouterLink to="/mysql.html#mysql-%E5%B8%B8%E8%A7%81%E5%AD%97%E6%AE%B5%E7%B1%BB%E5%9E%8B">MySQL 数据类型</RouterLink></li>
+<li><RouterLink to="/mysql.html#mysql-%E5%B8%B8%E7%94%A8%E8%AF%AD%E5%8F%A5">MySQL 常用语句</RouterLink>、<RouterLink to="/mysql.html#mysql-%E5%87%BD%E6%95%B0">函数</RouterLink>、<RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">索引失效</RouterLink>、<RouterLink to="/mysql.html#%E6%85%A2%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96">查询用时很长优化</RouterLink>、<RouterLink to="/mysql.html#%E8%A1%A8%E8%BF%9E%E6%8E%A5%E6%9F%A5%E8%AF%A2%E7%A7%8D%E7%B1%BB%E5%8F%8A%E5%8C%BA%E5%88%AB">表连接查询有哪些，区别呢</RouterLink></li>
 <li>MyBatis Plus 多表查询 API</li>
-<li>MyBatis XML 文件标签</li>
-<li>Java 数据类型及包装类</li>
+<li><RouterLink to="/mysql.html#mybatis-xml-%E6%A0%87%E7%AD%BE">MyBatis XML 文件标签</RouterLink></li>
+<li><a href="https://javaguide.cn/java/basis/java-basic-questions-01.html#java-%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BA%86%E8%A7%A3%E4%B9%88" target="_blank" rel="noopener noreferrer">Java 数据类型及包装类<ExternalLinkIcon/></a></li>
 <li>重写和重载区别</li>
-<li>equals() 和 == 区别</li>
+<li><RouterLink to="/java.html#%E5%92%8C-equals-%E7%9A%84%E5%8C%BA%E5%88%AB">equals() 和 == 区别</RouterLink></li>
 <li>List 和 Set 区别</li>
 <li>Java 实现线程几种方式</li>
 <li>Redis 说一下，几种数据结构常用 API</li>
 <li>Spring 、Spring MVC、Spring Boot、Spring Cloud</li>
 <li>Spring Boot 常用注解</li>
-<li>AOP 说一下</li>
+<li><RouterLink to="/spring.html#aop">AOP 说一下</RouterLink></li>
 <li>Nacos，Gateway，OpenFeign 说一下 Gateway 原理</li>
 <li>RabbitMQ 原理说一下，用来干嘛了</li>
 <li>Nginx 说一下</li>

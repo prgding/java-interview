@@ -1,11 +1,9 @@
 # MySQL
 
 ## MySQL 常见字段类型
-
 ![](mysql.assets/fields.png)
 
-## mysql 常用语句
-
+## MySQL 常用语句
 ```sql
 create table `tname`(
 	`column_name` type,
@@ -29,7 +27,7 @@ delete from tname [where ...];
 select f1 from tname where f1 like condition;
 ```
 
-## mysql 函数
+## MySQL 函数
 
 ### 字符串
 
@@ -79,16 +77,16 @@ addtime(time, timeexp); add timeexp to time;
 
 1. [6 种失效情况](https://mp.weixin.qq.com/s/lEx6iRRP3MbwJ82Xwp675w)
 
-![图片](mysql.assets/640.png)
+![](mysql.assets/640.png)
 
 2. [防止索引失效](https://www.xiaolincoding.com/mysql/index/index_interview.html#防止索引失效)
 
-## [慢查询优化](https://chat.openai.com/c/b37ae682-d06e-48d3-b1d6-2d8fae025ada)
+## [慢查询优化](https://chat.openai.com/share/83dc5682-4652-425b-b543-d27348a8d334)
 
 1. 使用 explain 分析执行计划
 2. 为经常查询的字段创建索引
 3. 尽量避免 select *
-4. 调整mysql缓存大小配置，定期检查慢查询日志
+4. 调整 MySQL 缓存大小配置，定期检查慢查询日志
 5. 硬件升级
 
 ## 表连接查询种类及区别
@@ -99,7 +97,7 @@ addtime(time, timeexp); add timeexp to time;
 4. 全外查询
 5. 交叉查询。笛卡尔积
 
-## mybatis xml 标签
+## MyBatis XML 标签
 
 1. **\<mapper>**：映射文件的根元素。它通常包含一个或多个 SQL 映射语句。
 2. **\<select>**：定义一个 SELECT 语句。

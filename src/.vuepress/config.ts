@@ -1,5 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { resolve } from 'path'
+
 
 export default defineUserConfig({
   base: "/java-interview/",
@@ -10,6 +12,12 @@ export default defineUserConfig({
 
   theme,
 
+  head: [
+    ['script', {}, `
+      console.log("111");
+    `]
+  ]
+
   // Enable it with pwa
-  // shouldPrefetch: false,
+  // shouldPrefetch: true,
 });
