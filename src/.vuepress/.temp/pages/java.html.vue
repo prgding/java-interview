@@ -47,7 +47,7 @@
 </li>
 </ol>
 <h2 id="string-s1-new-string-abc-这段代码创建了几个字符串对象" tabindex="-1"><a class="header-anchor" href="#string-s1-new-string-abc-这段代码创建了几个字符串对象" aria-hidden="true">#</a> <code v-pre>String s1 = new String(&quot;abc&quot;);</code> 这段代码创建了几个字符串对象？</h2>
-<p>分为两种情况。</p>
+<p>2个或1个，分为两种情况。</p>
 <ol>
 <li>字符串常量池中不存在时，现在常量池中创建 1 个，然后在堆中创建 1 个，一共 2 个。</li>
 <li>字符串常量池中存在时，只会在堆中创建 1 个。</li>
@@ -198,6 +198,51 @@
 <ul>
 <li>多个方法名相同但是参数列表必须不同（类型、个数、顺序）、返回值部分有所不同。</li>
 <li>发生在编译期。</li>
+</ul>
+</li>
+<li>
+<p>补充：</p>
+<ul>
+<li>无法重写父类的 private / final / static 方法</li>
+<li>无法重写构造方法</li>
+</ul>
+</li>
+</ul>
+<h2 id="集合" tabindex="-1"><a class="header-anchor" href="#集合" aria-hidden="true">#</a> 集合</h2>
+<ul>
+<li>Collection：存放元素值
+<ul>
+<li>List：有序、可重复
+<ul>
+<li>ArrayList：Object[] 数组</li>
+<li>LinkedList：双向链表</li>
+<li>Vector：Object[] 数组，线程安全</li>
+</ul>
+</li>
+<li>Set：无序、不可重复
+<ul>
+<li>HashSet：HashMap 实现
+<ul>
+<li>LinkedHashSet：LinkedHashMap 实现</li>
+</ul>
+</li>
+<li>TreeSet：TreeMap 实现</li>
+</ul>
+</li>
+<li>Queue：有序、可重复</li>
+</ul>
+</li>
+<li>Map：存放键值对
+<ul>
+<li>HashMap
+<ul>
+<li>1.7：数组 + 链表</li>
+<li>1.8：数组 + 链表 / 红黑树</li>
+<li>LinkedHashMap：数组 + 链表 / 红黑树 + 双向链表</li>
+</ul>
+</li>
+<li>Hashtable：数组 + 链表，线程安全</li>
+<li>TreeMap：红黑树（自平衡的排序二叉树）</li>
 </ul>
 </li>
 </ul>

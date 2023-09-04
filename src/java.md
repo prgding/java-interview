@@ -37,7 +37,7 @@
 
 ## `String s1 = new String("abc");` 这段代码创建了几个字符串对象？
 
-分为两种情况。
+2个或1个，分为两种情况。
 
 1. 字符串常量池中不存在时，现在常量池中创建 1 个，然后在堆中创建 1 个，一共 2 个。
 2. 字符串常量池中存在时，只会在堆中创建 1 个。
@@ -176,3 +176,27 @@
 - 重载
   - 多个方法名相同但是参数列表必须不同（类型、个数、顺序）、返回值部分有所不同。
   - 发生在编译期。
+- 补充：
+  - 无法重写父类的 private / final / static 方法
+  - 无法重写构造方法
+
+
+## 集合
+
+- Collection：存放元素值
+  - List：有序、可重复
+    - ArrayList：Object[] 数组
+    - LinkedList：双向链表
+    - Vector：Object[] 数组，线程安全
+  - Set：无序、不可重复
+    - HashSet：HashMap 实现
+      - LinkedHashSet：LinkedHashMap 实现
+    - TreeSet：TreeMap 实现
+  - Queue：有序、可重复
+- Map：存放键值对
+  - HashMap
+    - 1.7：数组 + 链表
+    - 1.8：数组 + 链表 / 红黑树
+    - LinkedHashMap：数组 + 链表 / 红黑树 + 双向链表
+  - Hashtable：数组 + 链表，线程安全
+  - TreeMap：红黑树（自平衡的排序二叉树）
