@@ -86,9 +86,9 @@
 <ol>
 <li>实例化 Bean</li>
 <li>属性赋值：构造注入或 set 注入</li>
-<li>Bean 后处理器的 before 方法</li>
+<li><strong>Bean 后处理器的 before 方法</strong></li>
 <li>初始化 Bean <code v-pre>init-method</code></li>
-<li>Bean 后处理器的 after 方法</li>
+<li><strong>Bean 后处理器的 after 方法</strong></li>
 <li>使用 Bean <code v-pre>getBean();</code></li>
 <li>销毁 Bean <code v-pre>destroy-method</code></li>
 </ol>

@@ -12,5 +12,6 @@ export const pagesRoutes = [
   ["v-8ba5c3a0","/question/23.09.01.html",{"y":"a","t":"23.09.01"},[":md"]],
   ["v-8168afe6","/question/23.09.04.html",{"y":"a","t":"23.09.04"},[":md"]],
   ["v-d78cd3a0","/question/",{"y":"a","t":"题目"},["/question/README.md"]],
+  ["v-1f24e95e","/question/%E6%89%80%E6%9C%89%E9%A2%98%E7%9B%AE.html",{"y":"a","t":"所有题目"},["/question/所有题目.html","/question/所有题目.md",":md"]],
   ["v-3706649a","/404.html",{"y":"p","t":""},[]],
 ]

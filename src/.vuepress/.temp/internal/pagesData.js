@@ -25,6 +25,8 @@ export const pagesData = {
   "v-8168afe6": () => import(/* webpackChunkName: "v-8168afe6" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/23.09.04.html.js").then(({ data }) => data),
   // path: /question/
   "v-d78cd3a0": () => import(/* webpackChunkName: "v-d78cd3a0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/index.html.js").then(({ data }) => data),
+  // path: /question/%E6%89%80%E6%9C%89%E9%A2%98%E7%9B%AE.html
+  "v-1f24e95e": () => import(/* webpackChunkName: "v-1f24e95e" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/question/所有题目.html.js").then(({ data }) => data),
   // path: /404.html
   "v-3706649a": () => import(/* webpackChunkName: "v-3706649a" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/404.html.js").then(({ data }) => data),
 }

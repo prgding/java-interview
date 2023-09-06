@@ -98,9 +98,9 @@
 
 1. 实例化 Bean
 2. 属性赋值：构造注入或 set 注入
-3. Bean 后处理器的 before 方法
+3. **Bean 后处理器的 before 方法**
 4. 初始化 Bean `init-method`
-5. Bean 后处理器的 after 方法
+5. **Bean 后处理器的 after 方法**
 6. 使用 Bean `getBean();`
 7. 销毁 Bean `destroy-method`
 
