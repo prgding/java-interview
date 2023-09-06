@@ -18,6 +18,11 @@ export default sidebar({
       link: "skills/",
     },
     {
+      text: "项目",
+      icon: "octicon:project-roadmap-16",
+      link: "projects/",
+    },
+    {
       text: "Java",
       icon: "logos:java",
       // link: "java/",

@@ -17,6 +17,11 @@ export default navbar([
     link: "skills/",
   },
   {
+    text: "项目",
+    icon: "octicon:project-roadmap-16",
+    link: "projects/",
+  },
+  {
     text: "Java",
     link: "/java/java/",
     icon: "logos:java",

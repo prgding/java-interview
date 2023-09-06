@@ -7,6 +7,8 @@ export const pagesData = {
   "v-4e9cb81e": () => import(/* webpackChunkName: "v-4e9cb81e" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/linux.html.js").then(({ data }) => data),
   // path: /mysql.html
   "v-b30035a0": () => import(/* webpackChunkName: "v-b30035a0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/mysql.html.js").then(({ data }) => data),
+  // path: /projects.html
+  "v-3ac5ce46": () => import(/* webpackChunkName: "v-3ac5ce46" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/projects.html.js").then(({ data }) => data),
   // path: /questions.html
   "v-3200da36": () => import(/* webpackChunkName: "v-3200da36" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions.html.js").then(({ data }) => data),
   // path: /redis.html

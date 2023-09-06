@@ -3,6 +3,7 @@ export const pagesRoutes = [
   ["v-a4e563c0","/docker.html",{"y":"a","t":"Docker"},[":md"]],
   ["v-4e9cb81e","/linux.html",{"y":"a","t":"Linux"},[":md"]],
   ["v-b30035a0","/mysql.html",{"y":"a","t":"MySQL"},[":md"]],
+  ["v-3ac5ce46","/projects.html",{"y":"a","t":"项目"},[":md"]],
   ["v-3200da36","/questions.html",{"y":"a","t":"题目"},[":md"]],
   ["v-2524dff7","/redis.html",{"y":"a","t":"Redis"},[":md"]],
   ["v-296b7d84","/skills.html",{"y":"a","t":"专业技能","O":2},[":md"]],
