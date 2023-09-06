@@ -11,7 +11,7 @@ heroText: 后端面试经验
 tagline: 以 Java 为主
 actions:
   - text: 题目
-    link: question/23.08.15
+    link: questions
     type: primary
 
   - text: 总结

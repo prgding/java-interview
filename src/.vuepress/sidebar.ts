@@ -10,10 +10,12 @@ export default sidebar({
     {
       text: "题目",
       icon: "ph:seal-question",
-      // link: "question/",
-      prefix: "question/",
-      collapsable: true,
-      children: "structure",
+      link: "questions/",
+    },
+    {
+      text: "专业技能",
+      icon: "carbon:skill-level-intermediate",
+      link: "skills/",
     },
     {
       text: "Java",
