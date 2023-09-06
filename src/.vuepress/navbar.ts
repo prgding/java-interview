@@ -18,8 +18,13 @@ export default navbar([
   },
   {
     text: "Java",
-    link: "/java/",
+    link: "/java/java/",
     icon: "logos:java",
+  },
+  {
+    text: "框架",
+    link: "/framework/spring/",
+    icon: "devicon:spring",
   },
   {
     text: "MySQL",
@@ -27,13 +32,18 @@ export default navbar([
     icon: "devicon:mysql",
   },
   {
-    text: "Spring",
-    link: "/spring/",
-    icon: "devicon:spring",
+    text: "Redis",
+    link: "/redis/",
+    icon: "logos:redis",
+  },
+  {
+    text: "Linux",
+    icon: "devicon:linux",
+    link: "linux/",
   },
   {
     text: "Docker",
-    icon: "teenyicons:docker-outline",
+    icon: "logos:docker-icon",
     link: "/docker/",
   },
 ]);

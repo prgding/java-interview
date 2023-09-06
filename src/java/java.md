@@ -1,4 +1,8 @@
-# Java
+---
+order: 1
+---
+
+# Java 基础
 
 ## String、StringBuffer、StringBuilder 的区别？
 

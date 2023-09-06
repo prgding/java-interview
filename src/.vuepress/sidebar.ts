@@ -20,7 +20,20 @@ export default sidebar({
     {
       text: "Java",
       icon: "logos:java",
-      link: "java/",
+      // link: "java/",
+
+      prefix: "java/",
+      collapsable: true,
+      children: "structure",
+    },
+    {
+      text: "框架",
+      icon: "devicon:spring",
+      // link: "spring/",
+
+      prefix: "framework/",
+      collapsable: true,
+      children: "structure",
     },
     {
       text: "MySQL",
@@ -28,13 +41,18 @@ export default sidebar({
       link: "mysql/",
     },
     {
-      text: "Spring",
-      icon: "devicon:spring",
-      link: "spring/",
+      text: "Redis",
+      icon: "logos:redis",
+      link: "redis/",
+    },
+    {
+      text: "Linux",
+      icon: "devicon:linux",
+      link: "linux/",
     },
     {
       text: "Docker",
-      icon: "teenyicons:docker-outline",
+      icon: "logos:docker-icon",
       link: "docker/",
     },
   ],
