@@ -122,8 +122,6 @@ order: 1
 复制对象：string.Person@333 string.Address@444
 ```
 
-
-
 ![拷贝类型](java.assets/shallow&deep-copy.png)
 
 ## 注解
