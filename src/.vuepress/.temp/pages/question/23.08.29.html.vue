@@ -11,7 +11,7 @@
 <li>说一下垃圾回收算法</li>
 <li>线程池的参数和执行任务流程</li>
 <li>简单说一下 CAP 理论</li>
-<li>Spring Bean 加载的过程</li>
+<li><RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 加载的过程</RouterLink></li>
 <li>说一下 MySQL 索引有哪些?</li>
 <li>MQ 的消息重复消费和消息堆积问题的解决思路</li>
 <li>反问:

@@ -6,7 +6,7 @@
 <li>为什么使用 ES 去优化 MySQL 查询? MySQL 模糊查询问题?</li>
 <li>Spring Boot 的特点?</li>
 <li>Spring Boot 的 starter?</li>
-<li>Spring 的容器启动和 Bean 加载(被打断说问循环依赖和三级缓存是啥)</li>
+<li>Spring 的容器启动和 <RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Bean 加载</RouterLink>（被打断说问循环依赖和三级缓存是啥）</li>
 <li>使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?</li>
 <li>一道算法题。先减后增求最小值<br>
 类似于 <a href="https://leetcode.cn/problems/B1IidL/description/" target="_blank" rel="noopener noreferrer">LCR 069，山脉数组的峰顶索引<ExternalLinkIcon/></a><br>

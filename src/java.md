@@ -63,7 +63,7 @@
 
 1. 根据规定，两个相等的对象的 hashCode() 必须是相等的。
 2. 重写 equals() 而不重写 hashCode() 会导致两个相等的对象 hashCode() 不相等。
-3. 这样的话如果使用 HashMap 或者 HashSet 时，相同的对象会存储到不同的位置，也就是出现了重复元素。
+3. 这样的话如果使用 HashMap 或者 HashSet 时，相同的对象会存储到不同的位置，也就是HashMap中出现了重复的 key ，HashSet 出现了重复的元素。
 
 
 

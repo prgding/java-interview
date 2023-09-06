@@ -67,7 +67,7 @@
 <ol>
 <li>根据规定，两个相等的对象的 hashCode() 必须是相等的。</li>
 <li>重写 equals() 而不重写 hashCode() 会导致两个相等的对象 hashCode() 不相等。</li>
-<li>这样的话如果使用 HashMap 或者 HashSet 时，相同的对象会存储到不同的位置，也就是出现了重复元素。</li>
+<li>这样的话如果使用 HashMap 或者 HashSet 时，相同的对象会存储到不同的位置，也就是HashMap中出现了重复的 key ，HashSet 出现了重复的元素。</li>
 </ol>
 <h2 id="包装类型的缓存机制了解么" tabindex="-1"><a class="header-anchor" href="#包装类型的缓存机制了解么" aria-hidden="true">#</a> 包装类型的缓存机制了解么？</h2>
 <ol>

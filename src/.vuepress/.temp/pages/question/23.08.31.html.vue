@@ -23,7 +23,7 @@
 <li>Java 有哪些集合</li>
 <li>ArrayList 和 LinkedList 区别</li>
 <li>请介绍一下 Spring 的 AOP 和 IoC</li>
-<li>请介绍一下 Spring 的 Bean 生命周期</li>
+<li><RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">请介绍一下 Spring 的 Bean 生命周期</RouterLink></li>
 <li>介绍项目</li>
 <li>一个 SpringBoot 项目中的常见注解</li>
 <li>SpringBoot 项目怎么使用事务，流程是怎么样</li>
