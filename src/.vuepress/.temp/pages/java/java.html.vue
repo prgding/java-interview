@@ -1,28 +1,24 @@
 <template><div><h1 id="java-基础" tabindex="-1"><a class="header-anchor" href="#java-基础" aria-hidden="true">#</a> Java 基础</h1>
 <h2 id="string、stringbuffer、stringbuilder-的区别" tabindex="-1"><a class="header-anchor" href="#string、stringbuffer、stringbuilder-的区别" aria-hidden="true">#</a> String、StringBuffer、StringBuilder 的区别？</h2>
 <ol>
-<li>
-<p>可变性</p>
+<li>可变性
 <ol>
 <li>String 不可变、后两者可变</li>
 </ol>
 </li>
-<li>
-<p>线程安全</p>
+<li>线程安全
 <ol>
 <li>String, StringBuffer 线程安全</li>
 </ol>
 </li>
-<li>
-<p>性能</p>
+<li>性能
 <ol>
 <li>String 每次要 new 对象，性能低。</li>
 <li>StringBuffer 可变但是线程安全，略微提升。</li>
 <li>StringBuilder 可变而且非线程安全。三者中提供最好的性能。</li>
 </ol>
 </li>
-<li>
-<p>选择</p>
+<li>选择
 <ol>
 <li>少量数据，String</li>
 <li>单线程大量数据 StringBuilder</li>
@@ -120,22 +116,6 @@
 </ol>
 </li>
 </ol>
-<h2 id="深拷贝和浅拷贝区别了解吗-什么是引用拷贝" tabindex="-1"><a class="header-anchor" href="#深拷贝和浅拷贝区别了解吗-什么是引用拷贝" aria-hidden="true">#</a> 深拷贝和浅拷贝区别了解吗？什么是引用拷贝？</h2>
-<ol>
-<li>引用拷贝</li>
-</ol>
-<p>两个不同的引用指向同一个对象</p>
-<ol start="2">
-<li>浅拷贝：复制整个对象，不包含内部对象，而是复制内部对象的引用地址。</li>
-</ol>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>原对象： <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@111</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@222</span>
-复制对象：<span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@333</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@222</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="3">
-<li>深拷贝：复制整个对象以及内部所包含的对象</li>
-</ol>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>原对象： <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@111</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@222</span>
-复制对象：<span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@333</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@444</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="@source/java/java.assets/shallow&amp;deep-copy.png" alt="拷贝类型" tabindex="0" loading="lazy"><figcaption>拷贝类型</figcaption></figure>
 <h2 id="注解" tabindex="-1"><a class="header-anchor" href="#注解" aria-hidden="true">#</a> 注解</h2>
 <ol>
 <li>
@@ -252,8 +232,66 @@
 <li>LinkedList：双向链表</li>
 </ul>
 </li>
-<li></li>
 </ul>
-</div></template>
+<h2 id="面向对象" tabindex="-1"><a class="header-anchor" href="#面向对象" aria-hidden="true">#</a> 面向对象</h2>
+<h3 id="三大特征" tabindex="-1"><a class="header-anchor" href="#三大特征" aria-hidden="true">#</a> 三大特征</h3>
+<ol>
+<li>封装（Encapsulation）：把对象的属性隐藏在内部，不允许外部直接访问，但可以提供一些方法供外界操作。例如我们看不到空调的内部零件，但可以通过遥控器来控制空调。</li>
+<li>继承（Inheritance）：不同的对象之间，可能会有共性，比如小猫、小狗都属于动物，都会跑。同时小猫、小狗在外观、叫声上又有所不同。这样，对象之间的共性可以使用父类的功能，对于个性我们可以继承后重写。这提高了代码的复用性，也使程序更加可维护。</li>
+<li>多态（Polymorphism）：一个对象具有多种形态，具体表现为父类引用指向子类的实例。如果子类重写了父类的方法，则真正执行的是子类覆盖的方法，如果没有重写，则执行的是父类的方法。</li>
+</ol>
+<h3 id="深拷贝和浅拷贝区别了解吗-什么是引用拷贝" tabindex="-1"><a class="header-anchor" href="#深拷贝和浅拷贝区别了解吗-什么是引用拷贝" aria-hidden="true">#</a> 深拷贝和浅拷贝区别了解吗？什么是引用拷贝？</h3>
+<ol>
+<li>引用拷贝</li>
+</ol>
+<p>两个不同的引用指向同一个对象</p>
+<ol start="2">
+<li>浅拷贝：复制整个对象，不包含内部对象，而是复制内部对象的引用地址。</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>原对象： <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@111</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@222</span>
+复制对象：<span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@333</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@222</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="3">
+<li>深拷贝：复制整个对象以及内部所包含的对象</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code>原对象： <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@111</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@222</span>
+复制对象：<span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Person</span><span class="token annotation punctuation">@333</span> <span class="token class-name"><span class="token namespace">string<span class="token punctuation">.</span></span>Address</span><span class="token annotation punctuation">@444</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><figure><img src="@source/java/java.assets/shallow&amp;deep-copy.png" alt="拷贝类型" tabindex="0" loading="lazy"><figcaption>拷贝类型</figcaption></figure>
+<h2 id="反射" tabindex="-1"><a class="header-anchor" href="#反射" aria-hidden="true">#</a> 反射</h2>
+<h3 id="是什么" tabindex="-1"><a class="header-anchor" href="#是什么" aria-hidden="true">#</a> 是什么</h3>
+<p>反射是指程序在运行期间可以拿到一个对象的所有信息。</p>
+<h2 id="线程的创建" tabindex="-1"><a class="header-anchor" href="#线程的创建" aria-hidden="true">#</a> 线程的创建</h2>
+<ol>
+<li>继承 Thread 类</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">class</span> myThread extens <span class="token class-name">Thread</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">myThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>实现 Runnable 接口</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">class</span> myRunnable <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
+    <span class="token annotation punctuation">@override</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token function">myRunnable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

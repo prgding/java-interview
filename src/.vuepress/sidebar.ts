@@ -28,7 +28,7 @@ export default sidebar({
       // link: "java/",
 
       prefix: "java/",
-      collapsable: true,
+      collapsible: true,
       children: "structure",
     },
     {
@@ -37,7 +37,7 @@ export default sidebar({
       // link: "spring/",
 
       prefix: "framework/",
-      collapsable: true,
+      collapsible: true,
       children: "structure",
     },
     {

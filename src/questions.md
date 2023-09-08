@@ -10,14 +10,14 @@
 5. MyBatis Plus 多表查询 API
 6. [MyBatis XML 文件标签](/java-interview/mysql.html#mybatis-xml-标签)
 7. [Java 数据类型及包装类](https://javaguide.cn/java/basis/java-basic-questions-01.html#java-中的几种基本数据类型了解么)
-8. [重写和重载区别](/java-interview/java.html#重写和重载区别)
-9. [equals() 和 == 区别](/java-interview/java.html#和-equals-的区别)
-10. [List 和 Set 区别](/java-interview/java.html#集合)
+8. [重写和重载区别](/java-interview/java/java/java.html#重写和重载区别)
+9. [equals() 和 == 区别](/java-interview/java/java.html#和-equals-的区别)
+10. [List 和 Set 区别](/java-interview/java/java.html#集合)
 11. Java 实现线程几种方式
 12. Redis 说一下，几种数据结构常用 API
-13. [Spring、Spring MVC、Spring Boot、Spring Cloud](/java-interview/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
-14. [Spring Boot 常用注解](/java-interview/spring.html#spring-boot-常用注解)
-15. [AOP 说一下](/java-interview/spring.html#aop)
+13. [Spring、Spring MVC、Spring Boot、Spring Cloud](/java-interview/framework/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
+14. [Spring Boot 常用注解](/java-interview/framework/spring.html#spring-boot-常用注解)
+15. [AOP 说一下](/java-interview/framework/spring.html#aop)
 16. Nacos，Gateway，OpenFeign 说一下 Gateway 原理
 17. RabbitMQ 原理说一下，用来干嘛了
 18. Nginx 说一下
@@ -29,8 +29,8 @@
 1. 自我介绍
 2. 项目背景（为什么会想做这个项目）
 3. JVM 运行流程
-4. [Java 两大容器了解吗 (Collection 和 Map)](/java-interview/java.html#集合)
-5. [你学的框架之间有什么区别？](/java-interview/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
+4. [Java 两大容器了解吗 (Collection 和 Map)](/java-interview/java/java.html#集合)
+5. [你学的框架之间有什么区别？](/java-interview/framework/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
 6. 了解过 SVN 吗？
 7. Linux 的常用命令
 8. 内连接和外连接有什么区别？
@@ -72,9 +72,9 @@
 
 ### 货拉拉的测开
 面试官很好 他自己还开视频了 不会的就不深问 会的就循序渐进的问 不会的还教你 前面的有几个忘记录音了
-1. [AOP 的实现方式](/java-interview/spring.html#实现方式)
+1. [AOP 的实现方式](/java-interview/framework/spring.html#实现方式)
 2. 有了解过用 Java Agent 实现 AOP 嘛
-3. [用 AOP 来干嘛](/java-interview/spring.html#aop-能做什么)
+3. [用 AOP 来干嘛](/java-interview/framework/spring.html#aop-能做什么)
 4. IO 的方式有哪些
 5. 常用的设计模式有哪些
 6. 为什么要设计成单例
@@ -84,7 +84,7 @@
 10. 两个有序链表合并成一个有序链表
 11. 用什么方式实现多线程
 12. 拒绝策略有哪些
-13. [线程安全的 List 和 Map](/java-interview/java.html#集合)
+13. [线程安全的 List 和 Map](/java-interview/java/java.html#集合)
 14. 说说 ConcurrentHashMap
 15. Java 的双亲委派
 16. 打破双亲委派的方式
@@ -113,13 +113,13 @@
 12. MyBatis 了解过多少
 13. Gateway 网关路由控制，请求分发具体怎么实现
 14. 讲一下责任链模式
-15. [Spring 核心模块](/java-interview/spring.html#spring-核心模块)
-16. [Spring 事务有了解吗](/java-interview/spring.html#spring-事务)
-17. [Spring 事务有哪几种传播级别](/java-interview/spring.html#spring-事务有哪几种传播级别)
-18. [讲下 IoC](/java-interview/spring.html#ioc)
-19. [创建 bean 的机制](/java-interview/spring.html#bean-的生命周期)
-20. [讲一下 AOP](/java-interview/spring.html#aop)
-21. [AOP 缺点](/java-interview/spring.html#aop-的缺点)，[具体应用](/java-interview/spring.html#aop-能做什么)
+15. [Spring 核心模块](/java-interview/framework/spring.html#spring-核心模块)
+16. [Spring 事务有了解吗](/java-interview/framework/spring.html#spring-事务)
+17. [Spring 事务有哪几种传播级别](/java-interview/framework/spring.html#spring-事务有哪几种传播级别)
+18. [讲下 IoC](/java-interview/framework/spring.html#ioc)
+19. [创建 bean 的机制](/java-interview/framework/spring.html#bean-的生命周期)
+20. [讲一下 AOP](/java-interview/framework/spring.html#aop)
+21. [AOP 缺点](/java-interview/framework/spring.html#aop-的缺点)，[具体应用](/java-interview/framework/spring.html#aop-能做什么)
 22. Vue 熟悉吗
 23. 如果让你去写一个类似淘宝的电商项目你会怎么做讲一下你的思路
 24. 定时任务怎么实现
@@ -173,7 +173,7 @@
    1. Redis 中不存储重要数据，就算丢失也无所谓
    2. 先删数据库，再更新 Redis
    3. 延迟双删。
-5. [讲一下 HashMap](/java-interview/java.html#集合)
+5. [讲一下 HashMap](/java-interview/java/java.html#集合)
    分 1.7 和 1.8 讲
    数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）
    1.7 并发扩容头插存在死循环 
@@ -206,14 +206,14 @@
 1. 自我介绍
 2. 项目 (10分钟)
 3. 对封装. 继承. 多态怎么理解的?
-4. [Java 的集合类有哪些?](/java-interview/java.html#集合)
+4. [Java 的集合类有哪些?](/java-interview/java/java.html#集合)
 5. ArrayList 和 LinkedList 的区别?
 6. HashMap 说一下? (初始化，put 流程，扩容)
 7. 说下 JVM 的运行时数据区(各部分存储内容)
 8. 说一下垃圾回收算法
 9. 线程池的参数和执行任务流程
 10. 简单说一下 CAP 理论
-11. [Spring Bean 加载的过程](/java-interview/spring.html#bean-的生命周期)
+11. [Spring Bean 加载的过程](/java-interview/framework/spring.html#bean-的生命周期)
 12. 说一下 MySQL 索引有哪些?
 13. MQ 的消息重复消费和消息堆积问题的解决思路
 14. 反问:
@@ -230,7 +230,7 @@
 3. 为什么使用 ES 去优化 MySQL 查询? MySQL 模糊查询问题?
 4. Spring Boot 的特点?
 5. Spring Boot 的 starter?
-6. Spring 的容器启动和 [Bean 加载](/java-interview/spring.html#bean-的生命周期)（被打断说问循环依赖和三级缓存是啥）
+6. Spring 的容器启动和 [Bean 加载](/java-interview/framework/spring.html#bean-的生命周期)（被打断说问循环依赖和三级缓存是啥）
 7. 使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?
 8. 一道算法题。先减后增求最小值
 类似于 [LCR 069，山脉数组的峰顶索引](https://leetcode.cn/problems/B1IidL/description/)
@@ -304,7 +304,7 @@
 1. Java 有哪些集合
 2. ArrayList 和 LinkedList 区别
 3. 请介绍一下 Spring 的 AOP 和 IoC
-4. [请介绍一下 Spring 的 Bean 生命周期](/java-interview/spring.html#bean-的生命周期)
+4. [请介绍一下 Spring 的 Bean 生命周期](/java-interview/framework/spring.html#bean-的生命周期)
 5. 介绍项目
 6. 一个 SpringBoot 项目中的常见注解
 7. SpringBoot 项目怎么使用事务，流程是怎么样
@@ -340,7 +340,7 @@
    - 宠物抽象类，猫、狗实现类（属性：名称、速度），十米赛跑，比赛开始做日志打印，到达终点做日志打印
      例：14:01:11 比赛开始，14:01:13 汤姆猫（5m/s）到达，14:01:16 旺财（2m/s）到达（题目用的是真实时间）
 2. 项目拷打
-3. [Spring Bean 的生命周期](/java-interview/spring.html#bean-的生命周期)
+3. [Spring Bean 的生命周期](/java-interview/framework/spring.html#bean-的生命周期)
 4. 在初始化 Bean 前如何修改 Bean 的属性覆盖原本要初始化的属性
 5. Git 命令，提交撤回
 6. 反问：

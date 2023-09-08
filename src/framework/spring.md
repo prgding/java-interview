@@ -11,28 +11,6 @@ order: 1
 - Spring Boot 简化了配置，做到开箱即用。
 - Spring Cloud 是一个微服务框架，结合 Spring Boot 可以快速开发分布式应用。
 
-## Spring Boot 常用注解
-
-```java
-// 启动：
-@SpringBootApplication
-@Configuration
-@EnableAutoConfiguration
-
-// 分层：
-@Repository
-@Service
-@Controller
-@RestController
-
-// 应用：
-@Component
-@Bean
-@AutoWired
-@ResponseBody
-@RequestParam
-```
-
 ## Spring 核心模块
 
 1. Spring Core (IoC)
@@ -49,7 +27,9 @@ order: 1
 
 思想：控制反转，一种设计思想，将**对象的创建权**和**对象关系管理权**交出去，由第三方容器负责创建与维护。
 
-实现：IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
+### 实现
+
+IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
 
 ## AOP
 
@@ -96,8 +76,6 @@ order: 1
 4. 使用 Bean `getBean();`
 5. 销毁 Bean `destroy-method`
 
-
-
 编写一个类实现 `BeanPostProcessor`，重写 `postProcessBeforeInitialization` 和 `postProcessAfterInitialization` 方法，可以在第 3 步初始化 Bean 之前和之后添加代码。
 
 1. 实例化 Bean
@@ -117,8 +95,6 @@ order: 1
    2. TransactionManager
 2. 声明式
    1. `@Transactional` 注解
-
-
 
 ### Spring 事务有哪几种传播级别
 
@@ -144,10 +120,6 @@ order: 1
 7. TransactionDefinition.PROPAGATION_NEVER
    - 以非事务运行
    - 有则抛出异常
-
-
-
-
 
 
 

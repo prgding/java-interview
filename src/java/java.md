@@ -14,7 +14,6 @@ order: 1
    1. String 每次要 new 对象，性能低。
    2. StringBuffer 可变但是线程安全，略微提升。
    3. StringBuilder 可变而且非线程安全。三者中提供最好的性能。
-
 4. 选择
    1. 少量数据，String
    2. 单线程大量数据 StringBuilder
@@ -102,27 +101,7 @@ order: 1
 
 
 
-## 深拷贝和浅拷贝区别了解吗？什么是引用拷贝？
 
-1. 引用拷贝
-
-两个不同的引用指向同一个对象
-
-2. 浅拷贝：复制整个对象，不包含内部对象，而是复制内部对象的引用地址。
-
-```java
-原对象： string.Person@111 string.Address@222
-复制对象：string.Person@333 string.Address@222
-```
-
-3. 深拷贝：复制整个对象以及内部所包含的对象
-
-```java
-原对象： string.Person@111 string.Address@222
-复制对象：string.Person@333 string.Address@444
-```
-
-![拷贝类型](java.assets/shallow&deep-copy.png)
 
 ## 注解
 
@@ -205,4 +184,80 @@ order: 1
 - 存储结构
   - ArrayList：Object [] 数组
   - LinkedList：双向链表
-- 
+
+## 面向对象
+
+### 三大特征
+
+1. 封装（Encapsulation）：把对象的属性隐藏在内部，不允许外部直接访问，但可以提供一些方法供外界操作。例如我们看不到空调的内部零件，但可以通过遥控器来控制空调。
+2. 继承（Inheritance）：不同的对象之间，可能会有共性，比如小猫、小狗都属于动物，都会跑。同时小猫、小狗在外观、叫声上又有所不同。这样，对象之间的共性可以使用父类的功能，对于个性我们可以继承后重写。这提高了代码的复用性，也使程序更加可维护。
+3. 多态（Polymorphism）：一个对象具有多种形态，具体表现为父类引用指向子类的实例。如果子类重写了父类的方法，则真正执行的是子类覆盖的方法，如果没有重写，则执行的是父类的方法。
+
+### 深拷贝和浅拷贝区别了解吗？什么是引用拷贝？
+
+1. 引用拷贝
+
+两个不同的引用指向同一个对象
+
+2. 浅拷贝：复制整个对象，不包含内部对象，而是复制内部对象的引用地址。
+
+```java
+原对象： string.Person@111 string.Address@222
+复制对象：string.Person@333 string.Address@222
+```
+
+3. 深拷贝：复制整个对象以及内部所包含的对象
+
+```java
+原对象： string.Person@111 string.Address@222
+复制对象：string.Person@333 string.Address@444
+```
+
+![拷贝类型](java.assets/shallow&deep-copy.png)
+
+## 反射
+
+### 是什么
+
+反射是指程序在运行期间可以拿到一个对象的所有信息。
+
+
+
+## 线程的创建
+
+1. 继承 Thread 类
+
+```java
+class myThread extens Thread{
+    @override
+    public void run(){
+        System.out.println("hello");
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        Thread t = new myThread();
+        t.start();
+    }
+}
+```
+
+2. 实现 Runnable 接口
+
+```java
+class myRunnable implements Runnable{
+    @override
+    public void run(){
+        System.out.println("hello");
+    }
+}
+
+public class Main(){
+    public static void main(String[] args){
+        Thread t = new Thread(new myRunnable());
+        t.start();
+    }
+}
+```
+

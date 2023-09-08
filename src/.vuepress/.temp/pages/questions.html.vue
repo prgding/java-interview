@@ -9,14 +9,14 @@
 <li>MyBatis Plus 多表查询 API</li>
 <li><RouterLink to="/mysql.html#mybatis-xml-%E6%A0%87%E7%AD%BE">MyBatis XML 文件标签</RouterLink></li>
 <li><a href="https://javaguide.cn/java/basis/java-basic-questions-01.html#java-%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BA%86%E8%A7%A3%E4%B9%88" target="_blank" rel="noopener noreferrer">Java 数据类型及包装类<ExternalLinkIcon/></a></li>
-<li><RouterLink to="/java.html#%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E5%8C%BA%E5%88%AB">重写和重载区别</RouterLink></li>
-<li><RouterLink to="/java.html#%E5%92%8C-equals-%E7%9A%84%E5%8C%BA%E5%88%AB">equals() 和 == 区别</RouterLink></li>
-<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">List 和 Set 区别</RouterLink></li>
+<li><RouterLink to="/java/java/java.html#%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E5%8C%BA%E5%88%AB">重写和重载区别</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E5%92%8C-equals-%E7%9A%84%E5%8C%BA%E5%88%AB">equals() 和 == 区别</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">List 和 Set 区别</RouterLink></li>
 <li>Java 实现线程几种方式</li>
 <li>Redis 说一下，几种数据结构常用 API</li>
-<li><RouterLink to="/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">Spring、Spring MVC、Spring Boot、Spring Cloud</RouterLink></li>
-<li><RouterLink to="/spring.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">Spring Boot 常用注解</RouterLink></li>
-<li><RouterLink to="/spring.html#aop">AOP 说一下</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">Spring、Spring MVC、Spring Boot、Spring Cloud</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">Spring Boot 常用注解</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#aop">AOP 说一下</RouterLink></li>
 <li>Nacos，Gateway，OpenFeign 说一下 Gateway 原理</li>
 <li>RabbitMQ 原理说一下，用来干嘛了</li>
 <li>Nginx 说一下</li>
@@ -28,8 +28,8 @@
 <li>自我介绍</li>
 <li>项目背景（为什么会想做这个项目）</li>
 <li>JVM 运行流程</li>
-<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">Java 两大容器了解吗 (Collection 和 Map)</RouterLink></li>
-<li><RouterLink to="/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">你学的框架之间有什么区别？</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 两大容器了解吗 (Collection 和 Map)</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">你学的框架之间有什么区别？</RouterLink></li>
 <li>了解过 SVN 吗？</li>
 <li>Linux 的常用命令</li>
 <li>内连接和外连接有什么区别？</li>
@@ -90,9 +90,9 @@
 <h3 id="货拉拉的测开" tabindex="-1"><a class="header-anchor" href="#货拉拉的测开" aria-hidden="true">#</a> 货拉拉的测开</h3>
 <p>面试官很好 他自己还开视频了 不会的就不深问 会的就循序渐进的问 不会的还教你 前面的有几个忘记录音了</p>
 <ol>
-<li><RouterLink to="/spring.html#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">AOP 的实现方式</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">AOP 的实现方式</RouterLink></li>
 <li>有了解过用 Java Agent 实现 AOP 嘛</li>
-<li><RouterLink to="/spring.html#aop-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88">用 AOP 来干嘛</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#aop-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88">用 AOP 来干嘛</RouterLink></li>
 <li>IO 的方式有哪些</li>
 <li>常用的设计模式有哪些</li>
 <li>为什么要设计成单例</li>
@@ -102,7 +102,7 @@
 <li>两个有序链表合并成一个有序链表</li>
 <li>用什么方式实现多线程</li>
 <li>拒绝策略有哪些</li>
-<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">线程安全的 List 和 Map</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">线程安全的 List 和 Map</RouterLink></li>
 <li>说说 ConcurrentHashMap</li>
 <li>Java 的双亲委派</li>
 <li>打破双亲委派的方式</li>
@@ -132,13 +132,13 @@
 <li>MyBatis 了解过多少</li>
 <li>Gateway 网关路由控制，请求分发具体怎么实现</li>
 <li>讲一下责任链模式</li>
-<li><RouterLink to="/spring.html#spring-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97">Spring 核心模块</RouterLink></li>
-<li><RouterLink to="/spring.html#spring-%E4%BA%8B%E5%8A%A1">Spring 事务有了解吗</RouterLink></li>
-<li><RouterLink to="/spring.html#spring-%E4%BA%8B%E5%8A%A1%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E4%BC%A0%E6%92%AD%E7%BA%A7%E5%88%AB">Spring 事务有哪几种传播级别</RouterLink></li>
-<li><RouterLink to="/spring.html#ioc">讲下 IoC</RouterLink></li>
-<li><RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">创建 bean 的机制</RouterLink></li>
-<li><RouterLink to="/spring.html#aop">讲一下 AOP</RouterLink></li>
-<li><RouterLink to="/spring.html#aop-%E7%9A%84%E7%BC%BA%E7%82%B9">AOP 缺点</RouterLink>，<RouterLink to="/spring.html#aop-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88">具体应用</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97">Spring 核心模块</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E4%BA%8B%E5%8A%A1">Spring 事务有了解吗</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E4%BA%8B%E5%8A%A1%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E4%BC%A0%E6%92%AD%E7%BA%A7%E5%88%AB">Spring 事务有哪几种传播级别</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#ioc">讲下 IoC</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">创建 bean 的机制</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#aop">讲一下 AOP</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#aop-%E7%9A%84%E7%BC%BA%E7%82%B9">AOP 缺点</RouterLink>，<RouterLink to="/framework/spring.html#aop-%E8%83%BD%E5%81%9A%E4%BB%80%E4%B9%88">具体应用</RouterLink></li>
 <li>Vue 熟悉吗</li>
 <li>如果让你去写一个类似淘宝的电商项目你会怎么做讲一下你的思路</li>
 <li>定时任务怎么实现</li>
@@ -192,7 +192,7 @@
 <li>延迟双删。</li>
 </ol>
 </li>
-<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink><br>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink><br>
 分 1.7 和 1.8 讲<br>
 数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）<br>
 1.7 并发扩容头插存在死循环<br>
@@ -230,14 +230,14 @@
 <li>自我介绍</li>
 <li>项目 (10分钟)</li>
 <li>对封装. 继承. 多态怎么理解的?</li>
-<li><RouterLink to="/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
 <li>ArrayList 和 LinkedList 的区别?</li>
 <li>HashMap 说一下? (初始化，put 流程，扩容)</li>
 <li>说下 JVM 的运行时数据区(各部分存储内容)</li>
 <li>说一下垃圾回收算法</li>
 <li>线程池的参数和执行任务流程</li>
 <li>简单说一下 CAP 理论</li>
-<li><RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 加载的过程</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 加载的过程</RouterLink></li>
 <li>说一下 MySQL 索引有哪些?</li>
 <li>MQ 的消息重复消费和消息堆积问题的解决思路</li>
 <li>反问:
@@ -256,7 +256,7 @@
 <li>为什么使用 ES 去优化 MySQL 查询? MySQL 模糊查询问题?</li>
 <li>Spring Boot 的特点?</li>
 <li>Spring Boot 的 starter?</li>
-<li>Spring 的容器启动和 <RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Bean 加载</RouterLink>（被打断说问循环依赖和三级缓存是啥）</li>
+<li>Spring 的容器启动和 <RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Bean 加载</RouterLink>（被打断说问循环依赖和三级缓存是啥）</li>
 <li>使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?</li>
 <li>一道算法题。先减后增求最小值<br>
 类似于 <a href="https://leetcode.cn/problems/B1IidL/description/" target="_blank" rel="noopener noreferrer">LCR 069，山脉数组的峰顶索引<ExternalLinkIcon/></a><br>
@@ -331,7 +331,7 @@
 <li>Java 有哪些集合</li>
 <li>ArrayList 和 LinkedList 区别</li>
 <li>请介绍一下 Spring 的 AOP 和 IoC</li>
-<li><RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">请介绍一下 Spring 的 Bean 生命周期</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">请介绍一下 Spring 的 Bean 生命周期</RouterLink></li>
 <li>介绍项目</li>
 <li>一个 SpringBoot 项目中的常见注解</li>
 <li>SpringBoot 项目怎么使用事务，流程是怎么样</li>
@@ -369,7 +369,7 @@
 </ul>
 </li>
 <li>项目拷打</li>
-<li><RouterLink to="/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 的生命周期</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 的生命周期</RouterLink></li>
 <li>在初始化 Bean 前如何修改 Bean 的属性覆盖原本要初始化的属性</li>
 <li>Git 命令，提交撤回</li>
 <li>反问：</li>

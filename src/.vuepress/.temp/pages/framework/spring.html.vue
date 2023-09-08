@@ -6,25 +6,7 @@
 <li>Spring Boot 简化了配置，做到开箱即用。</li>
 <li>Spring Cloud 是一个微服务框架，结合 Spring Boot 可以快速开发分布式应用。</li>
 </ul>
-<h2 id="spring-boot-常用注解" tabindex="-1"><a class="header-anchor" href="#spring-boot-常用注解" aria-hidden="true">#</a> Spring Boot 常用注解</h2>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token comment">// 启动：</span>
-<span class="token annotation punctuation">@SpringBootApplication</span>
-<span class="token annotation punctuation">@Configuration</span>
-<span class="token annotation punctuation">@EnableAutoConfiguration</span>
-
-<span class="token comment">// 分层：</span>
-<span class="token annotation punctuation">@Repository</span>
-<span class="token annotation punctuation">@Service</span>
-<span class="token annotation punctuation">@Controller</span>
-<span class="token annotation punctuation">@RestController</span>
-
-<span class="token comment">// 应用：</span>
-<span class="token annotation punctuation">@Component</span>
-<span class="token annotation punctuation">@Bean</span>
-<span class="token annotation punctuation">@AutoWired</span>
-<span class="token annotation punctuation">@ResponseBody</span>
-<span class="token annotation punctuation">@RequestParam</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="spring-核心模块" tabindex="-1"><a class="header-anchor" href="#spring-核心模块" aria-hidden="true">#</a> Spring 核心模块</h2>
+<h2 id="spring-核心模块" tabindex="-1"><a class="header-anchor" href="#spring-核心模块" aria-hidden="true">#</a> Spring 核心模块</h2>
 <ol>
 <li>Spring Core (IoC)</li>
 <li>Spring AOP</li>
@@ -37,7 +19,8 @@
 <h2 id="ioc" tabindex="-1"><a class="header-anchor" href="#ioc" aria-hidden="true">#</a> IoC</h2>
 <h3 id="是什么" tabindex="-1"><a class="header-anchor" href="#是什么" aria-hidden="true">#</a> 是什么</h3>
 <p>思想：控制反转，一种设计思想，将<strong>对象的创建权</strong>和<strong>对象关系管理权</strong>交出去，由第三方容器负责创建与维护。</p>
-<p>实现：IoC 最常见以及最合理的实现方式叫做 DI 依赖注入</p>
+<h3 id="实现" tabindex="-1"><a class="header-anchor" href="#实现" aria-hidden="true">#</a> 实现</h3>
+<p>IoC 最常见以及最合理的实现方式叫做 DI 依赖注入</p>
 <h2 id="aop" tabindex="-1"><a class="header-anchor" href="#aop" aria-hidden="true">#</a> AOP</h2>
 <h3 id="是什么-1" tabindex="-1"><a class="header-anchor" href="#是什么-1" aria-hidden="true">#</a> 是什么？</h3>
 <p>将事务、日志、安全等非业务代码穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。</p>
