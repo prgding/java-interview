@@ -163,6 +163,8 @@ order: 1
 
 ## 集合
 
+### 两大集合以及实现类
+
 - Collection：存放元素值
   - List：有序、可重复
     - ArrayList：Object[] 数组
@@ -184,6 +186,40 @@ order: 1
 - 存储结构
   - ArrayList：Object [] 数组
   - LinkedList：双向链表
+
+- 操作数据效率
+
+    - ArrayList 按下标查询效率为 O(1)，LinkedList 不支持下标查询
+    - ArrayList 尾部增删为 O(1)，其他部分为 O(n)
+    - LinkedList 头尾增删为 O(1)，其他部分为 O(n)
+
+- 内存消耗
+
+    - LinkedList 每个节点需要前一个和后一个两个引用，通常比 ArrayList 占用更多的内存。
+
+- 线程安全
+
+    - 都不线程安全，有两种方案保证线程安全
+
+        1. 方法内部使用，局部变量是线程安全的
+
+        2. 使用 Collections.synchronizedList() 包裹
+
+            `````java
+            List<Object> syncArrayList = Collections.synchronizedList(new ArrayList<>);
+            List<Object> syncLinkedList = Collections.synchronizedList(new LinkedList<>);
+            `````
+
+### 线程安全的 List 和 Map
+
+1. List
+    1. Vector: 古老的线程安全实现，使用内部同步来确保线程安全。每次方法调用都要同步，并发性能不佳。
+    2. Collections.synchronizedList() 包装，但是这样会导致全局锁定，影响并发性能
+    3. CopyOnWriteArrayList: JUC 包中一个线程安全的 ArrayList 实现
+2. Map
+    1. Hashtable：古老的实现，使用同步
+    2. Collections.synchronizedMap() 包装
+    3. ConcurrentHashMap： JUC 包中一个线程安全的 HashMap 实现
 
 ## 面向对象
 
@@ -222,42 +258,4 @@ order: 1
 反射是指程序在运行期间可以拿到一个对象的所有信息。
 
 
-
-## 线程的创建
-
-1. 继承 Thread 类
-
-```java
-class myThread extens Thread{
-    @override
-    public void run(){
-        System.out.println("hello");
-    }
-}
-
-public class Main{
-    public static void main(String[] args){
-        Thread t = new myThread();
-        t.start();
-    }
-}
-```
-
-2. 实现 Runnable 接口
-
-```java
-class myRunnable implements Runnable{
-    @override
-    public void run(){
-        System.out.println("hello");
-    }
-}
-
-public class Main(){
-    public static void main(String[] args){
-        Thread t = new Thread(new myRunnable());
-        t.start();
-    }
-}
-```
 

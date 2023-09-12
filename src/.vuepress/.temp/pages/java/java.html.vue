@@ -189,6 +189,7 @@
 </li>
 </ul>
 <h2 id="集合" tabindex="-1"><a class="header-anchor" href="#集合" aria-hidden="true">#</a> 集合</h2>
+<h3 id="两大集合以及实现类" tabindex="-1"><a class="header-anchor" href="#两大集合以及实现类" aria-hidden="true">#</a> 两大集合以及实现类</h3>
 <ul>
 <li>Collection：存放元素值
 <ul>
@@ -226,13 +227,63 @@
 </ul>
 <h3 id="arraylist-和-linkedlist-的区别" tabindex="-1"><a class="header-anchor" href="#arraylist-和-linkedlist-的区别" aria-hidden="true">#</a> ArrayList 和 LinkedList 的区别?</h3>
 <ul>
-<li>存储结构
+<li>
+<p>存储结构</p>
 <ul>
 <li>ArrayList：Object [] 数组</li>
 <li>LinkedList：双向链表</li>
 </ul>
 </li>
+<li>
+<p>操作数据效率</p>
+<ul>
+<li>ArrayList 按下标查询效率为 O(1)，LinkedList 不支持下标查询</li>
+<li>ArrayList 尾部增删为 O(1)，其他部分为 O(n)</li>
+<li>LinkedList 头尾增删为 O(1)，其他部分为 O(n)</li>
 </ul>
+</li>
+<li>
+<p>内存消耗</p>
+<ul>
+<li>LinkedList 每个节点需要前一个和后一个两个引用，通常比 ArrayList 占用更多的内存。</li>
+</ul>
+</li>
+<li>
+<p>线程安全</p>
+<ul>
+<li>
+<p>都不线程安全，有两种方案保证线程安全</p>
+<ol>
+<li>
+<p>方法内部使用，局部变量是线程安全的</p>
+</li>
+<li>
+<p>使用 Collections.synchronizedList() 包裹</p>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">></span></span> syncArrayList <span class="token operator">=</span> <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">synchronizedList</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">></span></span> syncLinkedList <span class="token operator">=</span> <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">synchronizedList</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="线程安全的-list-和-map" tabindex="-1"><a class="header-anchor" href="#线程安全的-list-和-map" aria-hidden="true">#</a> 线程安全的 List 和 Map</h3>
+<ol>
+<li>List
+<ol>
+<li>Vector: 古老的线程安全实现，使用内部同步来确保线程安全。每次方法调用都要同步，并发性能不佳。</li>
+<li>Collections.synchronizedList() 包装，但是这样会导致全局锁定，影响并发性能</li>
+<li>CopyOnWriteArrayList: JUC 包中一个线程安全的 ArrayList 实现</li>
+</ol>
+</li>
+<li>Map
+<ol>
+<li>Hashtable：古老的实现，使用同步</li>
+<li>Collections.synchronizedMap() 包装</li>
+<li>ConcurrentHashMap： JUC 包中一个线程安全的 HashMap 实现</li>
+</ol>
+</li>
+</ol>
 <h2 id="面向对象" tabindex="-1"><a class="header-anchor" href="#面向对象" aria-hidden="true">#</a> 面向对象</h2>
 <h3 id="三大特征" tabindex="-1"><a class="header-anchor" href="#三大特征" aria-hidden="true">#</a> 三大特征</h3>
 <ol>
@@ -259,39 +310,6 @@
 <h2 id="反射" tabindex="-1"><a class="header-anchor" href="#反射" aria-hidden="true">#</a> 反射</h2>
 <h3 id="是什么" tabindex="-1"><a class="header-anchor" href="#是什么" aria-hidden="true">#</a> 是什么</h3>
 <p>反射是指程序在运行期间可以拿到一个对象的所有信息。</p>
-<h2 id="线程的创建" tabindex="-1"><a class="header-anchor" href="#线程的创建" aria-hidden="true">#</a> 线程的创建</h2>
-<ol>
-<li>继承 Thread 类</li>
-</ol>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">class</span> myThread extens <span class="token class-name">Thread</span><span class="token punctuation">{</span>
-    <span class="token annotation punctuation">@override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span><span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token function">myThread</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
-<li>实现 Runnable 接口</li>
-</ol>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">class</span> myRunnable <span class="token keyword">implements</span> <span class="token class-name">Runnable</span><span class="token punctuation">{</span>
-    <span class="token annotation punctuation">@override</span>
-    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">run</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span><span class="token punctuation">{</span>
-        <span class="token class-name">Thread</span> t <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Thread</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token function">myRunnable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        t<span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
+</div></template>
 
 

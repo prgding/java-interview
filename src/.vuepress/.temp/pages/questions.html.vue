@@ -12,7 +12,7 @@
 <li><RouterLink to="/java/java/java.html#%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E5%8C%BA%E5%88%AB">重写和重载区别</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E5%92%8C-equals-%E7%9A%84%E5%8C%BA%E5%88%AB">equals() 和 == 区别</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">List 和 Set 区别</RouterLink></li>
-<li>Java 实现线程几种方式</li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA">Java 实现线程几种方式</RouterLink></li>
 <li>Redis 说一下，几种数据结构常用 API</li>
 <li><RouterLink to="/framework/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">Spring、Spring MVC、Spring Boot、Spring Cloud</RouterLink></li>
 <li><RouterLink to="/framework/spring.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">Spring Boot 常用注解</RouterLink></li>
@@ -44,9 +44,9 @@
 <li>自我介绍</li>
 <li>MySQL
 <ul>
-<li>索引在项目中有用到过吗？说一说你对索引的了解，再结合你之前的使用场景说一下你遇到了什么问题？为什么要用索引？解决了什么问题？</li>
-<li>索引有哪些类型？你用到的是哪种？</li>
-<li>SQL 优化，你有用过吗？</li>
+<li>为什么要用索引？</li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">索引有哪些类型？</RouterLink>你用到的是哪种？</li>
+<li><RouterLink to="/mysql.html#sql-%E4%BC%98%E5%8C%96">SQL 优化，你有用过吗？</RouterLink></li>
 <li>什么是回表查询？</li>
 <li>你的项目用到过锁吗？说说你的了解</li>
 <li>MySQL 的隔离级别了解吗？提升隔离级别需要注意什么？为什么提升隔离级别性能会降低？</li>
@@ -80,8 +80,8 @@
 </li>
 <li>JVM
 <ul>
-<li>JVM 垃圾回收机制了解吗？</li>
-<li>JVM 垃圾回收算法有哪些？详细说一下</li>
+<li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">JVM 垃圾回收机制了解吗？</RouterLink></li>
+<li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95">JVM 垃圾回收算法有哪些？详细说一下</RouterLink></li>
 </ul>
 </li>
 <li>项目负责哪部分？对前端一些技术了解多少？VUE 了解过吗？</li>
@@ -100,9 +100,9 @@
 <li>在什么样的数据结构要用到链表</li>
 <li>Java 中哪些实现用到了链表</li>
 <li>两个有序链表合并成一个有序链表</li>
-<li>用什么方式实现多线程</li>
-<li>拒绝策略有哪些</li>
-<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">线程安全的 List 和 Map</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA">用什么方式实现多线程</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5">线程池拒绝策略策略有哪些</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84-list-%E5%92%8C-map">线程安全的 List 和 Map</RouterLink></li>
 <li>说说 ConcurrentHashMap</li>
 <li>Java 的双亲委派</li>
 <li>打破双亲委派的方式</li>
@@ -126,9 +126,9 @@
 <li>注册中心如果挂了如何应对?</li>
 <li>数据库用的啥? 为啥选择 MySQL? 大致讲一下你对 MySQL 的理解</li>
 <li>事务隔离级别? 默认是哪种?</li>
-<li>MySOL 索引有了解过吗?</li>
-<li>索引的原理大致有了解吗</li>
-<li>讲下 MySOL 主从复制</li>
+<li><RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95">MySQL 索引有了解过吗?</RouterLink></li>
+<li><RouterLink to="/mysql.html#%E4%B8%BA%E4%BB%80%E4%B9%88-mysql-%E9%80%89%E6%8B%A9-b-%E6%A0%91">索引的原理大致有了解吗</RouterLink></li>
+<li>讲下 MySQL 主从复制</li>
 <li>MyBatis 了解过多少</li>
 <li>Gateway 网关路由控制，请求分发具体怎么实现</li>
 <li>讲一下责任链模式</li>
@@ -143,7 +143,7 @@
 <li>如果让你去写一个类似淘宝的电商项目你会怎么做讲一下你的思路</li>
 <li>定时任务怎么实现</li>
 <li>分布式锁具体讲一下</li>
-<li>讲下 SQL 优化</li>
+<li><RouterLink to="/mysql.html#sql-%E4%BC%98%E5%8C%96">讲下 SQL 优化</RouterLink></li>
 <li>Sentinel 怎么实现流量控制</li>
 </ol>
 <h3 id="云徙科技" tabindex="-1"><a class="header-anchor" href="#云徙科技" aria-hidden="true">#</a> 云徙科技</h3>
@@ -156,7 +156,7 @@
 <li>调用 wait 方法会怎么样</li>
 <li>notify()和 notifyAll() 的区别</li>
 <li>说说你使用过的 JUC 包下的类</li>
-<li>说一下 JVM 垃圾回收</li>
+<li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6">说一下 JVM 垃圾回收</RouterLink></li>
 <li>说说 TCP 和 UDP 的区别</li>
 <li>平常怎么学习?</li>
 </ol>
@@ -168,7 +168,7 @@
 <li>项目文档与代码的设计有什么想法（谈到时间安排上）</li>
 <li>针对加班的看法 （接受就是）</li>
 <li>集合的理解</li>
-<li>多线程（实现，线程池）</li>
+<li>多线程（实现，<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">线程池</RouterLink>）</li>
 <li>谈谈浅拷贝和深拷贝？</li>
 <li>MySQL 索引</li>
 <li>谈谈数据库设计表使用主键自增，不让主键自增？</li>
@@ -208,12 +208,12 @@
 我主要是学习了 Redis 和 MySQL，然后就讲自己会哪些知识点</li>
 <li>那你能不能讲一下 MySQL 的锁<br>
 全局锁，表锁，行锁，间隙锁</li>
-<li>讲一下 MySQL 索引，并且什么时候会失效<br>
+<li>讲一下 MySQL 索引<br>
 建立索引过程<br>
 最左前缀原则<br>
-讲一下 B+ 树<br>
-讲一下索引怎么失效，以及一些处理办法</li>
-<li>并发，Synchronized，Volatile，ReentrantLock，线程池</li>
+<RouterLink to="/mysql.html#%E4%B8%BA%E4%BB%80%E4%B9%88-mysql-%E9%80%89%E6%8B%A9-b-%E6%A0%91">讲一下 B+ 树</RouterLink><br>
+<RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">讲一下索引怎么失效，以及一些处理办法</RouterLink></li>
+<li>并发，Synchronized，Volatile，ReentrantLock，<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">线程池</RouterLink></li>
 <li>有没有了解过我们公司<br>
 了解过，做 erp 服务的</li>
 <li>反问?<br>
@@ -231,14 +231,14 @@
 <li>项目 (10分钟)</li>
 <li>对封装. 继承. 多态怎么理解的?</li>
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
-<li>ArrayList 和 LinkedList 的区别?</li>
+<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别?</RouterLink></li>
 <li>HashMap 说一下? (初始化，put 流程，扩容)</li>
 <li>说下 JVM 的运行时数据区(各部分存储内容)</li>
-<li>说一下垃圾回收算法</li>
-<li>线程池的参数和执行任务流程</li>
+<li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95">说一下垃圾回收算法</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink>和<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">执行任务流程</RouterLink></li>
 <li>简单说一下 CAP 理论</li>
 <li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 加载的过程</RouterLink></li>
-<li>说一下 MySQL 索引有哪些?</li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">说一下 MySQL 索引有哪些?</RouterLink></li>
 <li>MQ 的消息重复消费和消息堆积问题的解决思路</li>
 <li>反问:
 <ol>
@@ -271,12 +271,11 @@
 </ol>
 <h3 id="深圳依时货拉拉一面-实习-12pjl" tabindex="-1"><a class="header-anchor" href="#深圳依时货拉拉一面-实习-12pjl" aria-hidden="true">#</a> 深圳依时货拉拉一面，实习 - 12pjl</h3>
 <ol>
-<li>SQL 优化，</li>
-<li>SQL 执行的很慢怎么排查，怎么解决</li>
+<li><RouterLink to="/mysql.html#sql-%E4%BC%98%E5%8C%96">SQL 优化</RouterLink></li>
 <li>Spring MVC 执行过程</li>
-<li>线程池的参数</li>
-<li>线程拒绝策略</li>
-<li>线程池执行过程</li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5">线程池拒绝策略</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">线程池执行过程</RouterLink></li>
 <li>Redis 数据结构，应用</li>
 <li>HashMap 和 HashTable 区别</li>
 <li>Feign 的原理</li>
@@ -291,14 +290,14 @@
 <ol>
 <li>介绍项目亮点</li>
 <li>Redis 为什么快</li>
-<li>Spring Boot.的自动装配原理</li>
+<li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配原理</RouterLink></li>
 <li>Redis 的缓存击穿和解决方案</li>
 <li>HashMap 的原理和扩容机制</li>
 <li>介绍 JVM 的内存情况</li>
-<li>List 和 Set 的区别</li>
+<li><RouterLink to="/java/java.html#%E4%B8%A4%E5%A4%A7%E9%9B%86%E5%90%88%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB">List 和 Set 的区别</RouterLink></li>
 <li>Redis 的数据类型</li>
-<li>介绍 MySQL 的索引结构</li>
-<li>索引什么时候会失效</li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">介绍 MySQL 的索引结构</RouterLink></li>
+<li><RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">索引什么时候会失效</RouterLink></li>
 <li>如何查询 SQL 是否命中索引</li>
 <li>类存储在 JVM 哪一块空间</li>
 <li>HashMap 和 ConcurrentHashMap 的区别</li>
@@ -312,29 +311,28 @@
 <li>自我介绍</li>
 <li>Java 中 == 和 equals() 有什么区别</li>
 <li>Hashcode 方法，有什么作用？</li>
-<li>用过哪些线程安全的 Map</li>
+<li><RouterLink to="/java/java.html#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84-list-%E5%92%8C-map">用过哪些线程安全的 Map</RouterLink></li>
 <li>HashMap 的扩容，put 方法执行过程</li>
-<li>ArrayList 和 LinkedList 的区别</li>
-<li>MySQL 了解到哪些索引？</li>
+<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别</RouterLink></li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">MySQL 了解到哪些索引？</RouterLink></li>
 <li>说说你对反射的理解？</li>
-<li>你怎么理解 Spring 的 AOP，IoC, DI?</li>
+<li>你怎么理解 Spring 的 <RouterLink to="/framework/spring.html#aop">AOP</RouterLink>, <RouterLink to="/framework/spring.html#ioc">IoC</RouterLink>, <RouterLink to="/framework/spring.html#%E5%AE%9E%E7%8E%B0">DI</RouterLink>?</li>
 <li>Java 的泛型说一下</li>
 <li>GC 的新生代老年代的占比、介绍、辨析 GC 方法</li>
-<li>说说你对线程池的了解</li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">说说你对线程池的了解</RouterLink></li>
 <li>你会怎么用数组实现的循环队列？</li>
 <li>假如有个 ArrayList，怎么把里面的偶数全部去掉？</li>
 <li>MySQL 的 explain 字段用过吗？</li>
-<li>介绍线程池</li>
 </ol>
 <h3 id="知律科技实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#知律科技实习一面-10lb" aria-hidden="true">#</a> 知律科技实习一面 - 10lb</h3>
 <ol>
 <li>Java 有哪些集合</li>
-<li>ArrayList 和 LinkedList 区别</li>
-<li>请介绍一下 Spring 的 AOP 和 IoC</li>
+<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 区别</RouterLink></li>
+<li>请介绍一下 Spring 的 <RouterLink to="/framework/spring.html#aop">AOP</RouterLink> 和 <RouterLink to="/framework/spring.html#ioc">IoC</RouterLink></li>
 <li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">请介绍一下 Spring 的 Bean 生命周期</RouterLink></li>
 <li>介绍项目</li>
-<li>一个 SpringBoot 项目中的常见注解</li>
-<li>SpringBoot 项目怎么使用事务，流程是怎么样</li>
+<li><RouterLink to="/framework/springboot.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">一个 SpringBoot 项目中的常见注解</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">SpringBoot 项目怎么使用事务，流程是怎么样</RouterLink></li>
 <li>数据库的 ACID，隔离级别</li>
 <li>MySQL 中的锁</li>
 <li>Redis 中的锁</li>
@@ -350,9 +348,9 @@
 <li>自我介绍</li>
 <li>请讲讲 Spring 和 Spring Boot 的关系</li>
 <li>Spring Boot 是怎么简化 Spring 开发的</li>
-<li>Spring Boot 的自动装配</li>
+<li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配</RouterLink></li>
 <li>Spring 中的事务失效场景</li>
-<li>一个方法 A 被事务管理，方法 A 中调用方法 B，方法 B 也被事务管理，那 B 中出现异常是只会回滚 B 方法吗，还是会 AB 方法都回滚</li>
+<li><RouterLink to="/framework/spring.html#spring-%E4%BA%8B%E5%8A%A1%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E4%BC%A0%E6%92%AD%E7%BA%A7%E5%88%AB">一个方法 A 被事务管理，方法 A 中调用方法 B，方法 B 也被事务管理，那 B 中出现异常是只会回滚 B 方法吗，还是会 AB 方法都回滚</RouterLink></li>
 <li>介绍一下你的项目</li>
 <li>介绍一下你项目中的难点，或者说你通过项目学到了什么</li>
 <li>请讲一下你的项目背景，为什么做这个项目</li>

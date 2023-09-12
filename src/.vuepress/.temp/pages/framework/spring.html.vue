@@ -23,7 +23,7 @@
 <p>IoC 最常见以及最合理的实现方式叫做 DI 依赖注入</p>
 <h2 id="aop" tabindex="-1"><a class="header-anchor" href="#aop" aria-hidden="true">#</a> AOP</h2>
 <h3 id="是什么-1" tabindex="-1"><a class="header-anchor" href="#是什么-1" aria-hidden="true">#</a> 是什么？</h3>
-<p>将事务、日志、安全等非业务代码穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。</p>
+<p>将事务、日志、安全等非业务代码在不改变原代码的情况下穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。</p>
 <h3 id="实现方式" tabindex="-1"><a class="header-anchor" href="#实现方式" aria-hidden="true">#</a> 实现方式</h3>
 <ol>
 <li>静态织入（AspectJ）：编译时增强</li>
