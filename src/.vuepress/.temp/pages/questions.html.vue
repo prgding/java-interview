@@ -27,7 +27,7 @@
 <ol>
 <li>自我介绍</li>
 <li>项目背景（为什么会想做这个项目）</li>
-<li>JVM 运行流程</li>
+<li><RouterLink to="/java/jvm.html#jvm-%E8%BF%90%E8%A1%8C%E6%B5%81%E7%A8%8B">JVM 运行流程</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 两大容器了解吗 (Collection 和 Map)</RouterLink></li>
 <li><RouterLink to="/framework/spring.html#spring-%E3%80%81spring-mvc%E3%80%81spring-boot%E3%80%81spring-cloud-%E7%AE%80%E4%BB%8B">你学的框架之间有什么区别？</RouterLink></li>
 <li>了解过 SVN 吗？</li>
@@ -233,7 +233,7 @@
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
 <li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别?</RouterLink></li>
 <li>HashMap 说一下? (初始化，put 流程，扩容)</li>
-<li>说下 JVM 的运行时数据区(各部分存储内容)</li>
+<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">说下 JVM 的运行时数据区(各部分存储内容)</RouterLink></li>
 <li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95">说一下垃圾回收算法</RouterLink></li>
 <li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink>和<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">执行任务流程</RouterLink></li>
 <li>简单说一下 CAP 理论</li>
@@ -293,13 +293,13 @@
 <li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配原理</RouterLink></li>
 <li>Redis 的缓存击穿和解决方案</li>
 <li>HashMap 的原理和扩容机制</li>
-<li>介绍 JVM 的内存情况</li>
+<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">介绍 JVM 的内存情况</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E4%B8%A4%E5%A4%A7%E9%9B%86%E5%90%88%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB">List 和 Set 的区别</RouterLink></li>
 <li>Redis 的数据类型</li>
 <li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">介绍 MySQL 的索引结构</RouterLink></li>
 <li><RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">索引什么时候会失效</RouterLink></li>
 <li>如何查询 SQL 是否命中索引</li>
-<li>类存储在 JVM 哪一块空间</li>
+<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">类存储在 JVM 哪一块空间</RouterLink></li>
 <li>HashMap 和 ConcurrentHashMap 的区别</li>
 <li>Redis 的数据一致性问题</li>
 <li>介绍红黑树</li>
@@ -373,6 +373,62 @@
 <li>反问：</li>
 <li>有几面？</li>
 <li>面试建议（他说没啥好说的，多经历就好，我知道大概率寄了）</li>
+</ol>
+<h2 id="_23-09-13" tabindex="-1"><a class="header-anchor" href="#_23-09-13" aria-hidden="true">#</a> 23.09.13</h2>
+<h3 id="小鹅通-11lh" tabindex="-1"><a class="header-anchor" href="#小鹅通-11lh" aria-hidden="true">#</a> 小鹅通 - 11lh</h3>
+<ol>
+<li>自我介绍一下自己？</li>
+<li>哪里人？在广东干嘛？</li>
+<li>怎么接触测试的？</li>
+<li>简历上的都是学校学到的吗？</li>
+<li>什么渠道去学习？</li>
+<li>说一下项目？</li>
+<li>追着问bug。。。怎么修正的？bug 添加不进去什么原因导致的呢？</li>
+<li>一张表，表里面有好多字段，查文章在 10:00 - 11:00 这一个小时有多少个人来访问了我这个文章？（有人访问一遍就会记录一次信息）</li>
+<li>数据库里面索引的坏处？</li>
+<li>Linux 往日志文件写东西权限不足？chmod</li>
+<li>你的 Linux 下的根目录下的A文件拷贝到我的根目录下的一个 B 文件夹里面。cp 是机器本身的拷贝，通过什么方法可以把你的操作系统ip和密码拿过来？</li>
+<li>泛型？IO 流有几种方式啊？一个图片用什么流？要用字节流。。分为字节流和字符流</li>
+<li>场景设计：一个商品加入购物车，购买，弹出微信，支付成功，支付方可以放手，那么输完密码成功那一刻开始，系统去做了什么操作？？？</li>
+<li>今后个人规划？测试这一行你打算怎么做的？</li>
+<li>你有什么问我的？转正吗？工作氛围？加班吗？</li>
+</ol>
+<h3 id="默安科技一面-11lh" tabindex="-1"><a class="header-anchor" href="#默安科技一面-11lh" aria-hidden="true">#</a> 默安科技一面 - 11lh</h3>
+<ol>
+<li>自我介绍一下</li>
+<li>数据结构？</li>
+<li>做项目过程中有了解过算法吗？</li>
+<li>软件的生命周期？</li>
+<li>测试阶段？</li>
+<li>测试的类型？</li>
+<li>测试用例的作用？</li>
+<li>测试报告内容？</li>
+<li>熟悉哪些语言？</li>
+<li>python 里有几种数据结构的类型？</li>
+<li>break、continue、pass的作用？</li>
+<li>更改列表的数据类型？</li>
+<li>正则解释 re 模块有哪几种方法啊？</li>
+<li>反转字符串？</li>
+<li>多重继承意味着什么呢？</li>
+<li>装饰器有过了解吗？</li>
+<li>MySQL 中的聚合函数？</li>
+<li>order by 和 group by 的作用？</li>
+<li>having 的作用？</li>
+<li>修改表字段？</li>
+<li>添加数据？</li>
+<li>如何给指定的字段添加数据？</li>
+<li>Linux 用过吗？怎么查看所有进程？</li>
+<li>查看所有端口？</li>
+<li>awk 作用是？什么是Linux三剑客？</li>
+<li>重定向有用过吗？</li>
+<li>查看当前磁盘的使用情况</li>
+<li>修改文件名称？</li>
+<li>删除文件？</li>
+<li>jmeter 里如何录制一个脚本？</li>
+<li>两个线程组之间的参数传参？</li>
+<li>用户定义的变量和用户的参数有什么区别？</li>
+<li>对自己的未来规划？</li>
+<li>你有什么问题要问我的吗？</li>
 </ol>
 </div></template>
 

@@ -24,6 +24,11 @@
 <h2 id="aop" tabindex="-1"><a class="header-anchor" href="#aop" aria-hidden="true">#</a> AOP</h2>
 <h3 id="是什么-1" tabindex="-1"><a class="header-anchor" href="#是什么-1" aria-hidden="true">#</a> 是什么？</h3>
 <p>将事务、日志、安全等非业务代码在不改变原代码的情况下穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。</p>
+<h3 id="aop-能做什么" tabindex="-1"><a class="header-anchor" href="#aop-能做什么" aria-hidden="true">#</a> AOP 能做什么？</h3>
+<ol>
+<li>AOP 适合用来做一些「<strong>比较通用的、与业务关系不大的</strong>」事情。</li>
+<li>事务、日志、安全控制、性能统计，异常处理等等。</li>
+</ol>
 <h3 id="实现方式" tabindex="-1"><a class="header-anchor" href="#实现方式" aria-hidden="true">#</a> 实现方式</h3>
 <ol>
 <li>静态织入（AspectJ）：编译时增强</li>
@@ -33,11 +38,6 @@
 <li>没有实现接口的对象使用 CGLib 代理</li>
 </ol>
 </li>
-</ol>
-<h3 id="aop-能做什么" tabindex="-1"><a class="header-anchor" href="#aop-能做什么" aria-hidden="true">#</a> AOP 能做什么？</h3>
-<ol>
-<li>AOP适合用来做一些「<strong>比较通用的、与业务关系不大的</strong>」事情。</li>
-<li>日志记录，性能统计，安全控制，事务处理，异常处理等等。</li>
 </ol>
 <h3 id="aop-的缺点" tabindex="-1"><a class="header-anchor" href="#aop-的缺点" aria-hidden="true">#</a> AOP 的缺点？</h3>
 <ul>

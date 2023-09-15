@@ -20,6 +20,44 @@
 <li>随机过期时间：为不同缓存设置稍微不同的过期时间，避免大量 key 同时过期。</li>
 <li>缓存预热：在缓存可能过期前，提前加载所需要的数据。</li>
 </ol>
+<h2 id="数据类型" tabindex="-1"><a class="header-anchor" href="#数据类型" aria-hidden="true">#</a> 数据类型</h2>
+<ul>
+<li>5 种基础类型：String, List, Set, Hash, Zset（有序集合）</li>
+<li>3 种特殊类型：HyperLogLogs（基数统计）、Bitmap（位存储）、Geospatial（地理位置）</li>
+</ul>
+<h2 id="redis-为什么快" tabindex="-1"><a class="header-anchor" href="#redis-为什么快" aria-hidden="true">#</a> Redis 为什么快</h2>
+<ol>
+<li>基于内存</li>
+<li>设计了高效的事件处理模型：IO 多路复用、单线程时间循环</li>
+<li>内置了多种优化了的数据结构</li>
+</ol>
+<h2 id="持久化机制" tabindex="-1"><a class="header-anchor" href="#持久化机制" aria-hidden="true">#</a> 持久化机制</h2>
+<ol>
+<li>RDB (Redis Database)：以快照方式写入磁盘</li>
+<li>AOF (Append Only Files)：将 Redis 写操作追加到文件中</li>
+<li>RDB + AOF 混合持久化</li>
+</ol>
+<h2 id="数据一致性" tabindex="-1"><a class="header-anchor" href="#数据一致性" aria-hidden="true">#</a> 数据一致性</h2>
+<ol>
+<li>
+<p>一致性要求高</p>
+<ol>
+<li>采用 Redisson 的读写锁
+<ol>
+<li>共享锁：读锁 readLock，其他线程可读</li>
+<li>排他锁：独占锁 writeLock，阻塞其他读写</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>允许延迟一致</p>
+<ol>
+<li>使用 MQ 中间件，更新数据后，通知缓存删除</li>
+<li>利用 canal 中间件，不需要修改业务代码，伪装 MySQL 的一个从节点，canal 通过读取 binlog 数据更新缓存</li>
+</ol>
+</li>
+</ol>
 </div></template>
 
 

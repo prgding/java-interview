@@ -57,6 +57,47 @@
 <li>DiscardPolicy：直接丢弃任务</li>
 <li>DiscardOldestPolicy：丢弃等待队列中最老的，并执行当前任务</li>
 </ol>
+<h2 id="进程和线程的区别" tabindex="-1"><a class="header-anchor" href="#进程和线程的区别" aria-hidden="true">#</a> 进程和线程的区别</h2>
+<ol>
+<li>基本定义：
+<ol>
+<li>进程是操作系统分配资源的基本单位</li>
+<li>线程是操作系统调度执行的基本单位，是进程内部的一个执行流程。</li>
+<li>一个进程可以产生多个线程，同一个进程中的线程共享该进程的资源</li>
+</ol>
+</li>
+<li>资源分配
+<ol>
+<li>进程间资源相互独立</li>
+<li>线程间共享该进程的资源</li>
+</ol>
+</li>
+<li>通信方式
+<ol>
+<li>进程间通信需要特殊的技术</li>
+<li>线程间可以通过读写进程中的共享变量来通信</li>
+</ol>
+</li>
+<li>创建、切换、中止开销
+<ol>
+<li>进程开销大</li>
+<li>线程开销小</li>
+</ol>
+</li>
+<li>独立性与风险
+<ol>
+<li>进程独立，一个崩溃不影响别的</li>
+<li>同一进程间线程紧密相关，一个线程的错误可能影响其他线程</li>
+</ol>
+</li>
+</ol>
+<h2 id="有了进程为什么还需要线程" tabindex="-1"><a class="header-anchor" href="#有了进程为什么还需要线程" aria-hidden="true">#</a> 有了进程为什么还需要线程?</h2>
+<ol>
+<li>线程各方面<strong>开销小</strong>。</li>
+<li>线程更<strong>轻量</strong>，一个进程可以创建多个线程。</li>
+<li>多个线程可以<strong>并发</strong>处理不同任务，充分利用了 cpu 的多核性能。</li>
+<li>同一进程内的线程<strong>共享</strong>内存和文件，相互通信无须调用内核。</li>
+</ol>
 </div></template>
 
 

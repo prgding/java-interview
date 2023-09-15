@@ -66,12 +66,6 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <li><strong>&lt;typeHandlers&gt;</strong>：定义如何转换 Java 类型到 JDBC 类型。</li>
 <li>动态 SQL 元素：如 <code v-pre>&lt;if&gt;</code>, <code v-pre>&lt;choose&gt;</code>, <code v-pre>&lt;when&gt;</code>, <code v-pre>&lt;otherwise&gt;</code>, <code v-pre>&lt;foreach&gt;</code>, <code v-pre>&lt;set&gt;</code>, <code v-pre>&lt;trim&gt;</code>, <code v-pre>&lt;where&gt;</code>, <code v-pre>&lt;bind&gt;</code>。这些可以用于构造动态的 SQL 语句。</li>
 </ol>
-<h2 id="sql-执行流程" tabindex="-1"><a class="header-anchor" href="#sql-执行流程" aria-hidden="true">#</a> SQL 执行流程</h2>
-<ol>
-<li>客户端和服务端的连接：MySQL 登陆，数据库表权限验证</li>
-<li>核心层：查询缓存、分析器分析语句、优化器优化语句</li>
-<li>存储引擎：执行器调用存储引擎 API 获取数据</li>
-</ol>
 <h2 id="索引" tabindex="-1"><a class="header-anchor" href="#索引" aria-hidden="true">#</a> 索引</h2>
 <h3 id="是什么" tabindex="-1"><a class="header-anchor" href="#是什么" aria-hidden="true">#</a> 是什么</h3>
 <p>是一种排好序的数据结构，能够快速检索数据。MySQL 中使用 B+ 树作为索引结构。</p>
@@ -111,10 +105,10 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <ol>
 <li>左或左右模糊匹配</li>
 <li>使用函数（查询索引列）</li>
-<li>类型隐式转换（索引列是字符串，查询参数为数字，本质是使用了 CAST 函数）</li>
+<li>索引列是字符串，查询参数为数字（使用 CAST 函数）</li>
 <li>使用表达式计算（索引列）</li>
 <li>联合索引未遵循最左匹配</li>
-<li>WHERE 子句中，OR 前面是索引列，后面不是索引列</li>
+<li>WHERE 子句中，OR 前是索引列，OR 后不是索引列</li>
 </ol>
 <h2 id="sql-优化" tabindex="-1"><a class="header-anchor" href="#sql-优化" aria-hidden="true">#</a> SQL 优化</h2>
 <h3 id="定位慢查询" tabindex="-1"><a class="header-anchor" href="#定位慢查询" aria-hidden="true">#</a> 定位慢查询</h3>
@@ -155,69 +149,9 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 </ol>
 </li>
 <li>为经常查询的字段创建索引</li>
-<li>SQL 语句优化：
-<ol>
 <li>尽量避免 select *</li>
-<li>避免索引失效的写法</li>
-<li>聚合查询尽量用 union all 代替 union，因为 union 多一层重复过滤</li>
-<li>表关联查询 join 的优化，优先使用内连接，外连接要以小表为驱动</li>
-<li>避免 where 中对字段进行表达式操作</li>
-</ol>
-</li>
-<li>主从复制，读写分离</li>
-<li>分库分表</li>
 <li>调整 MySQL 缓存大小配置，定期检查慢查询日志</li>
 <li>硬件升级</li>
-</ol>
-<h2 id="锁" tabindex="-1"><a class="header-anchor" href="#锁" aria-hidden="true">#</a> 锁</h2>
-<h3 id="锁的种类" tabindex="-1"><a class="header-anchor" href="#锁的种类" aria-hidden="true">#</a> 锁的种类</h3>
-<ol>
-<li>按粒度：
-<ol>
-<li>全局锁</li>
-<li>表级锁</li>
-<li>页级锁</li>
-<li>行级锁</li>
-</ol>
-</li>
-<li>按属性：
-<ol>
-<li>共享锁</li>
-<li>排他锁</li>
-</ol>
-</li>
-<li>按状态：
-<ol>
-<li>意向共享锁</li>
-<li>意向排他锁</li>
-</ol>
-</li>
-<li>按模式：
-<ol>
-<li>乐观锁</li>
-<li>悲观锁</li>
-</ol>
-</li>
-</ol>
-<h2 id="事务" tabindex="-1"><a class="header-anchor" href="#事务" aria-hidden="true">#</a> 事务</h2>
-<h3 id="四大特性" tabindex="-1"><a class="header-anchor" href="#四大特性" aria-hidden="true">#</a> 四大特性</h3>
-<p>Atomicity：原子性<br>
-Consistency：一致性<br>
-Isolation：隔离性<br>
-Durability：持久性</p>
-<h3 id="并发事务问题" tabindex="-1"><a class="header-anchor" href="#并发事务问题" aria-hidden="true">#</a> 并发事务问题</h3>
-<ol>
-<li>脏读：读取未提交的数据（A 读取 B 未提交的数据，B 回滚后 A 的数据是脏数据）</li>
-<li>不可重复读：一个事务中多次读取的内容不一样</li>
-<li>幻读：多行或少行，数据总量不一样</li>
-<li>丢失修改：两个事务同时修改，提交后其中一个事务的修改被覆盖</li>
-</ol>
-<h2 id="事务隔离级别" tabindex="-1"><a class="header-anchor" href="#事务隔离级别" aria-hidden="true">#</a> 事务隔离级别</h2>
-<ol>
-<li>读未提交（Read uncommitted）：一个事务可以读到另一个事务未提交的数据</li>
-<li>读已提交（Read committed）：一个事务要等另一个事务提交后才能读取数据。解决脏读。</li>
-<li>可重复读（Repeatable read）：默认隔离级别，一个事务开始读数据时，不允许其他事务修改。解决脏读和不可重复读。</li>
-<li>串行化（Serializable）：最高的隔离级别，可以避免所有问题，但是效率低、消耗数据库性能，一般不使用。</li>
 </ol>
 </div></template>
 
