@@ -98,6 +98,29 @@
 <li>多个线程可以<strong>并发</strong>处理不同任务，充分利用了 cpu 的多核性能。</li>
 <li>同一进程内的线程<strong>共享</strong>内存和文件，相互通信无须调用内核。</li>
 </ol>
+<h2 id="synchronized-的作用" tabindex="-1"><a class="header-anchor" href="#synchronized-的作用" aria-hidden="true">#</a> synchronized 的作用</h2>
+<ol>
+<li>控制并发访问，确保某一时刻只有一个线程可以执行特定的代码段</li>
+<li>可以同步方法，也可以同步代码块</li>
+<li>底层由 monitor 实现</li>
+</ol>
+<h2 id="volatile-关键字" tabindex="-1"><a class="header-anchor" href="#volatile-关键字" aria-hidden="true">#</a> volatile 关键字</h2>
+<ul>
+<li>中文翻译：不稳定的</li>
+<li>如果声明变量为 volatile ，这就告诉 JVM 这个变量是共享且不稳定的，每次使用都到主存中读取</li>
+<li>保证线程间的可见性</li>
+<li>禁止进行指令重排序</li>
+</ul>
+<h2 id="cas" tabindex="-1"><a class="header-anchor" href="#cas" aria-hidden="true">#</a> CAS</h2>
+<p>体现乐观锁的思想，在无锁的情况下保证线程操作共享数据的原子性。</p>
+<h2 id="reentrantlock-可重入锁相比于-sychronized" tabindex="-1"><a class="header-anchor" href="#reentrantlock-可重入锁相比于-sychronized" aria-hidden="true">#</a> ReentrantLock 可重入锁相比于 sychronized</h2>
+<ol>
+<li>可中断</li>
+<li>可以设置超时时间</li>
+<li>可以设置公平锁</li>
+<li>支持多个条件变量</li>
+<li>与 synchronized 一样，都支持重入</li>
+</ol>
 </div></template>
 
 

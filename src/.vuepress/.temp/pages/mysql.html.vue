@@ -219,6 +219,35 @@ Durability：持久性</p>
 <li>可重复读（Repeatable read）：默认隔离级别，一个事务开始读数据时，不允许其他事务修改。解决脏读和不可重复读。</li>
 <li>串行化（Serializable）：最高的隔离级别，可以避免所有问题，但是效率低、消耗数据库性能，一般不使用。</li>
 </ol>
+<h2 id="mvcc" tabindex="-1"><a class="header-anchor" href="#mvcc" aria-hidden="true">#</a> MVCC</h2>
+<h3 id="简介" tabindex="-1"><a class="header-anchor" href="#简介" aria-hidden="true">#</a> 简介</h3>
+<p>全称 Multi-Versioin Concurrency Control，多版本并发控制。是解决读写冲突的一种机制。</p>
+<h3 id="工作原理" tabindex="-1"><a class="header-anchor" href="#工作原理" aria-hidden="true">#</a> 工作原理</h3>
+<ol>
+<li>读操作
+<ol>
+<li>当事务想要读取数据时，它会读取满足其快照的数据版本。</li>
+<li>一个事务只能看到它开始时（或之前）存在的数据，不会看到后来其他食物所做的修改</li>
+</ol>
+</li>
+<li>写操作：
+<ol>
+<li>不覆盖原有数据，而是创建新的版本</li>
+</ol>
+</li>
+</ol>
+<h3 id="注意事项" tabindex="-1"><a class="header-anchor" href="#注意事项" aria-hidden="true">#</a> 注意事项：</h3>
+<ol>
+<li>每个版本都有一个时间戳，表示其创建或失效的时间</li>
+<li>垃圾回收是必要的</li>
+</ol>
+<h3 id="项目中的应用" tabindex="-1"><a class="header-anchor" href="#项目中的应用" aria-hidden="true">#</a> 项目中的应用：</h3>
+<ol>
+<li>并发控制：高并发系统中，很可能出现多个事务同时读写，使用 MVCC 可以减少冲突和等待时间。</li>
+<li>历史查询： MVCC 保存了数据的多个版本，便于查询历史状态。</li>
+<li>在线备份：使用 MVCC，可以在不阻塞正常操作的情况下进行数据库备份。</li>
+<li>读取的一致性：确保事务读取的数据是一致的，即使在该事务读取过程中，其他事务在修改。</li>
+</ol>
 </div></template>
 
 
