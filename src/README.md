@@ -10,8 +10,8 @@ bgImageStyle:
 heroText: 后端面试经验
 tagline: 以 Java 为主
 actions:
-  - text: 题目
-    link: questions
+  - text: 专业技能
+    link: skills
     type: primary
 
   - text: 总结

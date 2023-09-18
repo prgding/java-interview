@@ -248,24 +248,6 @@
 <li>LinkedList 每个节点需要前一个和后一个两个引用，通常比 ArrayList 占用更多的内存。</li>
 </ul>
 </li>
-<li>
-<p>线程安全</p>
-<ul>
-<li>
-<p>都不线程安全，有两种方案保证线程安全</p>
-<ol>
-<li>
-<p>方法内部使用，局部变量是线程安全的</p>
-</li>
-<li>
-<p>使用 Collections.synchronizedList() 包裹</p>
-<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">></span></span> syncArrayList <span class="token operator">=</span> <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">synchronizedList</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token class-name">List</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Object</span><span class="token punctuation">></span></span> syncLinkedList <span class="token operator">=</span> <span class="token class-name">Collections</span><span class="token punctuation">.</span><span class="token function">synchronizedList</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div></li>
-</ol>
-</li>
-</ul>
-</li>
 </ul>
 <h3 id="线程安全的-list-和-map" tabindex="-1"><a class="header-anchor" href="#线程安全的-list-和-map" aria-hidden="true">#</a> 线程安全的 List 和 Map</h3>
 <ol>

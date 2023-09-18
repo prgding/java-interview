@@ -19,7 +19,7 @@ export default navbar([
   {
     text: "项目",
     icon: "octicon:project-roadmap-16",
-    link: "projects/",
+    link: "/projects/",
   },
   {
     text: "Java",

@@ -49,6 +49,14 @@ IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
    1. 要代理的对象实现了某个接口，则使用 JDK 代理
    2. 没有实现接口的对象使用 CGLib 代理
 
+### 基本步骤
+
+1. **定义切面**：切面就是你要在目标对象上增强的部分。
+2. **定义切入点**：切入点决定了哪些连接点会得到增强。可以使用表达式或模式来匹配连接点。
+3. **定义连接点**：连接点是你要插入切面代码的位置，例如方法调用或异常抛出的时候。
+4. **定义通知**：通知是真正的增强操作，例如：前置通知、后置通知、环绕通知、异常通知等。
+5. **进行织入**：将切面代码插入到目标代码中，创建一个被增强的对象。
+
 ### AOP 的缺点？
 
 - 调试困难：某些功能是在运行时动态应用的，这可能导致代码调试困难。
@@ -98,26 +106,26 @@ IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
 
 ### Spring 事务有哪几种传播级别
 
-1. TransactionDefinition.PROPAGATION_REQUIRED
+1. TransactionDefinition.PROPAGATION_**REQUIRED**
    - 使用最多，`@Transactional` 注解默认
    - 如果当前存在事务则加入
    - 没有则新建
-2. TransactionDefinition.PROPAGATION_REQUIRES_NEW
+2. TransactionDefinition.PROPAGATION_**REQUIRES_NEW**
    - 有则挂起
    - 新建事务，相互独立
-3. TransactionDefinition.PROPAGATION_NESTED
+3. TransactionDefinition.PROPAGATION_**NESTED**
    - 有则嵌套
    - 没有则新建。（等价于 ...REQUIRED）
-4. TransactionDefinition.PROPAGATION_MANDATORY
+4. TransactionDefinition.PROPAGATION_**MANDATORY**
    - 有则加入
    - 没有则抛出异常
-5. TransactionDefinition.PROPAGATION_SUPPORTS
+5. TransactionDefinition.PROPAGATION_**SUPPORTS**
    - 有则加入
    - 没有以非事务运行
-6. TransactionDefinition.PROPAGATION_NOT_SUPPORTED
+6. TransactionDefinition.PROPAGATION_**NOT_SUPPORTED**
    - 以非事务运行
    - 有则挂起
-7. TransactionDefinition.PROPAGATION_NEVER
+7. TransactionDefinition.PROPAGATION_**NEVER**
    - 以非事务运行
    - 有则抛出异常
 

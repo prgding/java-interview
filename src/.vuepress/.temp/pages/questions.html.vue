@@ -9,7 +9,7 @@
 <li>MyBatis Plus 多表查询 API</li>
 <li><RouterLink to="/mysql.html#mybatis-xml-%E6%A0%87%E7%AD%BE">MyBatis XML 文件标签</RouterLink></li>
 <li><a href="https://javaguide.cn/java/basis/java-basic-questions-01.html#java-%E4%B8%AD%E7%9A%84%E5%87%A0%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E4%BA%86%E8%A7%A3%E4%B9%88" target="_blank" rel="noopener noreferrer">Java 数据类型及包装类<ExternalLinkIcon/></a></li>
-<li><RouterLink to="/java/java/java.html#%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E5%8C%BA%E5%88%AB">重写和重载区别</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E9%87%8D%E5%86%99%E5%92%8C%E9%87%8D%E8%BD%BD%E5%8C%BA%E5%88%AB">重写和重载区别</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E5%92%8C-equals-%E7%9A%84%E5%8C%BA%E5%88%AB">equals() 和 == 区别</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">List 和 Set 区别</RouterLink></li>
 <li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA">Java 实现线程几种方式</RouterLink></li>

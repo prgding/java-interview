@@ -39,6 +39,14 @@
 </ol>
 </li>
 </ol>
+<h3 id="基本步骤" tabindex="-1"><a class="header-anchor" href="#基本步骤" aria-hidden="true">#</a> 基本步骤</h3>
+<ol>
+<li><strong>定义切面</strong>：切面就是你要在目标对象上增强的部分。</li>
+<li><strong>定义切入点</strong>：切入点决定了哪些连接点会得到增强。可以使用表达式或模式来匹配连接点。</li>
+<li><strong>定义连接点</strong>：连接点是你要插入切面代码的位置，例如方法调用或异常抛出的时候。</li>
+<li><strong>定义通知</strong>：通知是真正的增强操作，例如：前置通知、后置通知、环绕通知、异常通知等。</li>
+<li><strong>进行织入</strong>：将切面代码插入到目标代码中，创建一个被增强的对象。</li>
+</ol>
 <h3 id="aop-的缺点" tabindex="-1"><a class="header-anchor" href="#aop-的缺点" aria-hidden="true">#</a> AOP 的缺点？</h3>
 <ul>
 <li>调试困难：某些功能是在运行时动态应用的，这可能导致代码调试困难。</li>
@@ -92,44 +100,44 @@
 </ol>
 <h3 id="spring-事务有哪几种传播级别" tabindex="-1"><a class="header-anchor" href="#spring-事务有哪几种传播级别" aria-hidden="true">#</a> Spring 事务有哪几种传播级别</h3>
 <ol>
-<li>TransactionDefinition.PROPAGATION_REQUIRED
+<li>TransactionDefinition.PROPAGATION_<strong>REQUIRED</strong>
 <ul>
 <li>使用最多，<code v-pre>@Transactional</code> 注解默认</li>
 <li>如果当前存在事务则加入</li>
 <li>没有则新建</li>
 </ul>
 </li>
-<li>TransactionDefinition.PROPAGATION_REQUIRES_NEW
+<li>TransactionDefinition.PROPAGATION_<strong>REQUIRES_NEW</strong>
 <ul>
 <li>有则挂起</li>
 <li>新建事务，相互独立</li>
 </ul>
 </li>
-<li>TransactionDefinition.PROPAGATION_NESTED
+<li>TransactionDefinition.PROPAGATION_<strong>NESTED</strong>
 <ul>
 <li>有则嵌套</li>
 <li>没有则新建。（等价于 ...REQUIRED）</li>
 </ul>
 </li>
-<li>TransactionDefinition.PROPAGATION_MANDATORY
+<li>TransactionDefinition.PROPAGATION_<strong>MANDATORY</strong>
 <ul>
 <li>有则加入</li>
 <li>没有则抛出异常</li>
 </ul>
 </li>
-<li>TransactionDefinition.PROPAGATION_SUPPORTS
+<li>TransactionDefinition.PROPAGATION_<strong>SUPPORTS</strong>
 <ul>
 <li>有则加入</li>
 <li>没有以非事务运行</li>
 </ul>
 </li>
-<li>TransactionDefinition.PROPAGATION_NOT_SUPPORTED
+<li>TransactionDefinition.PROPAGATION_<strong>NOT_SUPPORTED</strong>
 <ul>
 <li>以非事务运行</li>
 <li>有则挂起</li>
 </ul>
 </li>
-<li>TransactionDefinition.PROPAGATION_NEVER
+<li>TransactionDefinition.PROPAGATION_<strong>NEVER</strong>
 <ul>
 <li>以非事务运行</li>
 <li>有则抛出异常</li>

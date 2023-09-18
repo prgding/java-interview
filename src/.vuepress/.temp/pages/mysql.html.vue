@@ -94,7 +94,8 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 </li>
 </ul>
 <h3 id="为什么-mysql-选择-b-树" tabindex="-1"><a class="header-anchor" href="#为什么-mysql-选择-b-树" aria-hidden="true">#</a> 为什么 MySQL 选择 B+ 树</h3>
-<p>对一个没有使用索引的 MySQL 进行逐步优化，大概是这样的流程：</p>
+<p>因为其他的数据结构都无法达到 B+ 树的这种性能。</p>
+<p>例如：</p>
 <ol>
 <li>使用数组，排好序，二分查找，但是
 <ol>
@@ -176,14 +177,14 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <ol>
 <li>全局锁</li>
 <li>表级锁</li>
-<li>页级锁</li>
+<li>页级锁（很少提及）</li>
 <li>行级锁</li>
 </ol>
 </li>
 <li>按属性：
 <ol>
-<li>共享锁</li>
-<li>排他锁</li>
+<li>读锁（共享锁）</li>
+<li>写锁（排他锁）</li>
 </ol>
 </li>
 <li>按状态：
@@ -199,6 +200,33 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 </ol>
 </li>
 </ol>
+<h3 id="mysql-中有哪些类型的锁" tabindex="-1"><a class="header-anchor" href="#mysql-中有哪些类型的锁" aria-hidden="true">#</a> MySQL 中有哪些类型的锁？</h3>
+<ul>
+<li>全局锁：对整个数据库实例加锁。</li>
+<li>表锁：锁定整个数据表。</li>
+<li>行锁：只锁定某个或某些行。</li>
+</ul>
+<h3 id="innodb-存储引擎支持哪种锁" tabindex="-1"><a class="header-anchor" href="#innodb-存储引擎支持哪种锁" aria-hidden="true">#</a> InnoDB 存储引擎支持哪种锁？</h3>
+<p>InnoDB 主要支持行锁，并在需要的时候也会使用表锁。</p>
+<h3 id="简述-mysql-中的乐观锁和悲观锁。" tabindex="-1"><a class="header-anchor" href="#简述-mysql-中的乐观锁和悲观锁。" aria-hidden="true">#</a> 简述 MySQL 中的乐观锁和悲观锁。</h3>
+<ul>
+<li>乐观锁：认为数据一般情况下不会造成冲突，所以在数据操作前不会加锁，只在提交操作时去检查是否有其他操作更新了这个数据。</li>
+<li>悲观锁：认为数据会导致冲突，所以在数据操作前会先加锁，确保数据操作的完整性。</li>
+</ul>
+<h3 id="什么是死锁-如何避免" tabindex="-1"><a class="header-anchor" href="#什么是死锁-如何避免" aria-hidden="true">#</a> 什么是死锁？如何避免？</h3>
+<p>死锁是两个或多个事务在资源上形成循环等待的情况。避免死锁的方法有：</p>
+<ul>
+<li>保持一致的锁定顺序。</li>
+<li>使用锁超时，当事务等待锁超过特定时间后，事务自动回滚。</li>
+<li>使用死锁检测机制，当检测到死锁时，主动回滚某个事务，打破死锁。</li>
+</ul>
+<h3 id="mysql-如何实现行锁" tabindex="-1"><a class="header-anchor" href="#mysql-如何实现行锁" aria-hidden="true">#</a> MySQL 如何实现行锁？</h3>
+<p>MySQL 主要通过 InnoDB 存储引擎来实现行锁，它使用索引来锁定数据行。如果没有索引，InnoDB 会退化使用表锁。</p>
+<h3 id="什么是读锁和写锁" tabindex="-1"><a class="header-anchor" href="#什么是读锁和写锁" aria-hidden="true">#</a> 什么是读锁和写锁？</h3>
+<ul>
+<li>读锁（共享锁）：允许多个事务同时读取数据，但不允许其他事务进行写操作。</li>
+<li>写锁（排他锁）：当事务持有写锁时，不允许其他事务进行读或写操作。</li>
+</ul>
 <h2 id="事务" tabindex="-1"><a class="header-anchor" href="#事务" aria-hidden="true">#</a> 事务</h2>
 <h3 id="四大特性" tabindex="-1"><a class="header-anchor" href="#四大特性" aria-hidden="true">#</a> 四大特性</h3>
 <p>Atomicity：原子性<br>

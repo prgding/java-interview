@@ -193,19 +193,6 @@ order: 1
 
     - LinkedList 每个节点需要前一个和后一个两个引用，通常比 ArrayList 占用更多的内存。
 
-- 线程安全
-
-    - 都不线程安全，有两种方案保证线程安全
-
-        1. 方法内部使用，局部变量是线程安全的
-
-        2. 使用 Collections.synchronizedList() 包裹
-
-            `````java
-            List<Object> syncArrayList = Collections.synchronizedList(new ArrayList<>);
-            List<Object> syncLinkedList = Collections.synchronizedList(new LinkedList<>);
-            `````
-
 ### 线程安全的 List 和 Map
 
 1. List

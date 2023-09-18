@@ -10,7 +10,7 @@
 5. MyBatis Plus 多表查询 API
 6. [MyBatis XML 文件标签](/java-interview/mysql.html#mybatis-xml-标签)
 7. [Java 数据类型及包装类](https://javaguide.cn/java/basis/java-basic-questions-01.html#java-中的几种基本数据类型了解么)
-8. [重写和重载区别](/java-interview/java/java/java.html#重写和重载区别)
+8. [重写和重载区别](/java-interview/java/java.html#重写和重载区别)
 9. [equals() 和 == 区别](/java-interview/java/java.html#和-equals-的区别)
 10. [List 和 Set 区别](/java-interview/java/java.html#集合)
 11. [Java 实现线程几种方式](/java-interview/java/juc.html#线程的创建)
