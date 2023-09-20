@@ -3,12 +3,18 @@ import { defineAsyncComponent } from 'vue'
 export const pagesComponents = {
   // path: /
   "v-8daa1a0e": defineAsyncComponent(() => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/index.html.vue")),
+  // path: /algorithm.html
+  "v-0cee75fa": defineAsyncComponent(() => import(/* webpackChunkName: "v-0cee75fa" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/algorithm.html.vue")),
   // path: /docker.html
   "v-a4e563c0": defineAsyncComponent(() => import(/* webpackChunkName: "v-a4e563c0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/docker.html.vue")),
   // path: /linux.html
   "v-4e9cb81e": defineAsyncComponent(() => import(/* webpackChunkName: "v-4e9cb81e" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/linux.html.vue")),
   // path: /mysql.html
   "v-b30035a0": defineAsyncComponent(() => import(/* webpackChunkName: "v-b30035a0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/mysql.html.vue")),
+  // path: /network.html
+  "v-1fe058e4": defineAsyncComponent(() => import(/* webpackChunkName: "v-1fe058e4" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/network.html.vue")),
+  // path: /os.html
+  "v-20cfb45c": defineAsyncComponent(() => import(/* webpackChunkName: "v-20cfb45c" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/os.html.vue")),
   // path: /projects.html
   "v-3ac5ce46": defineAsyncComponent(() => import(/* webpackChunkName: "v-3ac5ce46" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/projects.html.vue")),
   // path: /questions.html

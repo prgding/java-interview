@@ -8,18 +8,18 @@ export default navbar([
   },
   {
     text: "题目",
-    icon: "ph:seal-question",
     link: "/questions/",
+    icon: "ph:seal-question",
   },
   {
     text: "专业技能",
-    icon: "carbon:skill-level-intermediate",
     link: "skills/",
+    icon: "carbon:skill-level-intermediate",
   },
   {
     text: "项目",
-    icon: "octicon:project-roadmap-16",
     link: "/projects/",
+    icon: "octicon:project-roadmap-16",
   },
   {
     text: "Java",
@@ -41,6 +41,21 @@ export default navbar([
     link: "/redis/",
     icon: "logos:redis",
   },
+  // {
+  //   text: "计算机网络",
+  //   link: "network/",
+  //   icon: "eos-icons:network",
+  // },
+  // {
+  //   text: "操作系统",
+  //   link: "os/",
+  //   icon: "wpf:mac-os",
+  // },
+  // {
+  //   text: "算法",
+  //   link: "algorithm/",
+  //   icon: "tabler:math",
+  // },
   {
     text: "Linux",
     icon: "devicon:linux",

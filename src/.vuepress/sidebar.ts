@@ -60,5 +60,20 @@ export default sidebar({
       icon: "logos:docker-icon",
       link: "docker/",
     },
+    {
+      text: "计算机网络",
+      link: "network/",
+      icon: "fluent-mdl2:my-network",
+    },
+    {
+      text: "操作系统",
+      link: "os/",
+      icon: "wpf:mac-os",
+    },
+    {
+      text: "算法",
+      link: "algorithm/",
+      icon: "tabler:math",
+    },
   ],
 });

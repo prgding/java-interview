@@ -1,8 +1,11 @@
 export const pagesRoutes = [
   ["v-8daa1a0e","/",{"y":"h","t":"项目主页","i":"home"},["/README.md"]],
+  ["v-0cee75fa","/algorithm.html",{"y":"a","t":"algorithm"},[":md"]],
   ["v-a4e563c0","/docker.html",{"y":"a","t":"Docker"},[":md"]],
   ["v-4e9cb81e","/linux.html",{"y":"a","t":"Linux"},[":md"]],
   ["v-b30035a0","/mysql.html",{"y":"a","t":"MySQL"},[":md"]],
+  ["v-1fe058e4","/network.html",{"y":"a","t":"计算机网络"},[":md"]],
+  ["v-20cfb45c","/os.html",{"y":"a","t":"OS"},[":md"]],
   ["v-3ac5ce46","/projects.html",{"y":"a","t":"项目"},[":md"]],
   ["v-3200da36","/questions.html",{"y":"a","t":"题目"},[":md"]],
   ["v-2524dff7","/redis.html",{"y":"a","t":"Redis"},[":md"]],

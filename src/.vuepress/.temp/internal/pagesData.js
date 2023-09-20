@@ -1,12 +1,18 @@
 export const pagesData = {
   // path: /
   "v-8daa1a0e": () => import(/* webpackChunkName: "v-8daa1a0e" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/index.html.js").then(({ data }) => data),
+  // path: /algorithm.html
+  "v-0cee75fa": () => import(/* webpackChunkName: "v-0cee75fa" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/algorithm.html.js").then(({ data }) => data),
   // path: /docker.html
   "v-a4e563c0": () => import(/* webpackChunkName: "v-a4e563c0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/docker.html.js").then(({ data }) => data),
   // path: /linux.html
   "v-4e9cb81e": () => import(/* webpackChunkName: "v-4e9cb81e" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/linux.html.js").then(({ data }) => data),
   // path: /mysql.html
   "v-b30035a0": () => import(/* webpackChunkName: "v-b30035a0" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/mysql.html.js").then(({ data }) => data),
+  // path: /network.html
+  "v-1fe058e4": () => import(/* webpackChunkName: "v-1fe058e4" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/network.html.js").then(({ data }) => data),
+  // path: /os.html
+  "v-20cfb45c": () => import(/* webpackChunkName: "v-20cfb45c" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/os.html.js").then(({ data }) => data),
   // path: /projects.html
   "v-3ac5ce46": () => import(/* webpackChunkName: "v-3ac5ce46" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/projects.html.js").then(({ data }) => data),
   // path: /questions.html

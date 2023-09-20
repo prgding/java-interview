@@ -10,7 +10,7 @@ order: 3
 
 ```java
 class myThread extens Thread{
-    @override
+    @Override
     public void run(){
         System.out.println("hello");
     }
@@ -28,7 +28,7 @@ public class Main{
 
 ```java
 class myRunnable implements Runnable{
-    @override
+    @Override
     public void run(){
         System.out.println("hello");
     }
@@ -41,6 +41,35 @@ public class Main(){
     }
 }
 ```
+
+3. 实现 Callable 接口并使用 FutureTask
+
+```java
+class myCallable implements Callable<Integer>{
+    @Override
+    public Integer call() throws Exception{
+        return 123;
+    }
+}
+
+public class Main(){
+    public static void main(String[] args){
+		Thread thread = new FutureTask<>(new MyCallable());
+        thread.start();
+    }
+}
+```
+
+4. 使用线程池
+
+```java
+ExecutorService executor = Executors.newFixedThreadPool(10);
+executor.submit(()->{
+    System.out.println("hello");
+})
+```
+
+
 
 ## 线程池
 
