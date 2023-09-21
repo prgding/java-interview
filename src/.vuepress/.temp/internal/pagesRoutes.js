@@ -7,7 +7,6 @@ export const pagesRoutes = [
   ["v-1fe058e4","/network.html",{"y":"a","t":"计算机网络"},[":md"]],
   ["v-20cfb45c","/os.html",{"y":"a","t":"OS"},[":md"]],
   ["v-3ac5ce46","/projects.html",{"y":"a","t":"项目"},[":md"]],
-  ["v-3200da36","/questions.html",{"y":"a","t":"题目"},[":md"]],
   ["v-2524dff7","/redis.html",{"y":"a","t":"Redis"},[":md"]],
   ["v-296b7d84","/skills.html",{"y":"a","t":"专业技能","O":2},[":md"]],
   ["v-ab0c34e0","/framework/mybatis.html",{"y":"a","t":"MyBatis","O":3},[":md"]],
@@ -19,4 +18,5 @@ export const pagesRoutes = [
   ["v-3706649a","/404.html",{"y":"p","t":""},[]],
   ["v-7d72c4ac","/framework/",{"y":"p","t":"Framework"},[]],
   ["v-14c69af4","/java/",{"y":"p","t":"Java"},[]],
+  ["v-3200da36","/questions.html",{"y":"a","t":"题目"},[":md"]],
 ]

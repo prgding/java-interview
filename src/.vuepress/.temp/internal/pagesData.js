@@ -15,8 +15,6 @@ export const pagesData = {
   "v-20cfb45c": () => import(/* webpackChunkName: "v-20cfb45c" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/os.html.js").then(({ data }) => data),
   // path: /projects.html
   "v-3ac5ce46": () => import(/* webpackChunkName: "v-3ac5ce46" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/projects.html.js").then(({ data }) => data),
-  // path: /questions.html
-  "v-3200da36": () => import(/* webpackChunkName: "v-3200da36" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions.html.js").then(({ data }) => data),
   // path: /redis.html
   "v-2524dff7": () => import(/* webpackChunkName: "v-2524dff7" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/redis.html.js").then(({ data }) => data),
   // path: /skills.html
@@ -39,4 +37,6 @@ export const pagesData = {
   "v-7d72c4ac": () => import(/* webpackChunkName: "v-7d72c4ac" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/framework/index.html.js").then(({ data }) => data),
   // path: /java/
   "v-14c69af4": () => import(/* webpackChunkName: "v-14c69af4" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/java/index.html.js").then(({ data }) => data),
+  // path: /questions.html
+  "v-3200da36": () => import(/* webpackChunkName: "v-3200da36" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions.html.js").then(({ data }) => data),
 }

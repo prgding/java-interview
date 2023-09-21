@@ -1,5 +1,50 @@
 # 题目
 
+## 23.09.20
+
+### 金蝶
+
+1. 自我介绍
+2. 项目相关
+3. Spring 和 Spring Boot 的区别
+4. 左连接和右连接区别
+5. Spring 的 AOP 原理
+6. Spring Boot 的自动装配原理
+7. MySQL 索引
+8. MySQL 优化
+9. 如何实现基于注解的 AOP
+10. JVM 内存区域
+11. 双亲委派机制
+12. 反问
+
+## 23.09.19
+
+### 谷泰科技
+
+#### 根据项目
+
+1. 介绍项目
+2. 项目的某个具体功能是怎么做的？业务之间的关联性？怎样实现统一管理的？
+3. 讲讲 JWT 登陆和身份认证
+4. 哪里用到了 Redis 缓存？
+5. 怎样实现 Redis 数据一致性的？
+
+#### 根据技能
+
+1. 讲讲面向对象
+2. Java 常用的集合以及实现类
+3. ArrayList, LinkedList, Vector 之间的区别
+4. ArrayList 的默认大小
+5. 说说 Java 多线程
+6. 关于线程池的参数，创建线程池的时候需要注意什么？可不可以不指定？不指定的话存在什么问题？
+7. 源码看过吗？
+8. 讲讲 Spring 的事务
+9. MySQL 了解多少？
+10. 为什么在深圳？
+11. 反问
+
+
+
 ## 23.08.15
 
 ### 南京中盈优创
@@ -115,7 +160,7 @@
 14. 讲一下责任链模式
 15. [Spring 核心模块](/java-interview/framework/spring.html#spring-核心模块)
 16. [Spring 事务有了解吗](/java-interview/framework/spring.html#spring-事务)
-17. [Spring 事务有哪几种传播级别](/java-interview/framework/spring.html#spring-事务有哪几种传播级别)
+17. [Spring 事务有哪几种传播行为](/java-interview/framework/spring.html#spring-事务有哪几种传播行为)
 18. [讲下 IoC](/java-interview/framework/spring.html#ioc)
 19. [创建 bean 的机制](/java-interview/framework/spring.html#bean-的生命周期)
 20. [讲一下 AOP](/java-interview/framework/spring.html#aop)
@@ -166,13 +211,10 @@
 2. 说一下 Java 面向对象的三大特征
    1.封装：我直接举得例子：人可以看成一个对象，有属性比如身高体重，如何有行为吃饭运动等
    2.继承：父类子类，举例子：鸟，然后子类鹦鹉，燕子等
-   3.多态：不记得了
+   3.多态：父类的方法在子类可以用不同的实现
 3. 简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下
    那些微服务组件我只会使用，原理我不太懂，然后把 Nacos 作为注册中心，Dubbo 来服务远程调用，然后网关权限校验，fastDFS 做分布式存储等讲一下
 4. Redis 和数据库怎么保存数据一致性 
-   1. Redis 中不存储重要数据，就算丢失也无所谓
-   2. 先删数据库，再更新 Redis
-   3. 延迟双删。
 5. [讲一下 HashMap](/java-interview/java/java.html#集合)
    分 1.7 和 1.8 讲
    数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）
@@ -403,28 +445,5 @@
 33. 对自己的未来规划？
 34. 你有什么问题要问我的吗？
 
-## 23.09.19
 
-### 谷泰科技
 
-#### 根据项目
-
-1. 介绍项目
-2. 项目的某个具体功能是怎么做的？业务之间的关联性？怎样实现统一管理的？
-3. 讲讲 JWT 登陆和身份认证
-4. 哪里用到了 Redis 缓存？
-5. 怎样实现 Redis 数据一致性的？
-
-#### 根据技能
-
-1. 讲讲面向对象
-2. Java 常用的集合以及实现类
-3. ArrayList, LinkedList, Vector 之间的区别
-4. ArrayList 的默认大小
-5. 说说 Java 多线程
-6. 关于线程池的参数，创建线程池的时候需要注意什么？可不可以不指定？不指定的话存在什么问题？
-7. 源码看过吗？
-8. 讲讲 Spring 的事务
-9. MySQL 了解多少？
-10. 为什么在深圳？
-11. 反问

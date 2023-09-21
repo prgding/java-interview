@@ -87,7 +87,7 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <li>字段特性：
 <ul>
 <li>主键索引（PRIMARY KEY）：非空、列值唯一、表中唯一</li>
-<li>唯一索引（UNIQUE KEY）：可为空、值唯一、表中可多个</li>
+<li>唯一索引（UNIQUE KEY）：可为空、列值唯一、表中可多个</li>
 <li>普通索引（INDEX）：加速查询</li>
 <li>联合索引：多列</li>
 </ul>
@@ -162,7 +162,6 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <li>避免索引失效的写法</li>
 <li>聚合查询尽量用 union all 代替 union，因为 union 多一层重复过滤</li>
 <li>表关联查询 join 的优化，优先使用内连接，外连接要以小表为驱动</li>
-<li>避免 where 中对字段进行表达式操作</li>
 </ol>
 </li>
 <li>主从复制，读写分离</li>
@@ -173,40 +172,33 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <h2 id="锁" tabindex="-1"><a class="header-anchor" href="#锁" aria-hidden="true">#</a> 锁</h2>
 <h3 id="锁的种类" tabindex="-1"><a class="header-anchor" href="#锁的种类" aria-hidden="true">#</a> 锁的种类</h3>
 <ol>
-<li>按粒度：
+<li>全局锁：可以用来全库逻辑备份</li>
+<li>表级锁
+<ol>
+<li>表锁</li>
+<li>元数据锁</li>
+<li>意向锁</li>
+<li>自增锁</li>
+</ol>
+</li>
+<li>行锁
+<ol>
+<li>记录锁</li>
+<li>间隙锁</li>
+<li>临键锁</li>
+<li>插入意向锁</li>
+</ol>
+</li>
+</ol>
+<h3 id="怎么用" tabindex="-1"><a class="header-anchor" href="#怎么用" aria-hidden="true">#</a> 怎么用</h3>
 <ol>
 <li>全局锁</li>
-<li>表级锁</li>
-<li>页级锁（很少提及）</li>
-<li>行级锁</li>
 </ol>
-</li>
-<li>按属性：
-<ol>
-<li>读锁（共享锁）</li>
-<li>写锁（排他锁）</li>
-</ol>
-</li>
-<li>按状态：
-<ol>
-<li>意向共享锁</li>
-<li>意向排他锁</li>
-</ol>
-</li>
-<li>按模式：
-<ol>
-<li>乐观锁</li>
-<li>悲观锁</li>
-</ol>
-</li>
-</ol>
-<h3 id="mysql-中有哪些类型的锁" tabindex="-1"><a class="header-anchor" href="#mysql-中有哪些类型的锁" aria-hidden="true">#</a> MySQL 中有哪些类型的锁？</h3>
-<ul>
-<li>全局锁：对整个数据库实例加锁。</li>
-<li>表锁：锁定整个数据表。</li>
-<li>行锁：只锁定某个或某些行。</li>
-</ul>
-<h3 id="innodb-存储引擎支持哪种锁" tabindex="-1"><a class="header-anchor" href="#innodb-存储引擎支持哪种锁" aria-hidden="true">#</a> InnoDB 存储引擎支持哪种锁？</h3>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment"># 上锁</span>
+flush <span class="token keyword">tables</span> <span class="token keyword">with</span> <span class="token keyword">read</span> <span class="token keyword">lock</span>
+<span class="token comment"># 解锁</span>
+<span class="token keyword">unlock</span> <span class="token keyword">tables</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="innodb-存储引擎支持哪种锁" tabindex="-1"><a class="header-anchor" href="#innodb-存储引擎支持哪种锁" aria-hidden="true">#</a> InnoDB 存储引擎支持哪种锁？</h3>
 <p>InnoDB 主要支持行锁，并在需要的时候也会使用表锁。</p>
 <h3 id="简述-mysql-中的乐观锁和悲观锁。" tabindex="-1"><a class="header-anchor" href="#简述-mysql-中的乐观锁和悲观锁。" aria-hidden="true">#</a> 简述 MySQL 中的乐观锁和悲观锁。</h3>
 <ul>

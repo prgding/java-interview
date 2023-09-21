@@ -11,6 +11,21 @@ order: 1
 - Spring Boot 简化了配置，做到开箱即用。
 - Spring Cloud 是一个微服务框架，结合 Spring Boot 可以快速开发分布式应用。
 
+## Spring 和 Spring Boot 的区别
+
+1. 目的和设计思路上
+    1. Spring 目的在于提供一个控制反转和依赖注入的容器，更便于开发低耦合的应用
+    2. Spring Boot 目的在于简化 Spring 应用的创建和部署，采用“约定大于配置”的思想
+2. 依赖上
+    1. Spring 需要手动管理依赖
+    2. Spring Boot 通过 “starters” 简化了依赖管理
+3. 配置上
+    1. Spring 需要大量的 XML 或 Java 配置
+    2. Spring Boot 有自动配置的功能。
+4. 项目启动
+    1. Spring 需要配置在服务器上
+    2. Spring Boot 内置 Tomcat、Jetty 等服务器，使得应用可以独立运行，不需要外部服务器。
+
 ## Spring 核心模块
 
 1. Spring Core (IoC)
@@ -35,7 +50,7 @@ IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
 
 ### 是什么？
 
-将事务、日志、安全等非业务代码在不改变原代码的情况下穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。
+将事务、日志、安全等非业务代码在不改变原代码的情况下穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。它是基于代理模式实现的
 
 ### AOP 能做什么？
 
@@ -57,10 +72,20 @@ IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
 4. **定义通知**：通知是真正的增强操作，例如：前置通知、后置通知、环绕通知、异常通知等。
 5. **进行织入**：将切面代码插入到目标代码中，创建一个被增强的对象。
 
+### 如何实现基于注解的 AOP
+
+1. 引入 spring-boot-starter-aop 依赖
+2. 配置类上 @EnableAspectJAutoProxy 启动 AOP 代理
+3. 使用 @Aspect, @Component 定义切面
+4. @Pointcut 定义连接点、@Before, @After 定义通知
+5. 运行程序
+
 ### AOP 的缺点？
 
 - 调试困难：某些功能是在运行时动态应用的，这可能导致代码调试困难。
 - 性能影响：大量使用切面时，可能对性能造成影响。
+- 可读性差：AOP 代码可读性差，因为它包含大量的切入点和通知逻辑。
+- 配置复杂：使用 AOP 需要编写大量的配置代码，这可能导致配置过程变得复杂。
 - Spring AOP 不是完全的 AOP 解决方案：与 AspectJ 等完整的 AOP 解决方案相比，Spring AOP 的功能相对有限。例如，它只支持方法级的切面编程。
 
 ##  Bean
@@ -104,7 +129,7 @@ IoC 最常见以及最合理的实现方式叫做 DI 依赖注入
 2. 声明式
    1. `@Transactional` 注解
 
-### Spring 事务有哪几种传播级别
+### Spring 事务有哪几种传播行为
 
 1. TransactionDefinition.PROPAGATION_**REQUIRED**
    - 使用最多，`@Transactional` 注解默认

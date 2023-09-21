@@ -17,8 +17,6 @@ export const pagesComponents = {
   "v-20cfb45c": defineAsyncComponent(() => import(/* webpackChunkName: "v-20cfb45c" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/os.html.vue")),
   // path: /projects.html
   "v-3ac5ce46": defineAsyncComponent(() => import(/* webpackChunkName: "v-3ac5ce46" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/projects.html.vue")),
-  // path: /questions.html
-  "v-3200da36": defineAsyncComponent(() => import(/* webpackChunkName: "v-3200da36" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions.html.vue")),
   // path: /redis.html
   "v-2524dff7": defineAsyncComponent(() => import(/* webpackChunkName: "v-2524dff7" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/redis.html.vue")),
   // path: /skills.html
@@ -41,4 +39,6 @@ export const pagesComponents = {
   "v-7d72c4ac": defineAsyncComponent(() => import(/* webpackChunkName: "v-7d72c4ac" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/framework/index.html.vue")),
   // path: /java/
   "v-14c69af4": defineAsyncComponent(() => import(/* webpackChunkName: "v-14c69af4" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/java/index.html.vue")),
+  // path: /questions.html
+  "v-3200da36": defineAsyncComponent(() => import(/* webpackChunkName: "v-3200da36" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions.html.vue")),
 }

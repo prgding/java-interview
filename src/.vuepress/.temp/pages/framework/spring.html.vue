@@ -6,6 +6,33 @@
 <li>Spring Boot 简化了配置，做到开箱即用。</li>
 <li>Spring Cloud 是一个微服务框架，结合 Spring Boot 可以快速开发分布式应用。</li>
 </ul>
+<h2 id="spring-和-spring-boot-的区别" tabindex="-1"><a class="header-anchor" href="#spring-和-spring-boot-的区别" aria-hidden="true">#</a> Spring 和 Spring Boot 的区别</h2>
+<ol>
+<li>目的和设计思路上
+<ol>
+<li>Spring 目的在于提供一个控制反转和依赖注入的容器，更便于开发低耦合的应用</li>
+<li>Spring Boot 目的在于简化 Spring 应用的创建和部署，采用“约定大于配置”的思想</li>
+</ol>
+</li>
+<li>依赖上
+<ol>
+<li>Spring 需要手动管理依赖</li>
+<li>Spring Boot 通过 “starters” 简化了依赖管理</li>
+</ol>
+</li>
+<li>配置上
+<ol>
+<li>Spring 需要大量的 XML 或 Java 配置</li>
+<li>Spring Boot 有自动配置的功能。</li>
+</ol>
+</li>
+<li>项目启动
+<ol>
+<li>Spring 需要配置在服务器上</li>
+<li>Spring Boot 内置 Tomcat、Jetty 等服务器，使得应用可以独立运行，不需要外部服务器。</li>
+</ol>
+</li>
+</ol>
 <h2 id="spring-核心模块" tabindex="-1"><a class="header-anchor" href="#spring-核心模块" aria-hidden="true">#</a> Spring 核心模块</h2>
 <ol>
 <li>Spring Core (IoC)</li>
@@ -23,7 +50,7 @@
 <p>IoC 最常见以及最合理的实现方式叫做 DI 依赖注入</p>
 <h2 id="aop" tabindex="-1"><a class="header-anchor" href="#aop" aria-hidden="true">#</a> AOP</h2>
 <h3 id="是什么-1" tabindex="-1"><a class="header-anchor" href="#是什么-1" aria-hidden="true">#</a> 是什么？</h3>
-<p>将事务、日志、安全等非业务代码在不改变原代码的情况下穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。</p>
+<p>将事务、日志、安全等非业务代码在不改变原代码的情况下穿插于业务代码中的一种编程方式叫做 AOP，面向切面编程。它是基于代理模式实现的</p>
 <h3 id="aop-能做什么" tabindex="-1"><a class="header-anchor" href="#aop-能做什么" aria-hidden="true">#</a> AOP 能做什么？</h3>
 <ol>
 <li>AOP 适合用来做一些「<strong>比较通用的、与业务关系不大的</strong>」事情。</li>
@@ -47,10 +74,20 @@
 <li><strong>定义通知</strong>：通知是真正的增强操作，例如：前置通知、后置通知、环绕通知、异常通知等。</li>
 <li><strong>进行织入</strong>：将切面代码插入到目标代码中，创建一个被增强的对象。</li>
 </ol>
+<h3 id="如何实现基于注解的-aop" tabindex="-1"><a class="header-anchor" href="#如何实现基于注解的-aop" aria-hidden="true">#</a> 如何实现基于注解的 AOP</h3>
+<ol>
+<li>引入 spring-boot-starter-aop 依赖</li>
+<li>配置类上 @EnableAspectJAutoProxy 启动 AOP 代理</li>
+<li>使用 @Aspect, @Component 定义切面</li>
+<li>@Pointcut 定义连接点、@Before, @After 定义通知</li>
+<li>运行程序</li>
+</ol>
 <h3 id="aop-的缺点" tabindex="-1"><a class="header-anchor" href="#aop-的缺点" aria-hidden="true">#</a> AOP 的缺点？</h3>
 <ul>
 <li>调试困难：某些功能是在运行时动态应用的，这可能导致代码调试困难。</li>
 <li>性能影响：大量使用切面时，可能对性能造成影响。</li>
+<li>可读性差：AOP 代码可读性差，因为它包含大量的切入点和通知逻辑。</li>
+<li>配置复杂：使用 AOP 需要编写大量的配置代码，这可能导致配置过程变得复杂。</li>
 <li>Spring AOP 不是完全的 AOP 解决方案：与 AspectJ 等完整的 AOP 解决方案相比，Spring AOP 的功能相对有限。例如，它只支持方法级的切面编程。</li>
 </ul>
 <h2 id="bean" tabindex="-1"><a class="header-anchor" href="#bean" aria-hidden="true">#</a> Bean</h2>
@@ -98,7 +135,7 @@
 </ol>
 </li>
 </ol>
-<h3 id="spring-事务有哪几种传播级别" tabindex="-1"><a class="header-anchor" href="#spring-事务有哪几种传播级别" aria-hidden="true">#</a> Spring 事务有哪几种传播级别</h3>
+<h3 id="spring-事务有哪几种传播行为" tabindex="-1"><a class="header-anchor" href="#spring-事务有哪几种传播行为" aria-hidden="true">#</a> Spring 事务有哪几种传播行为</h3>
 <ol>
 <li>TransactionDefinition.PROPAGATION_<strong>REQUIRED</strong>
 <ul>
