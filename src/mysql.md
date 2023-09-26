@@ -143,7 +143,7 @@ addtime(time, timeexp); add timeexp to time;
 5. 联合索引未遵循最左匹配
 6. WHERE 子句中，OR 前面是索引列，后面不是索引列
 
-## SQL 优化
+## MySQL 优化
 
 ### 定位慢查询
 
@@ -174,7 +174,7 @@ addtime(time, timeexp); add timeexp to time;
         1. 添加索引
         2. 修改返回字段
 2. 为经常查询的字段创建索引
-3. SQL 语句优化：
+3. **SQL 语句优化**：
     1. 尽量避免 select *
     2. 避免索引失效的写法
     3. 聚合查询尽量用 union all 代替 union，因为 union 多一层重复过滤
@@ -207,11 +207,23 @@ addtime(time, timeexp); add timeexp to time;
 ```sql
 # 上锁
 flush tables with read lock
+
 # 解锁
 unlock tables
 ```
 
+2. 表锁
 
+```sql
+# 加读锁（共享锁）
+lock tables [t_name] read;
+
+# 加写锁（独占锁）
+lock tables [t_name] write;
+
+# 解锁
+unlock tables
+```
 
 
 
@@ -225,8 +237,11 @@ InnoDB 主要支持行锁，并在需要的时候也会使用表锁。
    - 悲观锁：认为数据会导致冲突，所以在数据操作前会先加锁，确保数据操作的完整性。
 
 ### 什么是死锁？如何避免？
-死锁是两个或多个事务在资源上形成循环等待的情况。避免死锁的方法有：
-   - 保持一致的锁定顺序。
+
+死锁是两个或多个事务在资源上形成循环等待的情况。
+
+MySQL 处理死锁的方式是通过等待超时和死锁检测。
+
    - 使用锁超时，当事务等待锁超过特定时间后，事务自动回滚。
    - 使用死锁检测机制，当检测到死锁时，主动回滚某个事务，打破死锁。
 

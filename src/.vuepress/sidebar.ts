@@ -75,5 +75,10 @@ export default sidebar({
       link: "algorithm/",
       icon: "tabler:math",
     },
+    {
+      text: "设计模式",
+      link: "dp/",
+      icon: "icon-park:graphic-design",
+    },
   ],
 });

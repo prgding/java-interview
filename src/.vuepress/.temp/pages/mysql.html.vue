@@ -117,7 +117,7 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 <li>联合索引未遵循最左匹配</li>
 <li>WHERE 子句中，OR 前面是索引列，后面不是索引列</li>
 </ol>
-<h2 id="sql-优化" tabindex="-1"><a class="header-anchor" href="#sql-优化" aria-hidden="true">#</a> SQL 优化</h2>
+<h2 id="mysql-优化" tabindex="-1"><a class="header-anchor" href="#mysql-优化" aria-hidden="true">#</a> MySQL 优化</h2>
 <h3 id="定位慢查询" tabindex="-1"><a class="header-anchor" href="#定位慢查询" aria-hidden="true">#</a> 定位慢查询</h3>
 <ol>
 <li>
@@ -156,7 +156,7 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 </ol>
 </li>
 <li>为经常查询的字段创建索引</li>
-<li>SQL 语句优化：
+<li><strong>SQL 语句优化</strong>：
 <ol>
 <li>尽量避免 select *</li>
 <li>避免索引失效的写法</li>
@@ -196,9 +196,21 @@ addtime<span class="token punctuation">(</span><span class="token keyword">time<
 </ol>
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment"># 上锁</span>
 flush <span class="token keyword">tables</span> <span class="token keyword">with</span> <span class="token keyword">read</span> <span class="token keyword">lock</span>
+
 <span class="token comment"># 解锁</span>
 <span class="token keyword">unlock</span> <span class="token keyword">tables</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="innodb-存储引擎支持哪种锁" tabindex="-1"><a class="header-anchor" href="#innodb-存储引擎支持哪种锁" aria-hidden="true">#</a> InnoDB 存储引擎支持哪种锁？</h3>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>表锁</li>
+</ol>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token comment"># 加读锁（共享锁）</span>
+<span class="token keyword">lock</span> <span class="token keyword">tables</span> <span class="token punctuation">[</span>t_name<span class="token punctuation">]</span> <span class="token keyword">read</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 加写锁（独占锁）</span>
+<span class="token keyword">lock</span> <span class="token keyword">tables</span> <span class="token punctuation">[</span>t_name<span class="token punctuation">]</span> <span class="token keyword">write</span><span class="token punctuation">;</span>
+
+<span class="token comment"># 解锁</span>
+<span class="token keyword">unlock</span> <span class="token keyword">tables</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="innodb-存储引擎支持哪种锁" tabindex="-1"><a class="header-anchor" href="#innodb-存储引擎支持哪种锁" aria-hidden="true">#</a> InnoDB 存储引擎支持哪种锁？</h3>
 <p>InnoDB 主要支持行锁，并在需要的时候也会使用表锁。</p>
 <h3 id="简述-mysql-中的乐观锁和悲观锁。" tabindex="-1"><a class="header-anchor" href="#简述-mysql-中的乐观锁和悲观锁。" aria-hidden="true">#</a> 简述 MySQL 中的乐观锁和悲观锁。</h3>
 <ul>
@@ -206,9 +218,9 @@ flush <span class="token keyword">tables</span> <span class="token keyword">with
 <li>悲观锁：认为数据会导致冲突，所以在数据操作前会先加锁，确保数据操作的完整性。</li>
 </ul>
 <h3 id="什么是死锁-如何避免" tabindex="-1"><a class="header-anchor" href="#什么是死锁-如何避免" aria-hidden="true">#</a> 什么是死锁？如何避免？</h3>
-<p>死锁是两个或多个事务在资源上形成循环等待的情况。避免死锁的方法有：</p>
+<p>死锁是两个或多个事务在资源上形成循环等待的情况。</p>
+<p>MySQL 处理死锁的方式是通过等待超时和死锁检测。</p>
 <ul>
-<li>保持一致的锁定顺序。</li>
 <li>使用锁超时，当事务等待锁超过特定时间后，事务自动回滚。</li>
 <li>使用死锁检测机制，当检测到死锁时，主动回滚某个事务，打破死锁。</li>
 </ul>

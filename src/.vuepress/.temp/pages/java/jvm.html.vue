@@ -1,7 +1,54 @@
 <template><div><h1 id="jvm" tabindex="-1"><a class="header-anchor" href="#jvm" aria-hidden="true">#</a> JVM</h1>
+<h2 id="jvm-架构" tabindex="-1"><a class="header-anchor" href="#jvm-架构" aria-hidden="true">#</a> JVM 架构</h2>
+<ol>
+<li><strong>类加载器</strong>
+<ol>
+<li>加载
+<ol>
+<li>双亲委派</li>
+</ol>
+</li>
+<li>链接
+<ol>
+<li>验证</li>
+<li>准备</li>
+<li>解析</li>
+</ol>
+</li>
+<li>初始化</li>
+</ol>
+</li>
+<li><strong>运行时数据区域</strong></li>
+<li><strong>执行引擎</strong>
+<ol>
+<li>解释器
+<ol>
+<li>读取 class 文件或者字节码并执行。</li>
+<li>缺点：如果一个方法被多次调用，代码会被它多次编译</li>
+</ol>
+</li>
+<li>JIT 编译器
+<ol>
+<li>解决了解释器的问题</li>
+<li>如果出现了重复调用，JIT 会把字节码编译成本地代码，能够直接被调用</li>
+<li>组件
+<ol>
+<li>中间代码生成器</li>
+<li>代码优化器</li>
+<li>目标代码生成器：将中间代码转换为本地机器码</li>
+<li>profiler：定位重复被调用的热点代码</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>垃圾回收器</li>
+<li>Java 本地方法接口：负责与本地库交互，提供给 JVM 执行引擎使用</li>
+</ol>
+</li>
+</ol>
 <h2 id="jvm-运行流程" tabindex="-1"><a class="header-anchor" href="#jvm-运行流程" aria-hidden="true">#</a> JVM 运行流程</h2>
 <ol>
-<li>类加载器<strong>加载</strong> .class 文件</li>
+<li>类加载器采用双亲委派机制<strong>加载</strong> .class 文件</li>
 <li><strong>链接</strong>：
 <ol>
 <li>验证：确保字节码安全、结构完整</li>

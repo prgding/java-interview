@@ -39,6 +39,255 @@
 <li>为什么在深圳？</li>
 <li>反问</li>
 </ol>
+<h2 id="_23-09-13" tabindex="-1"><a class="header-anchor" href="#_23-09-13" aria-hidden="true">#</a> 23.09.13</h2>
+<h3 id="小鹅通-11lh" tabindex="-1"><a class="header-anchor" href="#小鹅通-11lh" aria-hidden="true">#</a> 小鹅通 - 11lh</h3>
+<ol>
+<li>自我介绍一下自己？</li>
+<li>哪里人？在广东干嘛？</li>
+<li>怎么接触测试的？</li>
+<li>简历上的都是学校学到的吗？</li>
+<li>什么渠道去学习？</li>
+<li>说一下项目？</li>
+<li>追着问bug。。。怎么修正的？bug 添加不进去什么原因导致的呢？</li>
+<li>一张表，表里面有好多字段，查文章在 10:00 - 11:00 这一个小时有多少个人来访问了我这个文章？（有人访问一遍就会记录一次信息）</li>
+<li>数据库里面索引的坏处？</li>
+<li>Linux 往日志文件写东西权限不足？chmod</li>
+<li>你的 Linux 下的根目录下的A文件拷贝到我的根目录下的一个 B 文件夹里面。cp 是机器本身的拷贝，通过什么方法可以把你的操作系统ip和密码拿过来？</li>
+<li>泛型？IO 流有几种方式啊？一个图片用什么流？要用字节流。。分为字节流和字符流</li>
+<li>场景设计：一个商品加入购物车，购买，弹出微信，支付成功，支付方可以放手，那么输完密码成功那一刻开始，系统去做了什么操作？？？</li>
+<li>今后个人规划？测试这一行你打算怎么做的？</li>
+<li>你有什么问我的？转正吗？工作氛围？加班吗？</li>
+</ol>
+<h3 id="默安科技一面-11lh" tabindex="-1"><a class="header-anchor" href="#默安科技一面-11lh" aria-hidden="true">#</a> 默安科技一面 - 11lh</h3>
+<ol>
+<li>自我介绍一下</li>
+<li>数据结构？</li>
+<li>做项目过程中有了解过算法吗？</li>
+<li>软件的生命周期？</li>
+<li>测试阶段？</li>
+<li>测试的类型？</li>
+<li>测试用例的作用？</li>
+<li>测试报告内容？</li>
+<li>熟悉哪些语言？</li>
+<li>python 里有几种数据结构的类型？</li>
+<li>break、continue、pass的作用？</li>
+<li>更改列表的数据类型？</li>
+<li>正则解释 re 模块有哪几种方法啊？</li>
+<li>反转字符串？</li>
+<li>多重继承意味着什么呢？</li>
+<li>装饰器有过了解吗？</li>
+<li>MySQL 中的聚合函数？</li>
+<li>order by 和 group by 的作用？</li>
+<li>having 的作用？</li>
+<li>修改表字段？</li>
+<li>添加数据？</li>
+<li>如何给指定的字段添加数据？</li>
+<li>Linux 用过吗？怎么查看所有进程？</li>
+<li>查看所有端口？</li>
+<li>awk 作用是？什么是Linux三剑客？</li>
+<li>重定向有用过吗？</li>
+<li>查看当前磁盘的使用情况</li>
+<li>修改文件名称？</li>
+<li>删除文件？</li>
+<li>jmeter 里如何录制一个脚本？</li>
+<li>两个线程组之间的参数传参？</li>
+<li>用户定义的变量和用户的参数有什么区别？</li>
+<li>对自己的未来规划？</li>
+<li>你有什么问题要问我的吗？</li>
+</ol>
+<h2 id="_23-09-04" tabindex="-1"><a class="header-anchor" href="#_23-09-04" aria-hidden="true">#</a> 23.09.04</h2>
+<h3 id="同余信息一面-10zwc" tabindex="-1"><a class="header-anchor" href="#同余信息一面-10zwc" aria-hidden="true">#</a> 同余信息一面 - 10zwc</h3>
+<ol>
+<li>场景题：
+<ul>
+<li>宠物抽象类，猫、狗实现类（属性：名称、速度），十米赛跑，比赛开始做日志打印，到达终点做日志打印<br>
+例：14:01:11 比赛开始，14:01:13 汤姆猫（5m/s）到达，14:01:16 旺财（2m/s）到达（题目用的是真实时间）</li>
+</ul>
+</li>
+<li>项目拷打</li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 的生命周期</RouterLink></li>
+<li>在初始化 Bean 前如何修改 Bean 的属性覆盖原本要初始化的属性</li>
+<li>Git 命令，提交撤回</li>
+<li>反问：</li>
+<li>有几面？</li>
+<li>面试建议（他说没啥好说的，多经历就好，我知道大概率寄了）</li>
+</ol>
+<h2 id="_23-09-01" tabindex="-1"><a class="header-anchor" href="#_23-09-01" aria-hidden="true">#</a> 23.09.01</h2>
+<h3 id="安软信创-实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#安软信创-实习一面-10lb" aria-hidden="true">#</a> 安软信创 实习一面 - 10lb</h3>
+<ol>
+<li>自我介绍</li>
+<li>请讲讲 Spring 和 Spring Boot 的关系</li>
+<li>Spring Boot 是怎么简化 Spring 开发的</li>
+<li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配</RouterLink></li>
+<li>Spring 中的事务失效场景</li>
+<li><RouterLink to="/framework/spring.html#spring-%E4%BA%8B%E5%8A%A1%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E4%BC%A0%E6%92%AD%E7%BA%A7%E5%88%AB">一个方法 A 被事务管理，方法 A 中调用方法 B，方法 B 也被事务管理，那 B 中出现异常是只会回滚 B 方法吗，还是会 AB 方法都回滚</RouterLink></li>
+<li>介绍一下你的项目</li>
+<li>介绍一下你项目中的难点，或者说你通过项目学到了什么</li>
+<li>请讲一下你的项目背景，为什么做这个项目</li>
+<li>有没有考虑自己搭建数据库</li>
+<li>反问</li>
+</ol>
+<h2 id="_23-08-31" tabindex="-1"><a class="header-anchor" href="#_23-08-31" aria-hidden="true">#</a> 23.08.31</h2>
+<h3 id="_10yj" tabindex="-1"><a class="header-anchor" href="#_10yj" aria-hidden="true">#</a> - 10yj</h3>
+<ol>
+<li>自我介绍</li>
+<li>Java 中 == 和 equals() 有什么区别</li>
+<li>Hashcode 方法，有什么作用？</li>
+<li><RouterLink to="/java/java.html#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84-list-%E5%92%8C-map">用过哪些线程安全的 Map</RouterLink></li>
+<li>HashMap 的扩容，put 方法执行过程</li>
+<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别</RouterLink></li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">MySQL 了解到哪些索引？</RouterLink></li>
+<li>说说你对反射的理解？</li>
+<li>你怎么理解 Spring 的 <RouterLink to="/framework/spring.html#aop">AOP</RouterLink>, <RouterLink to="/framework/spring.html#ioc">IoC</RouterLink>, <RouterLink to="/framework/spring.html#%E5%AE%9E%E7%8E%B0">DI</RouterLink>?</li>
+<li>Java 的泛型说一下</li>
+<li>GC 的新生代老年代的占比、介绍、辨析 GC 方法</li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">说说你对线程池的了解</RouterLink></li>
+<li>你会怎么用数组实现的循环队列？</li>
+<li>假如有个 ArrayList，怎么把里面的偶数全部去掉？</li>
+<li>MySQL 的 explain 字段用过吗？</li>
+</ol>
+<h3 id="知律科技实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#知律科技实习一面-10lb" aria-hidden="true">#</a> 知律科技实习一面 - 10lb</h3>
+<ol>
+<li>Java 有哪些集合</li>
+<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 区别</RouterLink></li>
+<li>请介绍一下 Spring 的 <RouterLink to="/framework/spring.html#aop">AOP</RouterLink> 和 <RouterLink to="/framework/spring.html#ioc">IoC</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">请介绍一下 Spring 的 Bean 生命周期</RouterLink></li>
+<li>介绍项目</li>
+<li><RouterLink to="/framework/springboot.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">一个 SpringBoot 项目中的常见注解</RouterLink></li>
+<li><RouterLink to="/framework/spring.html#spring-%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">SpringBoot 项目怎么使用事务，流程是怎么样</RouterLink></li>
+<li>数据库的 ACID，隔离级别</li>
+<li>MySQL 中的锁</li>
+<li>Redis 中的锁</li>
+<li>讲一下悲观锁乐观锁，并说说在项目中怎么使用</li>
+<li>Mybatis 中的#{}和${}的区别</li>
+<li>项目中怎么使用 Redis</li>
+<li>请讲一下 Redis 怎么实现双写一致</li>
+<li>反问</li>
+</ol>
+<h2 id="_23-08-30" tabindex="-1"><a class="header-anchor" href="#_23-08-30" aria-hidden="true">#</a> 23.08.30</h2>
+<h3 id="北京鲸算科技-实习一面-45分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京鲸算科技-实习一面-45分钟-09zkx" aria-hidden="true">#</a> 北京鲸算科技 实习一面 45分钟 - 09zkx</h3>
+<ol>
+<li>自我介绍.</li>
+<li>介绍一下项目。(10分钟)</li>
+<li>为什么使用 ES 去优化 MySQL 查询? MySQL 模糊查询问题?</li>
+<li>Spring Boot 的特点?</li>
+<li>Spring Boot 的 starter?</li>
+<li>Spring 的容器启动和 <RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Bean 加载</RouterLink>（被打断说问循环依赖和三级缓存是啥）</li>
+<li>使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?</li>
+<li>一道算法题。先减后增求最小值<br>
+类似于 <a href="https://leetcode.cn/problems/B1IidL/description/" target="_blank" rel="noopener noreferrer">LCR 069，山脉数组的峰顶索引<ExternalLinkIcon/></a><br>
+暴力 + 二分查找优化 (10分钟 A)</li>
+<li>反问:
+<ol>
+<li>面试中有什么不足?</li>
+<li>部门业务是什么?</li>
+<li>新人进公司负责什么?</li>
+</ol>
+</li>
+</ol>
+<h3 id="深圳依时货拉拉一面-实习-12pjl" tabindex="-1"><a class="header-anchor" href="#深圳依时货拉拉一面-实习-12pjl" aria-hidden="true">#</a> 深圳依时货拉拉一面，实习 - 12pjl</h3>
+<ol>
+<li><RouterLink to="/mysql.html#sql-%E4%BC%98%E5%8C%96">SQL 优化</RouterLink></li>
+<li>Spring MVC 执行过程</li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5">线程池拒绝策略</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">线程池执行过程</RouterLink></li>
+<li>Redis 数据结构，应用</li>
+<li>HashMap 和 HashTable 区别</li>
+<li>Feign 的原理</li>
+<li>设计模式</li>
+<li>会什么常见中间件</li>
+<li>MySQL 的事务隔离级别</li>
+<li>主从复制如果从库数据还没有加载好就有用户进行访问，出异常了要怎么解决</li>
+<li>主从复制的方式</li>
+<li>Mybatis 的#{}和${}，为什么${}还在使用</li>
+</ol>
+<h3 id="浩鲸科技-08zz" tabindex="-1"><a class="header-anchor" href="#浩鲸科技-08zz" aria-hidden="true">#</a> 浩鲸科技 - 08zz</h3>
+<ol>
+<li>介绍项目亮点</li>
+<li>Redis 为什么快</li>
+<li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配原理</RouterLink></li>
+<li>Redis 的缓存击穿和解决方案</li>
+<li>HashMap 的原理和扩容机制</li>
+<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">介绍 JVM 的内存情况</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E4%B8%A4%E5%A4%A7%E9%9B%86%E5%90%88%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB">List 和 Set 的区别</RouterLink></li>
+<li>Redis 的数据类型</li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">介绍 MySQL 的索引结构</RouterLink></li>
+<li><RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">索引什么时候会失效</RouterLink></li>
+<li>如何查询 SQL 是否命中索引</li>
+<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">类存储在 JVM 哪一块空间</RouterLink></li>
+<li>HashMap 和 ConcurrentHashMap 的区别</li>
+<li>Redis 的数据一致性问题</li>
+<li>介绍红黑树</li>
+<li>HashMap 的负载因子是否可变</li>
+</ol>
+<h2 id="_23-08-29" tabindex="-1"><a class="header-anchor" href="#_23-08-29" aria-hidden="true">#</a> 23.08.29</h2>
+<h3 id="北京数坤科技-实习-50分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京数坤科技-实习-50分钟-09zkx" aria-hidden="true">#</a> 北京数坤科技-实习 50分钟 - 09zkx</h3>
+<ol>
+<li>自我介绍</li>
+<li>项目 (10分钟)</li>
+<li>对封装. 继承. 多态怎么理解的?</li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
+<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别?</RouterLink></li>
+<li>HashMap 说一下? (初始化，put 流程，扩容)</li>
+<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">说下 JVM 的运行时数据区(各部分存储内容)</RouterLink></li>
+<li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95">说一下垃圾回收算法</RouterLink></li>
+<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink>和<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">执行任务流程</RouterLink></li>
+<li>简单说一下 CAP 理论</li>
+<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 加载的过程</RouterLink></li>
+<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">说一下 MySQL 索引有哪些?</RouterLink></li>
+<li>MQ 的消息重复消费和消息堆积问题的解决思路</li>
+<li>反问:
+<ol>
+<li>对实习生的要求和培养机制?</li>
+<li>面试回答中有什么不足的地方?</li>
+<li>什么时候出结果?几轮?</li>
+</ol>
+</li>
+</ol>
+<h2 id="_23-08-28" tabindex="-1"><a class="header-anchor" href="#_23-08-28" aria-hidden="true">#</a> 23.08.28</h2>
+<h3 id="金蝶一面-tyh" tabindex="-1"><a class="header-anchor" href="#金蝶一面-tyh" aria-hidden="true">#</a> 金蝶一面 - tyh</h3>
+<ol>
+<li>自我介绍</li>
+<li>说一下 Java 面向对象的三大特征<br>
+1.封装：我直接举得例子：人可以看成一个对象，有属性比如身高体重，如何有行为吃饭运动等<br>
+2.继承：父类子类，举例子：鸟，然后子类鹦鹉，燕子等<br>
+3.多态：父类的方法在子类可以用不同的实现</li>
+<li>简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下<br>
+那些微服务组件我只会使用，原理我不太懂，然后把 Nacos 作为注册中心，Dubbo 来服务远程调用，然后网关权限校验，fastDFS 做分布式存储等讲一下</li>
+<li>Redis 和数据库怎么保存数据一致性</li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink><br>
+分 1.7 和 1.8 讲<br>
+数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）<br>
+1.7 并发扩容头插存在死循环<br>
+1.8 使用尾插解决死循环</li>
+<li>除了简历上这个项目还有其他项目吗：
+<ol>
+<li>之前还做过一个聊天室项目，使用 Socket 和线程池实现聊天，群聊功能，通过 IO 流实现文件传输功能</li>
+<li>还做过一个个人博客项目，JWT 存到 ThreadLocal，然后拦截器验证权限，进入的时候存基本信息，出去的时候 remove，防止内存溢出</li>
+<li>因为我感觉这两个项目比较 low，所以就没写到简历上面</li>
+</ol>
+</li>
+<li>你现在在哪（回答深圳，讲述为什么来深圳），<br>
+我主要是学习了 Redis 和 MySQL，然后就讲自己会哪些知识点</li>
+<li>那你能不能讲一下 MySQL 的锁<br>
+全局锁，表锁，行锁，间隙锁</li>
+<li>讲一下 MySQL 索引<br>
+建立索引过程<br>
+最左前缀原则<br>
+<RouterLink to="/mysql.html#%E4%B8%BA%E4%BB%80%E4%B9%88-mysql-%E9%80%89%E6%8B%A9-b-%E6%A0%91">讲一下 B+ 树</RouterLink><br>
+<RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">讲一下索引怎么失效，以及一些处理办法</RouterLink></li>
+<li>并发，Synchronized，Volatile，ReentrantLock，<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">线程池</RouterLink></li>
+<li>有没有了解过我们公司<br>
+了解过，做 erp 服务的</li>
+<li>反问?<br>
+公司的业务是啥？<br>
+一面过了有二面吗？
+<ul>
+<li>面试官：实习岗位就一面，一周内等电话通知</li>
+</ul>
+</li>
+</ol>
 <h2 id="_23-08-15" tabindex="-1"><a class="header-anchor" href="#_23-08-15" aria-hidden="true">#</a> 23.08.15</h2>
 <h3 id="南京中盈优创" tabindex="-1"><a class="header-anchor" href="#南京中盈优创" aria-hidden="true">#</a> 南京中盈优创</h3>
 <ol>
@@ -214,255 +463,6 @@
 <li>谈谈数据库设计表使用主键自增，不让主键自增？</li>
 <li>Redis 的持久化机制</li>
 <li>简单讲讲 Redis 高可用</li>
-</ol>
-<h2 id="_23-08-28" tabindex="-1"><a class="header-anchor" href="#_23-08-28" aria-hidden="true">#</a> 23.08.28</h2>
-<h3 id="金蝶一面-tyh" tabindex="-1"><a class="header-anchor" href="#金蝶一面-tyh" aria-hidden="true">#</a> 金蝶一面 - tyh</h3>
-<ol>
-<li>自我介绍</li>
-<li>说一下 Java 面向对象的三大特征<br>
-1.封装：我直接举得例子：人可以看成一个对象，有属性比如身高体重，如何有行为吃饭运动等<br>
-2.继承：父类子类，举例子：鸟，然后子类鹦鹉，燕子等<br>
-3.多态：父类的方法在子类可以用不同的实现</li>
-<li>简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下<br>
-那些微服务组件我只会使用，原理我不太懂，然后把 Nacos 作为注册中心，Dubbo 来服务远程调用，然后网关权限校验，fastDFS 做分布式存储等讲一下</li>
-<li>Redis 和数据库怎么保存数据一致性</li>
-<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink><br>
-分 1.7 和 1.8 讲<br>
-数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）<br>
-1.7 并发扩容头插存在死循环<br>
-1.8 使用尾插解决死循环</li>
-<li>除了简历上这个项目还有其他项目吗：
-<ol>
-<li>之前还做过一个聊天室项目，使用 Socket 和线程池实现聊天，群聊功能，通过 IO 流实现文件传输功能</li>
-<li>还做过一个个人博客项目，JWT 存到 ThreadLocal，然后拦截器验证权限，进入的时候存基本信息，出去的时候 remove，防止内存溢出</li>
-<li>因为我感觉这两个项目比较 low，所以就没写到简历上面</li>
-</ol>
-</li>
-<li>你现在在哪（回答深圳，讲述为什么来深圳），<br>
-我主要是学习了 Redis 和 MySQL，然后就讲自己会哪些知识点</li>
-<li>那你能不能讲一下 MySQL 的锁<br>
-全局锁，表锁，行锁，间隙锁</li>
-<li>讲一下 MySQL 索引<br>
-建立索引过程<br>
-最左前缀原则<br>
-<RouterLink to="/mysql.html#%E4%B8%BA%E4%BB%80%E4%B9%88-mysql-%E9%80%89%E6%8B%A9-b-%E6%A0%91">讲一下 B+ 树</RouterLink><br>
-<RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">讲一下索引怎么失效，以及一些处理办法</RouterLink></li>
-<li>并发，Synchronized，Volatile，ReentrantLock，<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">线程池</RouterLink></li>
-<li>有没有了解过我们公司<br>
-了解过，做 erp 服务的</li>
-<li>反问?<br>
-公司的业务是啥？<br>
-一面过了有二面吗？
-<ul>
-<li>面试官：实习岗位就一面，一周内等电话通知</li>
-</ul>
-</li>
-</ol>
-<h2 id="_23-08-29" tabindex="-1"><a class="header-anchor" href="#_23-08-29" aria-hidden="true">#</a> 23.08.29</h2>
-<h3 id="北京数坤科技-实习-50分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京数坤科技-实习-50分钟-09zkx" aria-hidden="true">#</a> 北京数坤科技-实习 50分钟 - 09zkx</h3>
-<ol>
-<li>自我介绍</li>
-<li>项目 (10分钟)</li>
-<li>对封装. 继承. 多态怎么理解的?</li>
-<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
-<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别?</RouterLink></li>
-<li>HashMap 说一下? (初始化，put 流程，扩容)</li>
-<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">说下 JVM 的运行时数据区(各部分存储内容)</RouterLink></li>
-<li><RouterLink to="/java/jvm.html#%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E7%AE%97%E6%B3%95">说一下垃圾回收算法</RouterLink></li>
-<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink>和<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">执行任务流程</RouterLink></li>
-<li>简单说一下 CAP 理论</li>
-<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 加载的过程</RouterLink></li>
-<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">说一下 MySQL 索引有哪些?</RouterLink></li>
-<li>MQ 的消息重复消费和消息堆积问题的解决思路</li>
-<li>反问:
-<ol>
-<li>对实习生的要求和培养机制?</li>
-<li>面试回答中有什么不足的地方?</li>
-<li>什么时候出结果?几轮?</li>
-</ol>
-</li>
-</ol>
-<h2 id="_23-08-30" tabindex="-1"><a class="header-anchor" href="#_23-08-30" aria-hidden="true">#</a> 23.08.30</h2>
-<h3 id="北京鲸算科技-实习一面-45分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京鲸算科技-实习一面-45分钟-09zkx" aria-hidden="true">#</a> 北京鲸算科技 实习一面 45分钟 - 09zkx</h3>
-<ol>
-<li>自我介绍.</li>
-<li>介绍一下项目。(10分钟)</li>
-<li>为什么使用 ES 去优化 MySQL 查询? MySQL 模糊查询问题?</li>
-<li>Spring Boot 的特点?</li>
-<li>Spring Boot 的 starter?</li>
-<li>Spring 的容器启动和 <RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Bean 加载</RouterLink>（被打断说问循环依赖和三级缓存是啥）</li>
-<li>使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?</li>
-<li>一道算法题。先减后增求最小值<br>
-类似于 <a href="https://leetcode.cn/problems/B1IidL/description/" target="_blank" rel="noopener noreferrer">LCR 069，山脉数组的峰顶索引<ExternalLinkIcon/></a><br>
-暴力 + 二分查找优化 (10分钟 A)</li>
-<li>反问:
-<ol>
-<li>面试中有什么不足?</li>
-<li>部门业务是什么?</li>
-<li>新人进公司负责什么?</li>
-</ol>
-</li>
-</ol>
-<h3 id="深圳依时货拉拉一面-实习-12pjl" tabindex="-1"><a class="header-anchor" href="#深圳依时货拉拉一面-实习-12pjl" aria-hidden="true">#</a> 深圳依时货拉拉一面，实习 - 12pjl</h3>
-<ol>
-<li><RouterLink to="/mysql.html#sql-%E4%BC%98%E5%8C%96">SQL 优化</RouterLink></li>
-<li>Spring MVC 执行过程</li>
-<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E5%8F%82%E6%95%B0">线程池的参数</RouterLink></li>
-<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%8B%92%E7%BB%9D%E7%AD%96%E7%95%A5">线程池拒绝策略</RouterLink></li>
-<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0%E7%9A%84%E6%89%A7%E8%A1%8C%E5%8E%9F%E7%90%86">线程池执行过程</RouterLink></li>
-<li>Redis 数据结构，应用</li>
-<li>HashMap 和 HashTable 区别</li>
-<li>Feign 的原理</li>
-<li>设计模式</li>
-<li>会什么常见中间件</li>
-<li>MySQL 的事务隔离级别</li>
-<li>主从复制如果从库数据还没有加载好就有用户进行访问，出异常了要怎么解决</li>
-<li>主从复制的方式</li>
-<li>Mybatis 的#{}和${}，为什么${}还在使用</li>
-</ol>
-<h3 id="浩鲸科技-08zz" tabindex="-1"><a class="header-anchor" href="#浩鲸科技-08zz" aria-hidden="true">#</a> 浩鲸科技 - 08zz</h3>
-<ol>
-<li>介绍项目亮点</li>
-<li>Redis 为什么快</li>
-<li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配原理</RouterLink></li>
-<li>Redis 的缓存击穿和解决方案</li>
-<li>HashMap 的原理和扩容机制</li>
-<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">介绍 JVM 的内存情况</RouterLink></li>
-<li><RouterLink to="/java/java.html#%E4%B8%A4%E5%A4%A7%E9%9B%86%E5%90%88%E4%BB%A5%E5%8F%8A%E5%AE%9E%E7%8E%B0%E7%B1%BB">List 和 Set 的区别</RouterLink></li>
-<li>Redis 的数据类型</li>
-<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">介绍 MySQL 的索引结构</RouterLink></li>
-<li><RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">索引什么时候会失效</RouterLink></li>
-<li>如何查询 SQL 是否命中索引</li>
-<li><RouterLink to="/java/jvm.html#%E8%BF%90%E8%A1%8C%E6%97%B6%E6%95%B0%E6%8D%AE%E5%8C%BA%E5%9F%9F">类存储在 JVM 哪一块空间</RouterLink></li>
-<li>HashMap 和 ConcurrentHashMap 的区别</li>
-<li>Redis 的数据一致性问题</li>
-<li>介绍红黑树</li>
-<li>HashMap 的负载因子是否可变</li>
-</ol>
-<h2 id="_23-08-31" tabindex="-1"><a class="header-anchor" href="#_23-08-31" aria-hidden="true">#</a> 23.08.31</h2>
-<h3 id="_10yj" tabindex="-1"><a class="header-anchor" href="#_10yj" aria-hidden="true">#</a> - 10yj</h3>
-<ol>
-<li>自我介绍</li>
-<li>Java 中 == 和 equals() 有什么区别</li>
-<li>Hashcode 方法，有什么作用？</li>
-<li><RouterLink to="/java/java.html#%E7%BA%BF%E7%A8%8B%E5%AE%89%E5%85%A8%E7%9A%84-list-%E5%92%8C-map">用过哪些线程安全的 Map</RouterLink></li>
-<li>HashMap 的扩容，put 方法执行过程</li>
-<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别</RouterLink></li>
-<li><RouterLink to="/mysql.html#mysql-%E7%B4%A2%E5%BC%95%E7%A7%8D%E7%B1%BB">MySQL 了解到哪些索引？</RouterLink></li>
-<li>说说你对反射的理解？</li>
-<li>你怎么理解 Spring 的 <RouterLink to="/framework/spring.html#aop">AOP</RouterLink>, <RouterLink to="/framework/spring.html#ioc">IoC</RouterLink>, <RouterLink to="/framework/spring.html#%E5%AE%9E%E7%8E%B0">DI</RouterLink>?</li>
-<li>Java 的泛型说一下</li>
-<li>GC 的新生代老年代的占比、介绍、辨析 GC 方法</li>
-<li><RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">说说你对线程池的了解</RouterLink></li>
-<li>你会怎么用数组实现的循环队列？</li>
-<li>假如有个 ArrayList，怎么把里面的偶数全部去掉？</li>
-<li>MySQL 的 explain 字段用过吗？</li>
-</ol>
-<h3 id="知律科技实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#知律科技实习一面-10lb" aria-hidden="true">#</a> 知律科技实习一面 - 10lb</h3>
-<ol>
-<li>Java 有哪些集合</li>
-<li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 区别</RouterLink></li>
-<li>请介绍一下 Spring 的 <RouterLink to="/framework/spring.html#aop">AOP</RouterLink> 和 <RouterLink to="/framework/spring.html#ioc">IoC</RouterLink></li>
-<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">请介绍一下 Spring 的 Bean 生命周期</RouterLink></li>
-<li>介绍项目</li>
-<li><RouterLink to="/framework/springboot.html#spring-boot-%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3">一个 SpringBoot 项目中的常见注解</RouterLink></li>
-<li><RouterLink to="/framework/spring.html#spring-%E4%B8%AD%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">SpringBoot 项目怎么使用事务，流程是怎么样</RouterLink></li>
-<li>数据库的 ACID，隔离级别</li>
-<li>MySQL 中的锁</li>
-<li>Redis 中的锁</li>
-<li>讲一下悲观锁乐观锁，并说说在项目中怎么使用</li>
-<li>Mybatis 中的#{}和${}的区别</li>
-<li>项目中怎么使用 Redis</li>
-<li>请讲一下 Redis 怎么实现双写一致</li>
-<li>反问</li>
-</ol>
-<h2 id="_23-09-01" tabindex="-1"><a class="header-anchor" href="#_23-09-01" aria-hidden="true">#</a> 23.09.01</h2>
-<h3 id="安软信创-实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#安软信创-实习一面-10lb" aria-hidden="true">#</a> 安软信创 实习一面 - 10lb</h3>
-<ol>
-<li>自我介绍</li>
-<li>请讲讲 Spring 和 Spring Boot 的关系</li>
-<li>Spring Boot 是怎么简化 Spring 开发的</li>
-<li><RouterLink to="/framework/springboot.html#%E8%87%AA%E5%8A%A8%E8%A3%85%E9%85%8D%E5%8E%9F%E7%90%86">Spring Boot 的自动装配</RouterLink></li>
-<li>Spring 中的事务失效场景</li>
-<li><RouterLink to="/framework/spring.html#spring-%E4%BA%8B%E5%8A%A1%E6%9C%89%E5%93%AA%E5%87%A0%E7%A7%8D%E4%BC%A0%E6%92%AD%E7%BA%A7%E5%88%AB">一个方法 A 被事务管理，方法 A 中调用方法 B，方法 B 也被事务管理，那 B 中出现异常是只会回滚 B 方法吗，还是会 AB 方法都回滚</RouterLink></li>
-<li>介绍一下你的项目</li>
-<li>介绍一下你项目中的难点，或者说你通过项目学到了什么</li>
-<li>请讲一下你的项目背景，为什么做这个项目</li>
-<li>有没有考虑自己搭建数据库</li>
-<li>反问</li>
-</ol>
-<h2 id="_23-09-04" tabindex="-1"><a class="header-anchor" href="#_23-09-04" aria-hidden="true">#</a> 23.09.04</h2>
-<h3 id="同余信息一面-10zwc" tabindex="-1"><a class="header-anchor" href="#同余信息一面-10zwc" aria-hidden="true">#</a> 同余信息一面 - 10zwc</h3>
-<ol>
-<li>场景题：
-<ul>
-<li>宠物抽象类，猫、狗实现类（属性：名称、速度），十米赛跑，比赛开始做日志打印，到达终点做日志打印<br>
-例：14:01:11 比赛开始，14:01:13 汤姆猫（5m/s）到达，14:01:16 旺财（2m/s）到达（题目用的是真实时间）</li>
-</ul>
-</li>
-<li>项目拷打</li>
-<li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 的生命周期</RouterLink></li>
-<li>在初始化 Bean 前如何修改 Bean 的属性覆盖原本要初始化的属性</li>
-<li>Git 命令，提交撤回</li>
-<li>反问：</li>
-<li>有几面？</li>
-<li>面试建议（他说没啥好说的，多经历就好，我知道大概率寄了）</li>
-</ol>
-<h2 id="_23-09-13" tabindex="-1"><a class="header-anchor" href="#_23-09-13" aria-hidden="true">#</a> 23.09.13</h2>
-<h3 id="小鹅通-11lh" tabindex="-1"><a class="header-anchor" href="#小鹅通-11lh" aria-hidden="true">#</a> 小鹅通 - 11lh</h3>
-<ol>
-<li>自我介绍一下自己？</li>
-<li>哪里人？在广东干嘛？</li>
-<li>怎么接触测试的？</li>
-<li>简历上的都是学校学到的吗？</li>
-<li>什么渠道去学习？</li>
-<li>说一下项目？</li>
-<li>追着问bug。。。怎么修正的？bug 添加不进去什么原因导致的呢？</li>
-<li>一张表，表里面有好多字段，查文章在 10:00 - 11:00 这一个小时有多少个人来访问了我这个文章？（有人访问一遍就会记录一次信息）</li>
-<li>数据库里面索引的坏处？</li>
-<li>Linux 往日志文件写东西权限不足？chmod</li>
-<li>你的 Linux 下的根目录下的A文件拷贝到我的根目录下的一个 B 文件夹里面。cp 是机器本身的拷贝，通过什么方法可以把你的操作系统ip和密码拿过来？</li>
-<li>泛型？IO 流有几种方式啊？一个图片用什么流？要用字节流。。分为字节流和字符流</li>
-<li>场景设计：一个商品加入购物车，购买，弹出微信，支付成功，支付方可以放手，那么输完密码成功那一刻开始，系统去做了什么操作？？？</li>
-<li>今后个人规划？测试这一行你打算怎么做的？</li>
-<li>你有什么问我的？转正吗？工作氛围？加班吗？</li>
-</ol>
-<h3 id="默安科技一面-11lh" tabindex="-1"><a class="header-anchor" href="#默安科技一面-11lh" aria-hidden="true">#</a> 默安科技一面 - 11lh</h3>
-<ol>
-<li>自我介绍一下</li>
-<li>数据结构？</li>
-<li>做项目过程中有了解过算法吗？</li>
-<li>软件的生命周期？</li>
-<li>测试阶段？</li>
-<li>测试的类型？</li>
-<li>测试用例的作用？</li>
-<li>测试报告内容？</li>
-<li>熟悉哪些语言？</li>
-<li>python 里有几种数据结构的类型？</li>
-<li>break、continue、pass的作用？</li>
-<li>更改列表的数据类型？</li>
-<li>正则解释 re 模块有哪几种方法啊？</li>
-<li>反转字符串？</li>
-<li>多重继承意味着什么呢？</li>
-<li>装饰器有过了解吗？</li>
-<li>MySQL 中的聚合函数？</li>
-<li>order by 和 group by 的作用？</li>
-<li>having 的作用？</li>
-<li>修改表字段？</li>
-<li>添加数据？</li>
-<li>如何给指定的字段添加数据？</li>
-<li>Linux 用过吗？怎么查看所有进程？</li>
-<li>查看所有端口？</li>
-<li>awk 作用是？什么是Linux三剑客？</li>
-<li>重定向有用过吗？</li>
-<li>查看当前磁盘的使用情况</li>
-<li>修改文件名称？</li>
-<li>删除文件？</li>
-<li>jmeter 里如何录制一个脚本？</li>
-<li>两个线程组之间的参数传参？</li>
-<li>用户定义的变量和用户的参数有什么区别？</li>
-<li>对自己的未来规划？</li>
-<li>你有什么问题要问我的吗？</li>
 </ol>
 </div></template>
 
