@@ -60,15 +60,11 @@ export default sidebar({
       icon: "logos:docker-icon",
       link: "docker/",
     },
+
     {
-      text: "计算机网络",
-      link: "network/",
-      icon: "fluent-mdl2:my-network",
-    },
-    {
-      text: "操作系统",
-      link: "os/",
-      icon: "wpf:mac-os",
+      text: "数据结构",
+      link: "datastructure/",
+      icon: "solar:structure-bold",
     },
     {
       text: "算法",
@@ -79,6 +75,17 @@ export default sidebar({
       text: "设计模式",
       link: "dp/",
       icon: "icon-park:graphic-design",
+    },
+
+    {
+      text: "计算机网络",
+      link: "network/",
+      icon: "fluent-mdl2:my-network",
+    },
+    {
+      text: "操作系统",
+      link: "os/",
+      icon: "wpf:mac-os",
     },
   ],
 });

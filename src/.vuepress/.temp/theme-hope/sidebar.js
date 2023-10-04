@@ -1,1 +1,1 @@
-export const sidebarData = {"/java/":["java","jvm","juc"],"/framework/":["spring","springboot","mybatis"]};
+export const sidebarData = {"/java/":["java","jvm","juc"],"/framework/":["spring","springboot","mybatis","springcloud"]};
