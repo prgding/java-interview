@@ -47,4 +47,6 @@ export const pagesComponents = {
   "v-7d72c4ac": defineAsyncComponent(() => import(/* webpackChunkName: "v-7d72c4ac" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/framework/index.html.vue")),
   // path: /java/
   "v-14c69af4": defineAsyncComponent(() => import(/* webpackChunkName: "v-14c69af4" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/java/index.html.vue")),
+  // path: /questions_%E5%89%AF%E6%9C%AC.html
+  "v-1ebd6ace": defineAsyncComponent(() => import(/* webpackChunkName: "v-1ebd6ace" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions_副本.html.vue")),
 }
