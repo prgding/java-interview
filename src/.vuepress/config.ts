@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: "/java-interview/",
 
   lang: "zh-CN",
-  title: "后端面试经验",
+  title: "后端开发经验",
   description: "以 Java 为主",
 
   theme,

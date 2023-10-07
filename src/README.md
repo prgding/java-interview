@@ -7,7 +7,7 @@ bgImage: https://theme-hope-assets.vuejs.press/bg/6-light.svg
 bgImageDark: https://theme-hope-assets.vuejs.press/bg/6-dark.svg
 bgImageStyle:
   background-attachment: fixed
-heroText: 后端面试经验
+heroText: 后端开发经验
 tagline: 以 Java 为主
 actions:
   - text: 专业技能
@@ -25,7 +25,7 @@ footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VueP
 
 # 关于网站
 
-分享 Java 后端开发面试经验
+分享 Java 后端开发经验
 
 # 关于作者
 
