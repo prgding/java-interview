@@ -22,5 +22,4 @@ export const pagesRoutes = [
   ["v-3706649a","/404.html",{"y":"p","t":""},[]],
   ["v-7d72c4ac","/framework/",{"y":"p","t":"Framework"},[]],
   ["v-14c69af4","/java/",{"y":"p","t":"Java"},[]],
-  ["v-1ebd6ace","/questions_%E5%89%AF%E6%9C%AC.html",{"y":"a","t":"题目"},["/questions_副本.html","/questions_副本.md",":md"]],
 ]

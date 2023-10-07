@@ -45,6 +45,4 @@ export const pagesData = {
   "v-7d72c4ac": () => import(/* webpackChunkName: "v-7d72c4ac" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/framework/index.html.js").then(({ data }) => data),
   // path: /java/
   "v-14c69af4": () => import(/* webpackChunkName: "v-14c69af4" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/java/index.html.js").then(({ data }) => data),
-  // path: /questions_%E5%89%AF%E6%9C%AC.html
-  "v-1ebd6ace": () => import(/* webpackChunkName: "v-1ebd6ace" */"/Users/dingshuai/Downloads/my-docs/src/.vuepress/.temp/pages/questions_副本.html.js").then(({ data }) => data),
 }
