@@ -1,5 +1,6 @@
 <template><div><h1 id="项目" tabindex="-1"><a class="header-anchor" href="#项目" aria-hidden="true">#</a> 项目</h1>
-<h2 id="仓易通-负责-java-后端" tabindex="-1"><a class="header-anchor" href="#仓易通-负责-java-后端" aria-hidden="true">#</a> <a href="https://github.com/prgding/EasyWareFlow" target="_blank" rel="noopener noreferrer">仓易通<ExternalLinkIcon/></a> |  负责 Java 后端</h2>
+<h2 id="仓易通-java-后端开发" tabindex="-1"><a class="header-anchor" href="#仓易通-java-后端开发" aria-hidden="true">#</a> 仓易通 |  Java 后端开发</h2>
+<p><a href="https://github.com/prgding/EasyWareFlow" target="_blank" rel="noopener noreferrer">https://github.com/prgding/EasyWareFlow<ExternalLinkIcon/></a></p>
 <p><strong>项目描述</strong>：</p>
 <ul>
 <li>仓易通是一个全面的仓库管理系统，用于满足日益增长的仓库管理需求。该系统提供了一站式解决方案，包括用户、角色、权限、商品、分类、采购、入库、出库的管理。旨在为中小型仓储公司提供强大且灵活的解决方案。</li>
@@ -51,6 +52,26 @@
 <li>延迟双删</li>
 </ol>
 </li>
+</ol>
+<h2 id="模仿银行项目-前后端开发" tabindex="-1"><a class="header-anchor" href="#模仿银行项目-前后端开发" aria-hidden="true">#</a> 模仿银行项目  |  前后端开发</h2>
+<p><a href="https://github.com/prgding/bank" target="_blank" rel="noopener noreferrer">https://github.com/prgding/bank<ExternalLinkIcon/></a></p>
+<p><strong>技术栈：</strong></p>
+<ol>
+<li>后端：Spring Boot + Spring Data JPA + MySQL + Redis</li>
+<li>前端：Vue3 + Element Plus</li>
+</ol>
+<p><strong>项目描述：</strong></p>
+<ol>
+<li>实现了一套模拟银行系统，支持管理员和普通用户角色。</li>
+<li>管理员可以进行用户管理、日志管理、头像上传和用户、日志导出到 Excel。</li>
+<li>普通用户可以进行注册、登录、查询余额、存款、取款、转账和查看日志。</li>
+</ol>
+<p><strong>主要职责：</strong></p>
+<ol>
+<li>设计和实现后端服务，利用 Spring Boot 和 Spring Data JPA 连接 MySQL 完成数据的增删改查。</li>
+<li>使用 Redis 实现缓存，优化系统性能。</li>
+<li>开发前端界面，利用 Vue3 和 Element Plus 构建用户友好的界面。</li>
+<li>实现 JWT 认证，保障系统安全。</li>
 </ol>
 </div></template>
 

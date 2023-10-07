@@ -1,6 +1,8 @@
 # 项目
 
-## [仓易通](https://github.com/prgding/EasyWareFlow) |  负责 Java 后端
+## 仓易通 |  Java 后端开发
+
+https://github.com/prgding/EasyWareFlow
 
 **项目描述**：
 
@@ -41,3 +43,25 @@
 5. 怎样实现 Redis 数据一致性的？
     1. 双写一致性：先写入 MySQL，再写入 Redis
     2. 延迟双删
+
+## 模仿银行项目  |  前后端开发
+
+https://github.com/prgding/bank
+
+**技术栈：**
+
+1. 后端：Spring Boot + Spring Data JPA + MySQL + Redis
+2. 前端：Vue3 + Element Plus
+
+**项目描述：**
+
+1. 实现了一套模拟银行系统，支持管理员和普通用户角色。
+2. 管理员可以进行用户管理、日志管理、头像上传和用户、日志导出到 Excel。
+3. 普通用户可以进行注册、登录、查询余额、存款、取款、转账和查看日志。
+
+**主要职责：**
+
+1. 设计和实现后端服务，利用 Spring Boot 和 Spring Data JPA 连接 MySQL 完成数据的增删改查。
+2. 使用 Redis 实现缓存，优化系统性能。
+3. 开发前端界面，利用 Vue3 和 Element Plus 构建用户友好的界面。
+4. 实现 JWT 认证，保障系统安全。
