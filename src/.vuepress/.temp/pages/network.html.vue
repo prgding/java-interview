@@ -9,7 +9,6 @@
 <li>会话层：建立、维护和终止会话。</li>
 <li>表示层：确保一个系统的应用层所发送的信息可以被另一个系统的应用层读取和理解。</li>
 <li>应用层：与终端用户的应用程序（如浏览器、电子邮件客户端等）直接交互。</li>
-<li>吴叔网传会飙英（语）</li>
 </ul>
 <h2 id="tcp-ip-四层模型" tabindex="-1"><a class="header-anchor" href="#tcp-ip-四层模型" aria-hidden="true">#</a> TCP / IP 四层模型</h2>
 <ul>
