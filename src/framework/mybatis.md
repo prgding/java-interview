@@ -1,5 +1,6 @@
 ---
 order: 3
+icon: healthicons:3-outline
 ---
 
 # MyBatis

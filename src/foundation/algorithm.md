@@ -1,3 +1,8 @@
+---
+order: 2
+icon: "tabler:math"
+---
+
 # 算法
 
 ## 什么是算法

@@ -301,3 +301,26 @@ Durability：持久性
 3. 在线备份：使用 MVCC，可以在不阻塞正常操作的情况下进行数据库备份。
 4. 读取的一致性：确保事务读取的数据是一致的，即使在该事务读取过程中，其他事务在修改。
 
+## SQL 语句中谁先执行谁后执行
+
+```sql
+SELECT 
+    u.username, 
+    o.order_id, 
+    p.product_name, 
+    o.quantity
+FROM users u
+LEFT JOIN orders o ON u.user_id = o.user_id
+INNER JOIN products p ON o.product_id = p.product_id
+WHERE o.order_date BETWEEN '2023-01-01' AND '2023-12-31'
+AND p.product_type = 'electronics'
+ORDER BY o.order_date DESC
+LIMIT 10;
+```
+
+1. 先执行 FROM，确定主查询表。
+2. 使用 JOIN 连接其他的表。
+3. 使用 WHERE 过滤查询结果。
+4. 使用 SELECT 过滤列。
+5. ORDER BY 排序。
+6. LIMIT 限制数量。

@@ -1,3 +1,0 @@
-# OS
-
-This is OS.

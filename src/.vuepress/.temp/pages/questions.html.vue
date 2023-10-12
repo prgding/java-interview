@@ -1,6 +1,26 @@
 <template><div><h1 id="题目" tabindex="-1"><a class="header-anchor" href="#题目" aria-hidden="true">#</a> 题目</h1>
 <h2 id="_23-10" tabindex="-1"><a class="header-anchor" href="#_23-10" aria-hidden="true">#</a> 23.10</h2>
-<p>需要加强的知识</p>
+<h3 id="需要加强的知识" tabindex="-1"><a class="header-anchor" href="#需要加强的知识" aria-hidden="true">#</a> 需要加强的知识</h3>
+<ol>
+<li>
+<p>SQL 语句中谁先执行谁后执行</p>
+</li>
+<li>
+<p>JWT 的实现细节</p>
+</li>
+<li>
+<p>数据库设计</p>
+</li>
+<li>
+<p>软件工程步骤</p>
+</li>
+<li>
+<p>异常</p>
+</li>
+<li>
+<p>项目中哪里用了事务</p>
+</li>
+</ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
 <h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>
 <ol>

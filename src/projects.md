@@ -32,9 +32,17 @@ https://github.com/prgding/EasyWareFlow
     3. 在角色和权限方面，采取了 RBAC 模型进行权限管理，用户根据其角色来获得相应的权限。
     4. 登陆和赋予权限后，用户就可以进行添加商品、设置分类、生成采购单、如果进行了采购，那对应的是入库操作。如果进行了售出或者收到了退货，那对应的是出库的操作。
 2. 项目的某个具体功能是怎么做的？业务之间的关联性？怎样实现统一管理的？
-3. 讲讲 JWT 登陆和身份认证
-    1. JSON Web Token（缩写 JWT）是目前最流行的跨域认证解决方案
-    2. 有三部分，Header、payload、Signature
+3. 讲讲 JWT 登陆的以及实现细节
+    1. 简介：
+        1. JSON Web Token（缩写 JWT）是目前最流行的跨域认证解决方案。
+        2. 有三部分，Header（包括 JWT 类型和加密算法）、Payload（实体信息）、Signature（对前两者进行加密）
+
+    2. 实现细节：
+        1. 引入 com.auth0 提供的 java-jwt 依赖。
+        2. 写一个 TokenUtils，里面包括 LoginSign（sign()和设置redis）、sign()、ge tAccount()
+        3. sign()里面用 JWT.create().withClaim(key,value).withIssuedAt().withExpiresAt().sign(加密())
+        4. getAccount() 里面用 JWT.decode(token).getClaim().asInt();
+
 4. 哪里用到了 Redis 缓存？
     1. 商品分类和仓库列表
     2. 因为很常用且更新频率不高

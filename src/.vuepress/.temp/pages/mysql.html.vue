@@ -280,6 +280,27 @@ Durability：持久性</p>
 <li>在线备份：使用 MVCC，可以在不阻塞正常操作的情况下进行数据库备份。</li>
 <li>读取的一致性：确保事务读取的数据是一致的，即使在该事务读取过程中，其他事务在修改。</li>
 </ol>
+<h2 id="sql-语句中谁先执行谁后执行" tabindex="-1"><a class="header-anchor" href="#sql-语句中谁先执行谁后执行" aria-hidden="true">#</a> SQL 语句中谁先执行谁后执行</h2>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> 
+    u<span class="token punctuation">.</span>username<span class="token punctuation">,</span> 
+    o<span class="token punctuation">.</span>order_id<span class="token punctuation">,</span> 
+    p<span class="token punctuation">.</span>product_name<span class="token punctuation">,</span> 
+    o<span class="token punctuation">.</span>quantity
+<span class="token keyword">FROM</span> users u
+<span class="token keyword">LEFT</span> <span class="token keyword">JOIN</span> orders o <span class="token keyword">ON</span> u<span class="token punctuation">.</span>user_id <span class="token operator">=</span> o<span class="token punctuation">.</span>user_id
+<span class="token keyword">INNER</span> <span class="token keyword">JOIN</span> products p <span class="token keyword">ON</span> o<span class="token punctuation">.</span>product_id <span class="token operator">=</span> p<span class="token punctuation">.</span>product_id
+<span class="token keyword">WHERE</span> o<span class="token punctuation">.</span>order_date <span class="token operator">BETWEEN</span> <span class="token string">'2023-01-01'</span> <span class="token operator">AND</span> <span class="token string">'2023-12-31'</span>
+<span class="token operator">AND</span> p<span class="token punctuation">.</span>product_type <span class="token operator">=</span> <span class="token string">'electronics'</span>
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> o<span class="token punctuation">.</span>order_date <span class="token keyword">DESC</span>
+<span class="token keyword">LIMIT</span> <span class="token number">10</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol>
+<li>先执行 FROM，确定主查询表。</li>
+<li>使用 JOIN 连接其他的表。</li>
+<li>使用 WHERE 过滤查询结果。</li>
+<li>使用 SELECT 过滤列。</li>
+<li>ORDER BY 排序。</li>
+<li>LIMIT 限制数量。</li>
+</ol>
 </div></template>
 
 

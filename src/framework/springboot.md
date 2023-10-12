@@ -1,5 +1,6 @@
 ---
 order: 2
+icon: healthicons:2-outline
 ---
 
 # Spring Boot
