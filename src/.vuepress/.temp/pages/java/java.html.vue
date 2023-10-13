@@ -155,13 +155,28 @@
 </li>
 </ol>
 <h2 id="异常" tabindex="-1"><a class="header-anchor" href="#异常" aria-hidden="true">#</a> 异常</h2>
+<h3 id="为什么要设计异常" tabindex="-1"><a class="header-anchor" href="#为什么要设计异常" aria-hidden="true">#</a> 为什么要设计异常？</h3>
 <ol>
-<li>异常的种类</li>
+<li>目的是：提高软件的健壮性和可维护性</li>
+<li>如何做到的：
+<ol>
+<li>异常处理机制为开发者提供了一个结构化的方法来捕获、处理和传递错误</li>
 </ol>
-<h3 id="exception-和-error-有什么区别" tabindex="-1"><a class="header-anchor" href="#exception-和-error-有什么区别" aria-hidden="true">#</a> Exception 和 Error 有什么区别？</h3>
+</li>
+</ol>
+<h3 id="层次结构" tabindex="-1"><a class="header-anchor" href="#层次结构" aria-hidden="true">#</a> 层次结构</h3>
 <ul>
-<li>Exception：程序本身可以处理的异常</li>
-<li>Error：程序无法处理的错误</li>
+<li>java.lang.Exception
+<ul>
+<li>Error</li>
+<li>Exception
+<ul>
+<li>受检异常，必须用 try-catch 处理或 throws 声明</li>
+<li>非受检异常。不需要强制处理。通常可以通过更好的编程来避免。</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="重写和重载区别" tabindex="-1"><a class="header-anchor" href="#重写和重载区别" aria-hidden="true">#</a> 重写和重载区别</h2>
 <ul>

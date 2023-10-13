@@ -280,7 +280,7 @@ Durability：持久性</p>
 <li>在线备份：使用 MVCC，可以在不阻塞正常操作的情况下进行数据库备份。</li>
 <li>读取的一致性：确保事务读取的数据是一致的，即使在该事务读取过程中，其他事务在修改。</li>
 </ol>
-<h2 id="sql-语句中谁先执行谁后执行" tabindex="-1"><a class="header-anchor" href="#sql-语句中谁先执行谁后执行" aria-hidden="true">#</a> SQL 语句中谁先执行谁后执行</h2>
+<h2 id="一条-sql-语句的执行顺序" tabindex="-1"><a class="header-anchor" href="#一条-sql-语句的执行顺序" aria-hidden="true">#</a> 一条 SQL 语句的执行顺序</h2>
 <div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">SELECT</span> 
     u<span class="token punctuation">.</span>username<span class="token punctuation">,</span> 
     o<span class="token punctuation">.</span>order_id<span class="token punctuation">,</span> 

@@ -4,19 +4,12 @@
 
 ### 需要加强的知识
 
-1. SQL 语句中谁先执行谁后执行
-
-2. JWT 的实现细节
-
-3. 数据库设计
-
-4. 软件工程步骤
-
-5. 异常
-
-6. 项目中哪里用了事务
-
-
+1. [一条 SQL 语句的执行顺序](/java-interview/mysql.html#一条-sql-语句的执行顺序)
+2. [JWT 的实现细节](/java-interview/projects.html#题目)
+3. [软件工程步骤](/java-interview/foundation/software.html#软件工程的步骤)
+4. [异常](/java-interview/java/java.html#异常)
+5. 项目中哪里用了事务
+6. 数据库设计
 
 ## 23.09.20
 

@@ -35,14 +35,16 @@ https://github.com/prgding/EasyWareFlow
 3. 讲讲 JWT 登陆的以及实现细节
     1. 简介：
         1. JSON Web Token（缩写 JWT）是目前最流行的跨域认证解决方案。
-        2. 有三部分，Header（包括 JWT 类型和加密算法）、Payload（实体信息）、Signature（对前两者进行加密）
-
+        2. 有三部分：
+            1. Header（包括 JWT 类型和加密算法类型）
+            2. Payload（实体信息）
+            3. Signature（对前两者进行加密）
     2. 实现细节：
-        1. 引入 com.auth0 提供的 java-jwt 依赖。
-        2. 写一个 TokenUtils，里面包括 LoginSign（sign()和设置redis）、sign()、ge tAccount()
-        3. sign()里面用 JWT.create().withClaim(key,value).withIssuedAt().withExpiresAt().sign(加密())
-        4. getAccount() 里面用 JWT.decode(token).getClaim().asInt();
-
+        1. Maven 引入 com.auth0 提供的 java-jwt 依赖。
+        2. 写一个 TokenUtils，里面包括：
+            1. LoginSign()：执行 sign() 和存入 Redis
+            2. sign()：进行签名，使用 JWT.create().withClaim(key,value).withIssuedAt(开始时间).withExpiresAt(失效时间).sign(加密方法)
+            3. getAccount()：验明正身，使用 JWT.decode(token).getClaim().asInt();
 4. 哪里用到了 Redis 缓存？
     1. 商品分类和仓库列表
     2. 因为很常用且更新频率不高

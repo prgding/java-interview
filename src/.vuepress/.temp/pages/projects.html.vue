@@ -23,8 +23,7 @@
 </ul>
 <h2 id="题目" tabindex="-1"><a class="header-anchor" href="#题目" aria-hidden="true">#</a> 题目</h2>
 <ol>
-<li>
-<p>介绍项目</p>
+<li>介绍项目
 <ol>
 <li>该项目是一个一站式仓库管理系统，具体包括了用户、角色、权限、商品、分类、采购、入库、出库等具体业务。</li>
 <li>在用户管理方面，采用了验证码登陆和 JWT 验证。当用户名、密码和验证码均正确时，用户会得到一个 JWT 令牌。后续的所有请求中，都要带上这个令牌。</li>
@@ -32,39 +31,42 @@
 <li>登陆和赋予权限后，用户就可以进行添加商品、设置分类、生成采购单、如果进行了采购，那对应的是入库操作。如果进行了售出或者收到了退货，那对应的是出库的操作。</li>
 </ol>
 </li>
-<li>
-<p>项目的某个具体功能是怎么做的？业务之间的关联性？怎样实现统一管理的？</p>
-</li>
-<li>
-<p>讲讲 JWT 登陆的以及实现细节</p>
+<li>项目的某个具体功能是怎么做的？业务之间的关联性？怎样实现统一管理的？</li>
+<li>讲讲 JWT 登陆的以及实现细节
 <ol>
-<li>
-<p>简介：</p>
+<li>简介：
 <ol>
 <li>JSON Web Token（缩写 JWT）是目前最流行的跨域认证解决方案。</li>
-<li>有三部分，Header（包括 JWT 类型和加密算法）、Payload（实体信息）、Signature（对前两者进行加密）</li>
-</ol>
-</li>
-<li>
-<p>实现细节：</p>
+<li>有三部分：
 <ol>
-<li>引入 com.auth0 提供的 java-jwt 依赖。</li>
-<li>写一个 TokenUtils，里面包括 LoginSign（sign()和设置redis）、sign()、ge tAccount()</li>
-<li>sign()里面用 JWT.create().withClaim(key,value).withIssuedAt().withExpiresAt().sign(加密())</li>
-<li>getAccount() 里面用 JWT.decode(token).getClaim().asInt();</li>
+<li>Header（包括 JWT 类型和加密算法类型）</li>
+<li>Payload（实体信息）</li>
+<li>Signature（对前两者进行加密）</li>
 </ol>
 </li>
 </ol>
 </li>
-<li>
-<p>哪里用到了 Redis 缓存？</p>
+<li>实现细节：
+<ol>
+<li>Maven 引入 com.auth0 提供的 java-jwt 依赖。</li>
+<li>写一个 TokenUtils，里面包括：
+<ol>
+<li>LoginSign()：执行 sign() 和存入 Redis</li>
+<li>sign()：进行签名，使用 JWT.create().withClaim(key,value).withIssuedAt(开始时间).withExpiresAt(失效时间).sign(加密方法)</li>
+<li>getAccount()：验明正身，使用 JWT.decode(token).getClaim().asInt();</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>哪里用到了 Redis 缓存？
 <ol>
 <li>商品分类和仓库列表</li>
 <li>因为很常用且更新频率不高</li>
 </ol>
 </li>
-<li>
-<p>怎样实现 Redis 数据一致性的？</p>
+<li>怎样实现 Redis 数据一致性的？
 <ol>
 <li>双写一致性：先写入 MySQL，再写入 Redis</li>
 <li>延迟双删</li>

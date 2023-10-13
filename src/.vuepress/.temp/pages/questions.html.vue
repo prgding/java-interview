@@ -2,24 +2,12 @@
 <h2 id="_23-10" tabindex="-1"><a class="header-anchor" href="#_23-10" aria-hidden="true">#</a> 23.10</h2>
 <h3 id="需要加强的知识" tabindex="-1"><a class="header-anchor" href="#需要加强的知识" aria-hidden="true">#</a> 需要加强的知识</h3>
 <ol>
-<li>
-<p>SQL 语句中谁先执行谁后执行</p>
-</li>
-<li>
-<p>JWT 的实现细节</p>
-</li>
-<li>
-<p>数据库设计</p>
-</li>
-<li>
-<p>软件工程步骤</p>
-</li>
-<li>
-<p>异常</p>
-</li>
-<li>
-<p>项目中哪里用了事务</p>
-</li>
+<li><RouterLink to="/mysql.html#%E4%B8%80%E6%9D%A1-sql-%E8%AF%AD%E5%8F%A5%E7%9A%84%E6%89%A7%E8%A1%8C%E9%A1%BA%E5%BA%8F">一条 SQL 语句的执行顺序</RouterLink></li>
+<li><RouterLink to="/projects.html#%E9%A2%98%E7%9B%AE">JWT 的实现细节</RouterLink></li>
+<li><RouterLink to="/foundation/software.html#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%AD%A5%E9%AA%A4">软件工程步骤</RouterLink></li>
+<li><RouterLink to="/java/java.html#%E5%BC%82%E5%B8%B8">异常</RouterLink></li>
+<li>项目中哪里用了事务</li>
+<li>数据库设计</li>
 </ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
 <h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>
