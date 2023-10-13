@@ -6,8 +6,6 @@
 <li><RouterLink to="/projects.html#%E9%A2%98%E7%9B%AE">JWT 的实现细节</RouterLink></li>
 <li><RouterLink to="/foundation/software.html#%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B%E7%9A%84%E6%AD%A5%E9%AA%A4">软件工程步骤</RouterLink></li>
 <li><RouterLink to="/java/java.html#%E5%BC%82%E5%B8%B8">异常</RouterLink></li>
-<li>项目中哪里用了事务</li>
-<li>数据库设计</li>
 </ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
 <h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>

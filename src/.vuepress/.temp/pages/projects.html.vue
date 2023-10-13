@@ -93,6 +93,12 @@
 <li>开发前端界面，利用 Vue3 和 Element Plus 构建用户友好的界面。</li>
 <li>实现 JWT 认证，保障系统安全。</li>
 </ol>
+<h2 id="题目-1" tabindex="-1"><a class="header-anchor" href="#题目-1" aria-hidden="true">#</a> 题目</h2>
+<h3 id="哪里使用了事务" tabindex="-1"><a class="header-anchor" href="#哪里使用了事务" aria-hidden="true">#</a> 哪里使用了事务</h3>
+<ol>
+<li>转账</li>
+<li>日志更新</li>
+</ol>
 </div></template>
 
 

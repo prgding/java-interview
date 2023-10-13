@@ -8,8 +8,6 @@
 2. [JWT 的实现细节](/java-interview/projects.html#题目)
 3. [软件工程步骤](/java-interview/foundation/software.html#软件工程的步骤)
 4. [异常](/java-interview/java/java.html#异常)
-5. 项目中哪里用了事务
-6. 数据库设计
 
 ## 23.09.20
 

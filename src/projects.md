@@ -73,3 +73,10 @@ https://github.com/prgding/bank
 2. 使用 Redis 实现缓存，优化系统性能。
 3. 开发前端界面，利用 Vue3 和 Element Plus 构建用户友好的界面。
 4. 实现 JWT 认证，保障系统安全。
+
+## 题目
+
+### 哪里使用了事务
+
+1. 转账
+2. 日志更新
