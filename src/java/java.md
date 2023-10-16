@@ -201,6 +201,32 @@ icon: healthicons:1-outline
 
     - LinkedList 每个节点需要前一个和后一个两个引用，通常比 ArrayList 占用更多的内存。
 
+### HashMap 与 Hashtable 区别
+
+- 线程安全
+    - HashMap 非线程安全，Hashtable 线程安全
+- 性能
+    - Hashtable 线程安全，多线程环境中性能低与 HashMap
+- Null 键 / 值
+    - HashMap：允许键值为`null`（键只能有一个，值可以多个）
+    - Hashtable：不允许键值为`null`
+- 实现与继承
+    - 两者都是 Map 的实现
+    - HashMap 继承了 AbstractMap
+    - Hashtable 继承了 Dictionary
+- 内部结构
+    - HashMap 可以变化为红黑树
+- 初始容量
+    - HashMap: 16
+    - Hashtable: 11
+    - 负载因子都是 0.75
+- 扩容机制
+    - HashMap: 已用容量 > 总容量 * 负载因子时，容量翻倍
+    - Hashtable: 已用容量 > 总容量 * 负载因子时，容量翻倍 + 1
+- 遍历方式
+    - HashMap：只支持 Iterator 遍历
+    - Hashtable：支持 Iterator 和 Enumeration 两种方式遍历
+
 ### 线程安全的 List 和 Map
 
 1. List
@@ -211,6 +237,42 @@ icon: healthicons:1-outline
     1. Hashtable：古老的实现，使用同步
     2. Collections.synchronizedMap() 包装
     3. ConcurrentHashMap： JUC 包中一个线程安全的 HashMap 实现
+
+### HashMap 的源码
+
+1. 可以从 HashSet 说起
+2. new 一个 HashSet，放入一个 String，使用 set.add() 方法
+
+```java
+HashSet<String> set = new HashSet<>();
+boolean str = set.add("abc");
+```
+
+3. add() 点进去调用了 map.put()，两个参数，key / value
+4. key 是元素，value 是占位的 new Object()
+5. put() 点进去调用了 putVal()，五个参数
+
+```java
+public V put(K key, V value) {
+    return putVal(
+        hash(key), // 生成哈希值
+        key, 
+        value, 
+        false,
+        true
+    );
+}
+```
+
+6. putVal中，hash(key) 是为了得到哈希值，也就是确定一个位置
+7. 在 putVal 方法执行中，还会经历 map 的初始化，初始容量为 16，负载因子是 0.75，在容量达到 16 * 0.75 时进行翻倍扩容。
+
+### ArrayList 的扩容机制
+
+1. 关于默认容量大小，指定的话，写多少是多少。
+2. 如果不指定，默认大小是 10。
+3. 超过默认 10，1.5 倍扩容。
+4. 扩容的方式是创建一个新的、更大的数组，旧的复制到新的。
 
 ## 面向对象
 

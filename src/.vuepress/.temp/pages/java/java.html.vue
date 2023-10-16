@@ -264,6 +264,56 @@
 </ul>
 </li>
 </ul>
+<h3 id="hashmap-与-hashtable-区别" tabindex="-1"><a class="header-anchor" href="#hashmap-与-hashtable-区别" aria-hidden="true">#</a> HashMap 与 Hashtable 区别</h3>
+<ul>
+<li>线程安全
+<ul>
+<li>HashMap 非线程安全，Hashtable 线程安全</li>
+</ul>
+</li>
+<li>性能
+<ul>
+<li>Hashtable 线程安全，多线程环境中性能低与 HashMap</li>
+</ul>
+</li>
+<li>Null 键 / 值
+<ul>
+<li>HashMap：允许键值为<code v-pre>null</code>（键只能有一个，值可以多个）</li>
+<li>Hashtable：不允许键值为<code v-pre>null</code></li>
+</ul>
+</li>
+<li>实现与继承
+<ul>
+<li>两者都是 Map 的实现</li>
+<li>HashMap 继承了 AbstractMap</li>
+<li>Hashtable 继承了 Dictionary</li>
+</ul>
+</li>
+<li>内部结构
+<ul>
+<li>HashMap 可以变化为红黑树</li>
+</ul>
+</li>
+<li>初始容量
+<ul>
+<li>HashMap: 16</li>
+<li>Hashtable: 11</li>
+<li>负载因子都是 0.75</li>
+</ul>
+</li>
+<li>扩容机制
+<ul>
+<li>HashMap: 已用容量 &gt; 总容量 * 负载因子时，容量翻倍</li>
+<li>Hashtable: 已用容量 &gt; 总容量 * 负载因子时，容量翻倍 + 1</li>
+</ul>
+</li>
+<li>遍历方式
+<ul>
+<li>HashMap：只支持 Iterator 遍历</li>
+<li>Hashtable：支持 Iterator 和 Enumeration 两种方式遍历</li>
+</ul>
+</li>
+</ul>
 <h3 id="线程安全的-list-和-map" tabindex="-1"><a class="header-anchor" href="#线程安全的-list-和-map" aria-hidden="true">#</a> 线程安全的 List 和 Map</h3>
 <ol>
 <li>List
@@ -280,6 +330,38 @@
 <li>ConcurrentHashMap： JUC 包中一个线程安全的 HashMap 实现</li>
 </ol>
 </li>
+</ol>
+<h3 id="hashmap-的源码" tabindex="-1"><a class="header-anchor" href="#hashmap-的源码" aria-hidden="true">#</a> HashMap 的源码</h3>
+<ol>
+<li>可以从 HashSet 说起</li>
+<li>new 一个 HashSet，放入一个 String，使用 set.add() 方法</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token class-name">HashSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">String</span><span class="token punctuation">></span></span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">boolean</span> str <span class="token operator">=</span> set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">"abc"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="3">
+<li>add() 点进去调用了 map.put()，两个参数，key / value</li>
+<li>key 是元素，value 是占位的 new Object()</li>
+<li>put() 点进去调用了 putVal()，五个参数</li>
+</ol>
+<div class="language-java line-numbers-mode" data-ext="java"><pre v-pre class="language-java"><code><span class="token keyword">public</span> <span class="token class-name">V</span> <span class="token function">put</span><span class="token punctuation">(</span><span class="token class-name">K</span> key<span class="token punctuation">,</span> <span class="token class-name">V</span> value<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token function">putVal</span><span class="token punctuation">(</span>
+        <span class="token function">hash</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 生成哈希值</span>
+        key<span class="token punctuation">,</span> 
+        value<span class="token punctuation">,</span> 
+        <span class="token boolean">false</span><span class="token punctuation">,</span>
+        <span class="token boolean">true</span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="6">
+<li>putVal中，hash(key) 是为了得到哈希值，也就是确定一个位置</li>
+<li>在 putVal 方法执行中，还会经历 map 的初始化，初始容量为 16，负载因子是 0.75，在容量达到 16 * 0.75 时进行翻倍扩容。</li>
+</ol>
+<h3 id="arraylist-的扩容机制" tabindex="-1"><a class="header-anchor" href="#arraylist-的扩容机制" aria-hidden="true">#</a> ArrayList 的扩容机制</h3>
+<ol>
+<li>关于默认容量大小，指定的话，写多少是多少。</li>
+<li>如果不指定，默认大小是 10。</li>
+<li>超过默认 10，1.5 倍扩容。</li>
+<li>扩容的方式是创建一个新的、更大的数组，旧的复制到新的。</li>
 </ol>
 <h2 id="面向对象" tabindex="-1"><a class="header-anchor" href="#面向对象" aria-hidden="true">#</a> 面向对象</h2>
 <h3 id="三大特征" tabindex="-1"><a class="header-anchor" href="#三大特征" aria-hidden="true">#</a> 三大特征</h3>

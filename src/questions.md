@@ -8,10 +8,9 @@
 2. [JWT 的实现细节](/java-interview/projects.html#题目)
 3. [软件工程步骤](/java-interview/foundation/software.html#软件工程的步骤)
 4. [异常](/java-interview/java/java.html#异常)
+5. 设计模式
 
 ## 23.09.20
-
-### 金蝶
 
 1. 自我介绍
 2. 项目相关
@@ -27,8 +26,6 @@
 12. 反问
 
 ## 23.09.19
-
-### 谷泰科技
 
 #### 根据项目
 

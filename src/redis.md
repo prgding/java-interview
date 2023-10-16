@@ -29,8 +29,32 @@
 
 ## 数据类型
 
-- 5 种基础类型：String, List, Set, Hash, Zset（有序集合）
-- 3 种特殊类型：HyperLogLogs（基数统计）、Bitmap（位存储）、Geospatial（地理位置）
+- 5 种基础类型：String, Hash, List, Set, Zset（有序集合Sorted Set）
+
+- 3 种特殊类型：HyperLogLogs（基数统计）、Bitmap（位存储）、Geospatial（地理位置）、Stream
+
+- 应用场景：
+
+    - String：缓存、验证码、分布式锁、计数器
+
+    - Hash：对象（用户的多个属性）、配置（动态配置、元数据）、数据缓存（数据库表行数据）
+
+    - List：队列、时间线或动态、最新消息列表
+
+    - Set：IP 地址去重、共同好友
+
+    - Zset：游戏排行榜、时间序列数据、延迟任务队列
+
+        
+
+    - Bitmap：用户活跃度、特性开关、在线用户数
+
+    - Geo：地理位置查询、计算两点距离
+
+    - HLL：基数统计、数据流中的元素计数
+
+    - Stream：消息队列
+
 
 ## Redis 为什么快
 

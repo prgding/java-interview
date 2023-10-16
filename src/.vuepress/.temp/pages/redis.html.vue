@@ -22,8 +22,44 @@
 </ol>
 <h2 id="数据类型" tabindex="-1"><a class="header-anchor" href="#数据类型" aria-hidden="true">#</a> 数据类型</h2>
 <ul>
-<li>5 种基础类型：String, List, Set, Hash, Zset（有序集合）</li>
-<li>3 种特殊类型：HyperLogLogs（基数统计）、Bitmap（位存储）、Geospatial（地理位置）</li>
+<li>
+<p>5 种基础类型：String, Hash, List, Set, Zset（有序集合Sorted Set）</p>
+</li>
+<li>
+<p>3 种特殊类型：HyperLogLogs（基数统计）、Bitmap（位存储）、Geospatial（地理位置）、Stream</p>
+</li>
+<li>
+<p>应用场景：</p>
+<ul>
+<li>
+<p>String：缓存、验证码、分布式锁、计数器</p>
+</li>
+<li>
+<p>Hash：对象（用户的多个属性）、配置（动态配置、元数据）、数据缓存（数据库表行数据）</p>
+</li>
+<li>
+<p>List：队列、时间线或动态、最新消息列表</p>
+</li>
+<li>
+<p>Set：IP 地址去重、共同好友</p>
+</li>
+<li>
+<p>Zset：游戏排行榜、时间序列数据、延迟任务队列</p>
+</li>
+<li>
+<p>Bitmap：用户活跃度、特性开关、在线用户数</p>
+</li>
+<li>
+<p>Geo：地理位置查询、计算两点距离</p>
+</li>
+<li>
+<p>HLL：基数统计、数据流中的元素计数</p>
+</li>
+<li>
+<p>Stream：消息队列</p>
+</li>
+</ul>
+</li>
 </ul>
 <h2 id="redis-为什么快" tabindex="-1"><a class="header-anchor" href="#redis-为什么快" aria-hidden="true">#</a> Redis 为什么快</h2>
 <ol>
