@@ -1,9 +1,11 @@
 # MySQL
 
 ## MySQL 常见字段类型
+
 ![](mysql.assets/fields.png)
 
 ## MySQL 常用语句
+
 ```sql
 create table `tname`(
 	`column_name` type,
@@ -324,3 +326,22 @@ LIMIT 10;
 4. 使用 SELECT 过滤列。
 5. ORDER BY 排序。
 6. LIMIT 限制数量。
+
+## Limit 与分页查询
+
+- 查询前 5 条
+
+```sql
+limit 5;
+```
+
+- 每页 6 条，查询第 2 页。（size = 6, page = 2）
+
+```sql
+limit 6 offset (2-1)*6;
+limit [size] offset [(page-1)*size]
+
+limit (2-1)*6, 6;
+limit [(page-1)*size], [size]
+```
+

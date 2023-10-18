@@ -301,6 +301,19 @@ Durability：持久性</p>
 <li>ORDER BY 排序。</li>
 <li>LIMIT 限制数量。</li>
 </ol>
-</div></template>
+<h2 id="limit-与分页查询" tabindex="-1"><a class="header-anchor" href="#limit-与分页查询" aria-hidden="true">#</a> Limit 与分页查询</h2>
+<ul>
+<li>查询前 5 条</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">limit</span> <span class="token number">5</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div></div></div><ul>
+<li>每页 6 条，查询第 2 页。（size = 6, page = 2）</li>
+</ul>
+<div class="language-sql line-numbers-mode" data-ext="sql"><pre v-pre class="language-sql"><code><span class="token keyword">limit</span> <span class="token number">6</span> <span class="token keyword">offset</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token keyword">limit</span> <span class="token punctuation">[</span>size<span class="token punctuation">]</span> <span class="token keyword">offset</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>page<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>size<span class="token punctuation">]</span>
+
+<span class="token keyword">limit</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">;</span>
+<span class="token keyword">limit</span> <span class="token punctuation">[</span><span class="token punctuation">(</span>page<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span>size<span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>size<span class="token punctuation">]</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 
