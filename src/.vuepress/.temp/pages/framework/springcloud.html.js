@@ -1,14 +1,1 @@
-export const data = JSON.parse("{\"key\":\"v-61189b3b\",\"path\":\"/framework/springcloud.html\",\"title\":\"Spring Cloud\",\"lang\":\"zh-CN\",\"frontmatter\":{\"order\":4,\"icon\":\"healthicons:4-outline\",\"description\":\"\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://vuepress-theme-hope-docs-demo.netlify.app/java-interview/framework/springcloud.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"后端开发经验\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Spring Cloud\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Ding\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Spring Cloud\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Ding\\\",\\\"url\\\":\\\"https://github.com/prgding\\\"}]}\"]]},\"headers\":[],\"readingTime\":{\"minutes\":0.03,\"words\":8},\"filePathRelative\":\"framework/springcloud.md\",\"autoDesc\":true}")
-
-if (import.meta.webpackHot) {
-  import.meta.webpackHot.accept()
-  if (__VUE_HMR_RUNTIME__.updatePageData) {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  }
-}
-
-if (import.meta.hot) {
-  import.meta.hot.accept(({ data }) => {
-    __VUE_HMR_RUNTIME__.updatePageData(data)
-  })
-}
+export const data = JSON.parse("{\"key\":\"v-61189b3b\",\"path\":\"/framework/springcloud.html\",\"title\":\"Spring Cloud\",\"lang\":\"zh-CN\",\"frontmatter\":{\"order\":4,\"icon\":\"healthicons:4-outline\",\"description\":\"\",\"head\":[[\"meta\",{\"property\":\"og:url\",\"content\":\"https://vuepress-theme-hope-docs-demo.netlify.app/java-interview/framework/springcloud.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"后端开发经验\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Spring Cloud\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"og:updated_time\",\"content\":\"2023-10-12T16:05:15.000Z\"}],[\"meta\",{\"property\":\"article:author\",\"content\":\"Ding\"}],[\"meta\",{\"property\":\"article:modified_time\",\"content\":\"2023-10-12T16:05:15.000Z\"}],[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Spring Cloud\\\",\\\"image\\\":[\\\"\\\"],\\\"dateModified\\\":\\\"2023-10-12T16:05:15.000Z\\\",\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"Ding\\\",\\\"url\\\":\\\"https://github.com/prgding\\\"}]}\"]]},\"headers\":[],\"git\":{\"createdTime\":1696420387000,\"updatedTime\":1697126715000,\"contributors\":[{\"name\":\"ding\",\"email\":\"69354087+prgding@users.noreply.github.com\",\"commits\":2}]},\"readingTime\":{\"minutes\":0.03,\"words\":8},\"filePathRelative\":\"framework/springcloud.md\",\"localizedDate\":\"2023年10月4日\",\"autoDesc\":true}")
