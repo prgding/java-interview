@@ -70,7 +70,10 @@ executor.submit(()->{
 })
 ```
 
+## Runnable、Callable 的区别
 
+1. Runnable 接口没有返回值，Callable 接口可以有一个泛型的返回值。
+2. Runnable 的 run 方法不能抛出异常，任务异常时需要使用 ’try-catch‘ 块来处理；Callable的 call 方法可以抛出异常
 
 ## 线程池
 
@@ -154,3 +157,101 @@ RejectedExecutionHandler handler //拒绝策略
 3. 可以设置公平锁
 4.  支持多个条件变量
 5. 与 synchronized 一样，都支持重入
+
+### ReentrantLock 使用场景
+
+#### 确保多线程访问时，数据库连接池的初始化是线程安全的
+
+```java
+@Service("mysqlStrategyImpl")
+public class MysqlStrategyImpl extends AbstractSqlParser implements SqlStrategy {
+    protected static final Lock LOCK = new ReentrantLock();
+	@Override
+    // 线程尝试获取一个连接池对象
+    public DruidDataSource getJdbcConnectionPool(PeisApiConfig ds) {
+        // 检查 MAP 中是否已经存在
+        if (MAP.containsKey(ds.getId())) {
+            return MAP.get(ds.getId());
+        } else {
+            // 不存在，尝试获得锁（这里确保给定时刻只有一个线程可进入初始化代码块）
+            LOCK.lock();
+            // MAP 为空时，可能会有多个线程进入到 else 排队获得锁，但是初始化只需要一次，所以下面需要用双重检查锁定（Double-Checked Locking, DCL）
+            try {
+                if (!MAP.containsKey(ds.getId())) {
+                    // 初始化数据库连接池
+                    ...;
+                    MAP.put(ds.getId(), druidDataSource);
+                }
+                return MAP.get(ds.getId());
+            } catch (Exception e) {
+                log.error(e.getMessage());
+                return null;
+            } finally {
+                // 显式解锁，相比 synchronized 更清晰，易维护
+                LOCK.unlock();
+            }
+        }
+    }
+}
+```
+
+## ExecutorService 使用场景
+
+```java
+public class ReportService {
+    ExecutorService es = Executors.newFixedThreadPool(10);
+     /**
+     * 发放体检报告
+     * @param p
+     */
+    public void grant(PeisCheckOrderPo p) {
+        for (Long id : p.getOrderIdList()) {
+            // 体检报告属性赋值
+            ...;
+            // 更新数据库
+            ...;
+            
+            // 同步报告
+            es.execute(new Runnable() {
+                public void run() {
+                    try {
+                        synReport(peisCheckOrder);
+                    } catch (Exception e) {
+                        log.error("同步报告异常", e);
+                    }
+                }
+            });
+        }
+    }
+
+    /**
+     * 撤销发放体检报告
+     * @author dingshuai
+     * @param p
+     */
+    public void ungrant(PeisCheckOrderPo p) {
+        for (Long id : p.getOrderIdList()) {
+            PeisCheckOrder peisCheckOrder = peisCheckOrderService.queryById(id);
+            // 取消授权
+            peisCheckOrder.setGrantStatus(0);
+            // 除了1，其他都表示未发送
+            peisCheckOrder.setAppointmentContent("0");
+            if (p.getOrderIdList().size() > 1) {
+                peisCheckOrder.setReceiveType(1);
+            } else {
+                peisCheckOrder.setReceiveType(0);
+            }
+            peisCheckOrderService.updateById(peisCheckOrder);
+
+            es.execute(() -> {
+                try {
+                    synReport(peisCheckOrder);
+                } catch (Exception e) {
+                    log.error("同步报告异常", e);
+                }
+            });
+        }
+    }
+}
+```
+
