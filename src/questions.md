@@ -41,7 +41,7 @@
 1. Hello, good morning. This is call from Wicresoft. Am I speaking with Shuai D?
 2. Okay, so are you ready for your English interview?
 3. Okay, good. So to start with, just give me a very brief introduction then about yourself.
-4. How about your Hobies? Like, what do you usually do in your spare time?
+4. How about your hobbies? Like, what do you usually do in your spare time?
 5. What is your understanding about this position?
 6. In dealing with customer for you, what do you think is the appropriate way to deal with an angry customer?
 7. I'll be giving you a scenario, okay? So don't worry, there's no wrong answer for this one. I just would like to know how are you going to respond to this situation, okay? The situation is that you only have one solution, but the customer rejected or did not accept that solution. So what will you do next? Or what would you tell your customer?
@@ -49,10 +49,10 @@
 9. Could you also share one experience? So any experience will do on how you manage a challenging situation?
 10. Apart from your communication skills, so what else do you think are your other advantages for this position?
 11. In dealing with customer or other people, of course it is expected that you will be receiving feedback. right? In general, how do you usually respond to any negative feedback?
-12. Considering that there are a lot of companies out there, but what really interests you to work with our company?
+12. Considering that there are a lot of companies out there, but what really interests you to work with Wicresoft?
 13. It is expected that you will also deal with pressure and stress. So in your own way, how do you usually manage stress or pressure?
 14. So actually there are two parts for this interview phone and email. Now, for the email part, I'll be sending it to your email address, is xxxx@gmail.com right? 
-15. Okay, so let me just send this to you first, okay? So that email, there are two parts. All the instructions are there and you have 30 minutes after this call, all right?
+15. Okay, so let me just send this to you first, okay? So that email, there are two parts. All the instructions are there, and you have 30 minutes after this call, all right?
 16. So good luck and have a nice day. Okay, bye for now. Thank you.
 
 ## 23.10.17
@@ -249,43 +249,6 @@
 12. 今后个人规划？测试这一行你打算怎么做的？
 13. 你有什么问我的？转正吗？工作氛围？加班吗？
 
-### 默安科技一面
-
-1. 自我介绍一下
-2. 数据结构？
-3. 做项目过程中有了解过算法吗？
-4. 软件的生命周期？
-5. 测试阶段？
-6. 测试的类型？
-7. 测试用例的作用？
-8. 测试报告内容？
-9. 熟悉哪些语言？
-10. python 里有几种数据结构的类型？
-11. break、continue、pass的作用？
-12. 更改列表的数据类型？
-13. 正则解释 re 模块有哪几种方法啊？
-14. 反转字符串？
-15. 多重继承意味着什么呢？
-16. 装饰器有过了解吗？
-17. MySQL 中的聚合函数？
-18. order by 和 group by 的作用？
-19. having 的作用？
-20. 修改表字段？
-21. 添加数据？
-22. 如何给指定的字段添加数据？
-23. Linux 用过吗？怎么查看所有进程？
-24. 查看所有端口？
-25. awk 作用是？什么是Linux三剑客？
-26. 重定向有用过吗？
-27. 查看当前磁盘的使用情况
-28. 修改文件名称？
-29. 删除文件？
-30. jmeter 里如何录制一个脚本？
-31. 两个线程组之间的参数传参？
-32. 用户定义的变量和用户的参数有什么区别？
-33. 对自己的未来规划？
-34. 你有什么问题要问我的吗？
-
 ## 23.09.04
 
 ### 同余信息一面 - 10zwc
@@ -297,9 +260,11 @@
 3. [Spring Bean 的生命周期](/java-interview/framework/spring.html#bean-的生命周期)
 4. 在初始化 Bean 前如何修改 Bean 的属性覆盖原本要初始化的属性
 5. Git 命令，提交撤回
-6. 反问：
+
+反问：
+
   1. 有几面？
-  2. 面试建议（他说没啥好说的，多经历就好，我知道大概率寄了）
+  2. 面试建议
 
 ## 23.09.01
 
@@ -415,7 +380,7 @@
 ### 北京数坤科技-实习 50分钟 - 09zkx
 
 1. 自我介绍
-2. 项目 (10分钟)
+2. 项目
 3. 对封装. 继承. 多态怎么理解的?
 4. [Java 的集合类有哪些?](/java-interview/java/java.html#集合)
 5. [ArrayList 和 LinkedList 的区别?](/java-interview/java/java.html#arraylist-和-linkedlist-的区别)
@@ -438,25 +403,13 @@
 
 1. 自我介绍
 2. 说一下 Java 面向对象的三大特征
-   1.封装：我直接举得例子：人可以看成一个对象，有属性比如身高体重，如何有行为吃饭运动等
-   2.继承：父类子类，举例子：鸟，然后子类鹦鹉，燕子等
-   3.多态：父类的方法在子类可以用不同的实现
 3. 简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下
-   那些微服务组件我只会使用，原理我不太懂，然后把 Nacos 作为注册中心，Dubbo 来服务远程调用，然后网关权限校验，fastDFS 做分布式存储等讲一下
 4. Redis 和数据库怎么保存数据一致性 
 5. [讲一下 HashMap](/java-interview/java/java.html#集合)
-   分 1.7 和 1.8 讲
-   数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）
-   1.7 并发扩容头插存在死循环 
-   1.8 使用尾插解决死循环
 6. 除了简历上这个项目还有其他项目吗：
-   1. 之前还做过一个聊天室项目，使用 Socket 和线程池实现聊天，群聊功能，通过 IO 流实现文件传输功能
-   2. 还做过一个个人博客项目，JWT 存到 ThreadLocal，然后拦截器验证权限，进入的时候存基本信息，出去的时候 remove，防止内存溢出
-   3. 因为我感觉这两个项目比较 low，所以就没写到简历上面
 7. 你现在在哪（回答深圳，讲述为什么来深圳），
    我主要是学习了 Redis 和 MySQL，然后就讲自己会哪些知识点
 8. 那你能不能讲一下 MySQL 的锁
-   全局锁，表锁，行锁，间隙锁
 9. 讲一下 MySQL 索引
    建立索引过程
    最左前缀原则
@@ -464,7 +417,6 @@
    [讲一下索引怎么失效，以及一些处理办法](/java-interview/mysql.html#索引失效)
 10. 并发，Synchronized，Volatile，ReentrantLock，[线程池](/java-interview/java/juc.html#线程池)
 11. 有没有了解过我们公司
-    了解过，做 erp 服务的
 12. 反问?
       公司的业务是啥？
       一面过了有二面吗？
@@ -511,8 +463,8 @@
 12. 线程和进程的区别？
 13. 有了进程为什么还要有线程？
 
-
 ### 谷川联行一面（说是过了一面之后会有二面）
+
 1. 自我介绍
 2. MySQL
    - 为什么要用索引？
@@ -542,7 +494,7 @@
 9. 面试官简单介绍了一下公司信息（业务和技术栈），然后问我还有什么想了解的
 
 ### 货拉拉的测开
-面试官很好 他自己还开视频了 不会的就不深问 会的就循序渐进的问 不会的还教你 前面的有几个忘记录音了
+
 1. [AOP 的实现方式](/java-interview/framework/spring.html#实现方式)
 2. 有了解过用 Java Agent 实现 AOP 嘛
 3. [用 AOP 来干嘛](/java-interview/framework/spring.html#aop-能做什么)

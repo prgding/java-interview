@@ -38,7 +38,7 @@
 <li>Hello, good morning. This is call from Wicresoft. Am I speaking with Shuai D?</li>
 <li>Okay, so are you ready for your English interview?</li>
 <li>Okay, good. So to start with, just give me a very brief introduction then about yourself.</li>
-<li>How about your Hobies? Like, what do you usually do in your spare time?</li>
+<li>How about your hobbies? Like, what do you usually do in your spare time?</li>
 <li>What is your understanding about this position?</li>
 <li>In dealing with customer for you, what do you think is the appropriate way to deal with an angry customer?</li>
 <li>I'll be giving you a scenario, okay? So don't worry, there's no wrong answer for this one. I just would like to know how are you going to respond to this situation, okay? The situation is that you only have one solution, but the customer rejected or did not accept that solution. So what will you do next? Or what would you tell your customer?</li>
@@ -46,10 +46,10 @@
 <li>Could you also share one experience? So any experience will do on how you manage a challenging situation?</li>
 <li>Apart from your communication skills, so what else do you think are your other advantages for this position?</li>
 <li>In dealing with customer or other people, of course it is expected that you will be receiving feedback. right? In general, how do you usually respond to any negative feedback?</li>
-<li>Considering that there are a lot of companies out there, but what really interests you to work with our company?</li>
+<li>Considering that there are a lot of companies out there, but what really interests you to work with Wicresoft?</li>
 <li>It is expected that you will also deal with pressure and stress. So in your own way, how do you usually manage stress or pressure?</li>
 <li>So actually there are two parts for this interview phone and email. Now, for the email part, I'll be sending it to your email address, is <a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a> right?</li>
-<li>Okay, so let me just send this to you first, okay? So that email, there are two parts. All the instructions are there and you have 30 minutes after this call, all right?</li>
+<li>Okay, so let me just send this to you first, okay? So that email, there are two parts. All the instructions are there, and you have 30 minutes after this call, all right?</li>
 <li>So good luck and have a nice day. Okay, bye for now. Thank you.</li>
 </ol>
 <h2 id="_23-10-17" tabindex="-1"><a class="header-anchor" href="#_23-10-17" aria-hidden="true">#</a> 23.10.17</h2>
@@ -241,43 +241,6 @@
 <li>今后个人规划？测试这一行你打算怎么做的？</li>
 <li>你有什么问我的？转正吗？工作氛围？加班吗？</li>
 </ol>
-<h3 id="默安科技一面" tabindex="-1"><a class="header-anchor" href="#默安科技一面" aria-hidden="true">#</a> 默安科技一面</h3>
-<ol>
-<li>自我介绍一下</li>
-<li>数据结构？</li>
-<li>做项目过程中有了解过算法吗？</li>
-<li>软件的生命周期？</li>
-<li>测试阶段？</li>
-<li>测试的类型？</li>
-<li>测试用例的作用？</li>
-<li>测试报告内容？</li>
-<li>熟悉哪些语言？</li>
-<li>python 里有几种数据结构的类型？</li>
-<li>break、continue、pass的作用？</li>
-<li>更改列表的数据类型？</li>
-<li>正则解释 re 模块有哪几种方法啊？</li>
-<li>反转字符串？</li>
-<li>多重继承意味着什么呢？</li>
-<li>装饰器有过了解吗？</li>
-<li>MySQL 中的聚合函数？</li>
-<li>order by 和 group by 的作用？</li>
-<li>having 的作用？</li>
-<li>修改表字段？</li>
-<li>添加数据？</li>
-<li>如何给指定的字段添加数据？</li>
-<li>Linux 用过吗？怎么查看所有进程？</li>
-<li>查看所有端口？</li>
-<li>awk 作用是？什么是Linux三剑客？</li>
-<li>重定向有用过吗？</li>
-<li>查看当前磁盘的使用情况</li>
-<li>修改文件名称？</li>
-<li>删除文件？</li>
-<li>jmeter 里如何录制一个脚本？</li>
-<li>两个线程组之间的参数传参？</li>
-<li>用户定义的变量和用户的参数有什么区别？</li>
-<li>对自己的未来规划？</li>
-<li>你有什么问题要问我的吗？</li>
-</ol>
 <h2 id="_23-09-04" tabindex="-1"><a class="header-anchor" href="#_23-09-04" aria-hidden="true">#</a> 23.09.04</h2>
 <h3 id="同余信息一面-10zwc" tabindex="-1"><a class="header-anchor" href="#同余信息一面-10zwc" aria-hidden="true">#</a> 同余信息一面 - 10zwc</h3>
 <ol>
@@ -291,9 +254,11 @@
 <li><RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Spring Bean 的生命周期</RouterLink></li>
 <li>在初始化 Bean 前如何修改 Bean 的属性覆盖原本要初始化的属性</li>
 <li>Git 命令，提交撤回</li>
-<li>反问：</li>
+</ol>
+<p>反问：</p>
+<ol>
 <li>有几面？</li>
-<li>面试建议（他说没啥好说的，多经历就好，我知道大概率寄了）</li>
+<li>面试建议</li>
 </ol>
 <h2 id="_23-09-01" tabindex="-1"><a class="header-anchor" href="#_23-09-01" aria-hidden="true">#</a> 23.09.01</h2>
 <h3 id="安软信创-实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#安软信创-实习一面-10lb" aria-hidden="true">#</a> 安软信创 实习一面 - 10lb</h3>
@@ -408,7 +373,7 @@
 <h3 id="北京数坤科技-实习-50分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京数坤科技-实习-50分钟-09zkx" aria-hidden="true">#</a> 北京数坤科技-实习 50分钟 - 09zkx</h3>
 <ol>
 <li>自我介绍</li>
-<li>项目 (10分钟)</li>
+<li>项目</li>
 <li>对封装. 继承. 多态怎么理解的?</li>
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">Java 的集合类有哪些?</RouterLink></li>
 <li><RouterLink to="/java/java.html#arraylist-%E5%92%8C-linkedlist-%E7%9A%84%E5%8C%BA%E5%88%AB">ArrayList 和 LinkedList 的区别?</RouterLink></li>
@@ -432,37 +397,21 @@
 <h3 id="金蝶一面-tyh" tabindex="-1"><a class="header-anchor" href="#金蝶一面-tyh" aria-hidden="true">#</a> 金蝶一面 - tyh</h3>
 <ol>
 <li>自我介绍</li>
-<li>说一下 Java 面向对象的三大特征<br>
-1.封装：我直接举得例子：人可以看成一个对象，有属性比如身高体重，如何有行为吃饭运动等<br>
-2.继承：父类子类，举例子：鸟，然后子类鹦鹉，燕子等<br>
-3.多态：父类的方法在子类可以用不同的实现</li>
-<li>简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下<br>
-那些微服务组件我只会使用，原理我不太懂，然后把 Nacos 作为注册中心，Dubbo 来服务远程调用，然后网关权限校验，fastDFS 做分布式存储等讲一下</li>
+<li>说一下 Java 面向对象的三大特征</li>
+<li>简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下</li>
 <li>Redis 和数据库怎么保存数据一致性</li>
-<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink><br>
-分 1.7 和 1.8 讲<br>
-数组+链表 数组+链表+红黑树（链表长度大于 8，且数组长度大于 64 变成红黑树）<br>
-1.7 并发扩容头插存在死循环<br>
-1.8 使用尾插解决死循环</li>
-<li>除了简历上这个项目还有其他项目吗：
-<ol>
-<li>之前还做过一个聊天室项目，使用 Socket 和线程池实现聊天，群聊功能，通过 IO 流实现文件传输功能</li>
-<li>还做过一个个人博客项目，JWT 存到 ThreadLocal，然后拦截器验证权限，进入的时候存基本信息，出去的时候 remove，防止内存溢出</li>
-<li>因为我感觉这两个项目比较 low，所以就没写到简历上面</li>
-</ol>
-</li>
+<li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink></li>
+<li>除了简历上这个项目还有其他项目吗：</li>
 <li>你现在在哪（回答深圳，讲述为什么来深圳），<br>
 我主要是学习了 Redis 和 MySQL，然后就讲自己会哪些知识点</li>
-<li>那你能不能讲一下 MySQL 的锁<br>
-全局锁，表锁，行锁，间隙锁</li>
+<li>那你能不能讲一下 MySQL 的锁</li>
 <li>讲一下 MySQL 索引<br>
 建立索引过程<br>
 最左前缀原则<br>
 <RouterLink to="/mysql.html#%E4%B8%BA%E4%BB%80%E4%B9%88-mysql-%E9%80%89%E6%8B%A9-b-%E6%A0%91">讲一下 B+ 树</RouterLink><br>
 <RouterLink to="/mysql.html#%E7%B4%A2%E5%BC%95%E5%A4%B1%E6%95%88">讲一下索引怎么失效，以及一些处理办法</RouterLink></li>
 <li>并发，Synchronized，Volatile，ReentrantLock，<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">线程池</RouterLink></li>
-<li>有没有了解过我们公司<br>
-了解过，做 erp 服务的</li>
+<li>有没有了解过我们公司</li>
 <li>反问?<br>
 公司的业务是啥？<br>
 一面过了有二面吗？
@@ -560,7 +509,6 @@
 <li>面试官简单介绍了一下公司信息（业务和技术栈），然后问我还有什么想了解的</li>
 </ol>
 <h3 id="货拉拉的测开" tabindex="-1"><a class="header-anchor" href="#货拉拉的测开" aria-hidden="true">#</a> 货拉拉的测开</h3>
-<p>面试官很好 他自己还开视频了 不会的就不深问 会的就循序渐进的问 不会的还教你 前面的有几个忘记录音了</p>
 <ol>
 <li><RouterLink to="/framework/spring.html#%E5%AE%9E%E7%8E%B0%E6%96%B9%E5%BC%8F">AOP 的实现方式</RouterLink></li>
 <li>有了解过用 Java Agent 实现 AOP 嘛</li>
