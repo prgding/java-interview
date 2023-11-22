@@ -69,8 +69,9 @@
 <li>特长</li>
 <li>拿手的、可以补充的</li>
 </ol>
-<p>转正：</p>
+<p><strong>反问：</strong></p>
 <ol>
+<li>转正：</li>
 <li>录用的话，负责哪一部分</li>
 <li>有二面吗</li>
 </ol>
@@ -141,7 +142,6 @@
 </ol>
 <h2 id="_23-10-14" tabindex="-1"><a class="header-anchor" href="#_23-10-14" aria-hidden="true">#</a> 23.10.14</h2>
 <h3 id="深圳实习" tabindex="-1"><a class="header-anchor" href="#深圳实习" aria-hidden="true">#</a> 深圳实习</h3>
-<p><strong>提问：</strong></p>
 <ol>
 <li>讲讲 JVM 流程</li>
 <li>垃圾回收</li>
@@ -170,23 +170,16 @@
 </ol>
 <p><strong>反问：</strong></p>
 <ol>
-<li>
-<p>负责哪块工作</p>
+<li>负责哪块工作
 <ol>
 <li>体检业务，跟医院，第三方体检机构去做体检系统</li>
 <li>前端忙不过来要写前端</li>
 <li>其他的常见中间件：MySQL, Redis, MongoDB 等等</li>
 </ol>
 </li>
-<li>
-<p>入职培训：无，一周适应</p>
-</li>
-<li>
-<p>转正：表现优秀可以</p>
-</li>
-<li>
-<p>硬件：Windows 台式</p>
-</li>
+<li>入职培训：无，一周适应</li>
+<li>转正：表现优秀可以</li>
+<li>硬件：Windows 台式</li>
 </ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
 <h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>
@@ -228,6 +221,7 @@
 <li>为什么在深圳？</li>
 <li>反问</li>
 </ol>
+<h1 id="收集别人的" tabindex="-1"><a class="header-anchor" href="#收集别人的" aria-hidden="true">#</a> 收集别人的</h1>
 <h2 id="_23-09-13" tabindex="-1"><a class="header-anchor" href="#_23-09-13" aria-hidden="true">#</a> 23.09.13</h2>
 <h3 id="小鹅通-11lh" tabindex="-1"><a class="header-anchor" href="#小鹅通-11lh" aria-hidden="true">#</a> 小鹅通 - 11lh</h3>
 <ol>
