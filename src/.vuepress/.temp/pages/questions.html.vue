@@ -1,4 +1,193 @@
 <template><div><h1 id="题目" tabindex="-1"><a class="header-anchor" href="#题目" aria-hidden="true">#</a> 题目</h1>
+<h2 id="_23-10-26" tabindex="-1"><a class="header-anchor" href="#_23-10-26" aria-hidden="true">#</a> 23.10.26</h2>
+<h3 id="上海协技科技" tabindex="-1"><a class="header-anchor" href="#上海协技科技" aria-hidden="true">#</a> 上海协技科技</h3>
+<ol>
+<li>自我介绍</li>
+<li>介绍项目</li>
+<li>项目的需求来自哪里</li>
+<li>简述集合、常用的集合类</li>
+<li>ArrayList 和 LinkedList 区别</li>
+<li>讲讲 HashMap</li>
+<li>JVM 运行时数据区域</li>
+<li>Spring MVC 用的多吗</li>
+<li>讲讲 IoC AOP</li>
+<li>Bean 生命周期</li>
+<li>SQL 的 Join 有哪些？区别？</li>
+<li>Redis 常用数据结构</li>
+<li>Vue2 会写吗</li>
+<li>目前在哪</li>
+<li>家乡在哪</li>
+<li>目前在实习吗</li>
+<li>最快多久到岗</li>
+<li>职业规划</li>
+<li>AI 工具具体怎样使用的</li>
+<li>学校有担当什么职务吗？</li>
+<li>了解我们公司吗？</li>
+<li>学校还有什么事情吗？</li>
+<li>家里的人员</li>
+</ol>
+<p><strong>反问：</strong></p>
+<ol>
+<li>负责哪一块工作</li>
+<li>转正机会</li>
+<li>可以自带电脑吗</li>
+</ol>
+<h2 id="_23-10-18" tabindex="-1"><a class="header-anchor" href="#_23-10-18" aria-hidden="true">#</a> 23.10.18</h2>
+<h3 id="微创软件" tabindex="-1"><a class="header-anchor" href="#微创软件" aria-hidden="true">#</a> 微创软件</h3>
+<ol>
+<li>Hello, good morning. This is call from Wicresoft. Am I speaking with Shuai D?</li>
+<li>Okay, so are you ready for your English interview?</li>
+<li>Okay, good. So to start with, just give me a very brief introduction then about yourself.</li>
+<li>How about your Hobies? Like, what do you usually do in your spare time?</li>
+<li>What is your understanding about this position?</li>
+<li>In dealing with customer for you, what do you think is the appropriate way to deal with an angry customer?</li>
+<li>I'll be giving you a scenario, okay? So don't worry, there's no wrong answer for this one. I just would like to know how are you going to respond to this situation, okay? The situation is that you only have one solution, but the customer rejected or did not accept that solution. So what will you do next? Or what would you tell your customer?</li>
+<li>Another scenario is that in order for you to understand the issue, you need more information, right? So what if the customer, let's say, refused to give you more details about the issue?</li>
+<li>Could you also share one experience? So any experience will do on how you manage a challenging situation?</li>
+<li>Apart from your communication skills, so what else do you think are your other advantages for this position?</li>
+<li>In dealing with customer or other people, of course it is expected that you will be receiving feedback. right? In general, how do you usually respond to any negative feedback?</li>
+<li>Considering that there are a lot of companies out there, but what really interests you to work with our company?</li>
+<li>It is expected that you will also deal with pressure and stress. So in your own way, how do you usually manage stress or pressure?</li>
+<li>So actually there are two parts for this interview phone and email. Now, for the email part, I'll be sending it to your email address, is <a href="mailto:xxxx@gmail.com">xxxx@gmail.com</a> right?</li>
+<li>Okay, so let me just send this to you first, okay? So that email, there are two parts. All the instructions are there and you have 30 minutes after this call, all right?</li>
+<li>So good luck and have a nice day. Okay, bye for now. Thank you.</li>
+</ol>
+<h2 id="_23-10-17" tabindex="-1"><a class="header-anchor" href="#_23-10-17" aria-hidden="true">#</a> 23.10.17</h2>
+<h3 id="杭州华云" tabindex="-1"><a class="header-anchor" href="#杭州华云" aria-hidden="true">#</a> 杭州华云</h3>
+<ol>
+<li>事务的四大特性</li>
+<li>提交一个订单时，如何理解其中事务的原子性</li>
+<li>事务的传播行为</li>
+<li>Servlet 的工作流程</li>
+<li>拦截器和过滤器是怎么回事</li>
+<li>Redis 怎么做分布式事务</li>
+<li>缓存雪崩</li>
+<li>SQL 索引、优化</li>
+<li>Docker 了解吗？</li>
+<li>多线程</li>
+<li>线程池的组成部分</li>
+<li>特长</li>
+<li>拿手的、可以补充的</li>
+</ol>
+<p>转正：</p>
+<ol>
+<li>录用的话，负责哪一部分</li>
+<li>有二面吗</li>
+</ol>
+<h3 id="中通服" tabindex="-1"><a class="header-anchor" href="#中通服" aria-hidden="true">#</a> 中通服</h3>
+<ol>
+<li>自我介绍</li>
+<li>有没有意向来杭州</li>
+<li>面向对象的特点</li>
+<li>多态的表现</li>
+<li>重写和重载</li>
+<li>方法重载是不是只能在一个类里面？</li>
+<li>Java 中常用的设计模式</li>
+<li>Spring Bean 可以设置成非单例的吗？可以用哪个注解设置？</li>
+<li>@Controller 和 @RestController 的区别</li>
+<li>@RequestBody 使用具体场景</li>
+<li>接收参数用什么注解？</li>
+<li>@Resource 和 @Autowired 区别</li>
+<li>Spring 的两大核心</li>
+<li>具体说说 AOP</li>
+<li>AOP 代理机制有几种，之间的区别？</li>
+<li>AOP 的使用场景</li>
+<li>AOP 增强类型或者说织入方式</li>
+<li>注解式事务失效的场景</li>
+<li>编程式事务的使用场景</li>
+<li>事务的特点</li>
+<li>事务传播行为</li>
+<li>写 Spring MVC 的 Controller 方法时，怎样校验前端数据？</li>
+<li>访问数据库用的哪个框架？为什么</li>
+<li>有没有学过数据库原理？</li>
+<li>数据库主键和唯一索引的区别？</li>
+<li>HashMap 底层原理</li>
+<li>HashMap 和 Hashtable 的区别</li>
+<li>Spring Bean 单例模式中，建一个全局的 HashMap 类型的变量，会导致什么问题？</li>
+<li>List 和 ArrayList 的关系</li>
+<li>ArrayList 和 LinkedList 的关系</li>
+<li>MyBatis 和 MyBatis Plus 关系</li>
+<li>MyBatis XML 中，#{} 和 ${} 的区别</li>
+<li>Redis 缓存穿透、缓存击穿</li>
+</ol>
+<h2 id="_23-10-16" tabindex="-1"><a class="header-anchor" href="#_23-10-16" aria-hidden="true">#</a> 23.10.16</h2>
+<h3 id="深圳富士康校招" tabindex="-1"><a class="header-anchor" href="#深圳富士康校招" aria-hidden="true">#</a> 深圳富士康校招</h3>
+<ol>
+<li>自我介绍</li>
+<li>为什么选择我们？看中了哪一点</li>
+<li>对工作岗位的要求</li>
+<li>知道我们的企业文化吗？</li>
+<li>兴趣爱好</li>
+<li>除了 Java 还有哪些感兴趣的语言</li>
+<li>有没有参加社团？为什么？</li>
+<li>对这次面试的岗位有什么了解</li>
+<li>了解 PDM 吗？（Product Data Management）</li>
+<li>两个不同的系统之间怎样交互（调用接口）</li>
+<li>说说你最拿手的项目</li>
+<li>项目是独立完成的吗？</li>
+<li>前端能基本开发吗？</li>
+<li>愿意转前端岗位吗？</li>
+<li>参加过比赛、竞赛之类的吗？</li>
+<li>未来规划</li>
+<li>如何团队协作</li>
+<li>ChatGPT 的应用</li>
+<li>证书</li>
+<li>接受派驻越南吗？</li>
+</ol>
+<p><strong>反问：</strong></p>
+<ol>
+<li>可以提前去实习吗</li>
+<li>技术栈</li>
+</ol>
+<h2 id="_23-10-14" tabindex="-1"><a class="header-anchor" href="#_23-10-14" aria-hidden="true">#</a> 23.10.14</h2>
+<h2 id="深圳实习" tabindex="-1"><a class="header-anchor" href="#深圳实习" aria-hidden="true">#</a> 深圳实习</h2>
+<p><strong>提问：</strong></p>
+<ol>
+<li>讲讲 JVM 流程</li>
+<li>垃圾回收</li>
+<li>运行时数据区域</li>
+<li>HashMap、Hashtable 区别</li>
+<li>线程安全的 List 和 Map</li>
+<li>HashMap 源码</li>
+<li>HashMap 扩容</li>
+<li>Lambda、Stream API</li>
+<li>并发、多线程</li>
+<li>Runnable 细说</li>
+<li>Runnable、Callable区别</li>
+<li>线程安全的类</li>
+<li>Spring Boot 多环境配置</li>
+<li>Redis 数据类型、细讲 Hash 场景</li>
+<li>@param 注解 Mapper 接口，XML 注解</li>
+<li>分页 limit 参数</li>
+<li>MySQL 事务</li>
+<li>隔离级别</li>
+<li>前端请求插件</li>
+<li>前端是独立完成吗</li>
+<li>目前在哪</li>
+<li>明年毕业吗</li>
+<li>老家哪里</li>
+<li>期望薪资</li>
+</ol>
+<p><strong>反问：</strong></p>
+<ol>
+<li>
+<p>负责哪块工作</p>
+<ol>
+<li>体检业务，跟医院，第三方体检机构去做体检系统</li>
+<li>前端忙不过来要写前端</li>
+<li>其他的常见中间件：MySQL, Redis, MongoDB 等等</li>
+</ol>
+</li>
+<li>
+<p>入职培训：无，一周适应</p>
+</li>
+<li>
+<p>转正：表现优秀可以</p>
+</li>
+<li>
+<p>硬件：Windows 台式</p>
+</li>
+</ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
 <h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>
 <ol>

@@ -1,5 +1,191 @@
 # 题目
 
+## 23.10.26
+
+### 上海协技科技
+
+1. 自我介绍
+2. 介绍项目
+3. 项目的需求来自哪里
+4. 简述集合、常用的集合类
+5. ArrayList 和 LinkedList 区别
+6. 讲讲 HashMap
+7. JVM 运行时数据区域
+8. Spring MVC 用的多吗
+9. 讲讲 IoC AOP
+10. Bean 生命周期
+11. SQL 的 Join 有哪些？区别？
+12. Redis 常用数据结构
+13. Vue2 会写吗
+14. 目前在哪
+15. 家乡在哪
+16. 目前在实习吗
+17. 最快多久到岗
+18. 职业规划
+19. AI 工具具体怎样使用的
+20. 学校有担当什么职务吗？
+21. 了解我们公司吗？
+22. 学校还有什么事情吗？
+23. 家里的人员
+
+**反问：**
+
+1. 负责哪一块工作
+2. 转正机会
+3. 可以自带电脑吗
+
+## 23.10.18
+
+### 微创软件
+
+1. Hello, good morning. This is call from Wicresoft. Am I speaking with Shuai D?
+2. Okay, so are you ready for your English interview?
+3. Okay, good. So to start with, just give me a very brief introduction then about yourself.
+4. How about your Hobies? Like, what do you usually do in your spare time?
+5. What is your understanding about this position?
+6. In dealing with customer for you, what do you think is the appropriate way to deal with an angry customer?
+7. I'll be giving you a scenario, okay? So don't worry, there's no wrong answer for this one. I just would like to know how are you going to respond to this situation, okay? The situation is that you only have one solution, but the customer rejected or did not accept that solution. So what will you do next? Or what would you tell your customer?
+8. Another scenario is that in order for you to understand the issue, you need more information, right? So what if the customer, let's say, refused to give you more details about the issue?
+9. Could you also share one experience? So any experience will do on how you manage a challenging situation?
+10. Apart from your communication skills, so what else do you think are your other advantages for this position?
+11. In dealing with customer or other people, of course it is expected that you will be receiving feedback. right? In general, how do you usually respond to any negative feedback?
+12. Considering that there are a lot of companies out there, but what really interests you to work with our company?
+13. It is expected that you will also deal with pressure and stress. So in your own way, how do you usually manage stress or pressure?
+14. So actually there are two parts for this interview phone and email. Now, for the email part, I'll be sending it to your email address, is xxxx@gmail.com right? 
+15. Okay, so let me just send this to you first, okay? So that email, there are two parts. All the instructions are there and you have 30 minutes after this call, all right?
+16. So good luck and have a nice day. Okay, bye for now. Thank you.
+
+## 23.10.17
+
+### 杭州华云
+
+1. 事务的四大特性
+2. 提交一个订单时，如何理解其中事务的原子性
+3. 事务的传播行为
+4. Servlet 的工作流程
+5. 拦截器和过滤器是怎么回事
+6. Redis 怎么做分布式事务
+7. 缓存雪崩
+8. SQL 索引、优化
+9. Docker 了解吗？
+10. 多线程
+11. 线程池的组成部分
+12. 特长
+13. 拿手的、可以补充的
+
+转正：
+
+1. 录用的话，负责哪一部分
+2. 有二面吗
+
+### 中通服
+
+1. 自我介绍
+2. 有没有意向来杭州
+3. 面向对象的特点
+4. 多态的表现
+5. 重写和重载
+6. 方法重载是不是只能在一个类里面？
+7. Java 中常用的设计模式
+8. Spring Bean 可以设置成非单例的吗？可以用哪个注解设置？
+9. @Controller 和 @RestController 的区别
+10. @RequestBody 使用具体场景
+11. 接收参数用什么注解？
+12. @Resource 和 @Autowired 区别
+13. Spring 的两大核心
+14. 具体说说 AOP
+15. AOP 代理机制有几种，之间的区别？
+16. AOP 的使用场景
+17. AOP 增强类型或者说织入方式
+18. 注解式事务失效的场景
+19. 编程式事务的使用场景
+20. 事务的特点
+21. 事务传播行为
+22. 写 Spring MVC 的 Controller 方法时，怎样校验前端数据？
+23. 访问数据库用的哪个框架？为什么
+24. 有没有学过数据库原理？
+25. 数据库主键和唯一索引的区别？
+26. HashMap 底层原理
+27. HashMap 和 Hashtable 的区别
+28. Spring Bean 单例模式中，建一个全局的 HashMap 类型的变量，会导致什么问题？
+29. List 和 ArrayList 的关系
+30. ArrayList 和 LinkedList 的关系
+31. MyBatis 和 MyBatis Plus 关系
+32. MyBatis XML 中，#{} 和 ${} 的区别
+33. Redis 缓存穿透、缓存击穿
+
+## 23.10.16
+
+### 深圳富士康校招
+
+1. 自我介绍
+2. 为什么选择我们？看中了哪一点
+3. 对工作岗位的要求
+4. 知道我们的企业文化吗？
+5. 兴趣爱好
+6. 除了 Java 还有哪些感兴趣的语言
+7. 有没有参加社团？为什么？
+8. 对这次面试的岗位有什么了解
+9. 了解 PDM 吗？（Product Data Management）
+10. 两个不同的系统之间怎样交互（调用接口）
+11. 说说你最拿手的项目
+12. 项目是独立完成的吗？
+13. 前端能基本开发吗？
+14. 愿意转前端岗位吗？
+15. 参加过比赛、竞赛之类的吗？
+16. 未来规划
+17. 如何团队协作
+18. ChatGPT 的应用
+19. 证书
+20. 接受派驻越南吗？
+
+**反问：**
+
+1. 可以提前去实习吗
+2. 技术栈
+
+## 23.10.14
+
+## 深圳实习
+
+**提问：**
+
+1. 讲讲 JVM 流程
+2. 垃圾回收
+3. 运行时数据区域
+4. HashMap、Hashtable 区别
+5. 线程安全的 List 和 Map
+6. HashMap 源码
+7. HashMap 扩容
+8. Lambda、Stream API
+9. 并发、多线程
+10. Runnable 细说
+11. Runnable、Callable区别
+12. 线程安全的类
+13. Spring Boot 多环境配置
+14. Redis 数据类型、细讲 Hash 场景
+15. @param 注解 Mapper 接口，XML 注解
+16. 分页 limit 参数
+17. MySQL 事务
+18. 隔离级别
+19. 前端请求插件
+20. 前端是独立完成吗
+21. 目前在哪
+22. 明年毕业吗
+23. 老家哪里
+24. 期望薪资
+
+**反问：**
+
+1. 负责哪块工作
+    1. 体检业务，跟医院，第三方体检机构去做体检系统
+    2. 前端忙不过来要写前端
+    3. 其他的常见中间件：MySQL, Redis, MongoDB 等等
+
+2. 入职培训：无，一周适应
+3. 转正：表现优秀可以
+4. 硬件：Windows 台式
+
 ## 23.09.20
 
 ### 金蝶
