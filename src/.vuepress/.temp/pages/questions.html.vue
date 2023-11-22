@@ -222,7 +222,7 @@
 <li>反问</li>
 </ol>
 <h1 id="收集别人的" tabindex="-1"><a class="header-anchor" href="#收集别人的" aria-hidden="true">#</a> 收集别人的</h1>
-<h2 id="_23-09-13-同学" tabindex="-1"><a class="header-anchor" href="#_23-09-13-同学" aria-hidden="true">#</a> 23.09.13 - 同学</h2>
+<h2 id="_23-09-13" tabindex="-1"><a class="header-anchor" href="#_23-09-13" aria-hidden="true">#</a> 23.09.13</h2>
 <h3 id="小鹅通-11lh" tabindex="-1"><a class="header-anchor" href="#小鹅通-11lh" aria-hidden="true">#</a> 小鹅通 - 11lh</h3>
 <ol>
 <li>自我介绍一下自己？</li>
@@ -241,7 +241,7 @@
 <li>今后个人规划？测试这一行你打算怎么做的？</li>
 <li>你有什么问我的？转正吗？工作氛围？加班吗？</li>
 </ol>
-<h3 id="默安科技一面-11lh" tabindex="-1"><a class="header-anchor" href="#默安科技一面-11lh" aria-hidden="true">#</a> 默安科技一面 - 11lh</h3>
+<h3 id="默安科技一面" tabindex="-1"><a class="header-anchor" href="#默安科技一面" aria-hidden="true">#</a> 默安科技一面</h3>
 <ol>
 <li>自我介绍一下</li>
 <li>数据结构？</li>
@@ -278,7 +278,7 @@
 <li>对自己的未来规划？</li>
 <li>你有什么问题要问我的吗？</li>
 </ol>
-<h2 id="_23-09-04-同学" tabindex="-1"><a class="header-anchor" href="#_23-09-04-同学" aria-hidden="true">#</a> 23.09.04 - 同学</h2>
+<h2 id="_23-09-04" tabindex="-1"><a class="header-anchor" href="#_23-09-04" aria-hidden="true">#</a> 23.09.04</h2>
 <h3 id="同余信息一面-10zwc" tabindex="-1"><a class="header-anchor" href="#同余信息一面-10zwc" aria-hidden="true">#</a> 同余信息一面 - 10zwc</h3>
 <ol>
 <li>场景题：
@@ -295,7 +295,7 @@
 <li>有几面？</li>
 <li>面试建议（他说没啥好说的，多经历就好，我知道大概率寄了）</li>
 </ol>
-<h2 id="_23-09-01-同学" tabindex="-1"><a class="header-anchor" href="#_23-09-01-同学" aria-hidden="true">#</a> 23.09.01 - 同学</h2>
+<h2 id="_23-09-01" tabindex="-1"><a class="header-anchor" href="#_23-09-01" aria-hidden="true">#</a> 23.09.01</h2>
 <h3 id="安软信创-实习一面-10lb" tabindex="-1"><a class="header-anchor" href="#安软信创-实习一面-10lb" aria-hidden="true">#</a> 安软信创 实习一面 - 10lb</h3>
 <ol>
 <li>自我介绍</li>
@@ -310,7 +310,7 @@
 <li>有没有考虑自己搭建数据库</li>
 <li>反问</li>
 </ol>
-<h2 id="_23-08-31-同学" tabindex="-1"><a class="header-anchor" href="#_23-08-31-同学" aria-hidden="true">#</a> 23.08.31 - 同学</h2>
+<h2 id="_23-08-31" tabindex="-1"><a class="header-anchor" href="#_23-08-31" aria-hidden="true">#</a> 23.08.31</h2>
 <h3 id="_10yj" tabindex="-1"><a class="header-anchor" href="#_10yj" aria-hidden="true">#</a> - 10yj</h3>
 <ol>
 <li>自我介绍</li>
@@ -347,7 +347,7 @@
 <li>请讲一下 Redis 怎么实现双写一致</li>
 <li>反问</li>
 </ol>
-<h2 id="_23-08-30-同学" tabindex="-1"><a class="header-anchor" href="#_23-08-30-同学" aria-hidden="true">#</a> 23.08.30 - 同学</h2>
+<h2 id="_23-08-30" tabindex="-1"><a class="header-anchor" href="#_23-08-30" aria-hidden="true">#</a> 23.08.30</h2>
 <h3 id="北京鲸算科技-实习一面-45分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京鲸算科技-实习一面-45分钟-09zkx" aria-hidden="true">#</a> 北京鲸算科技 实习一面 45分钟 - 09zkx</h3>
 <ol>
 <li>自我介绍.</li>
@@ -404,7 +404,7 @@
 <li>介绍红黑树</li>
 <li>HashMap 的负载因子是否可变</li>
 </ol>
-<h2 id="_23-08-29-同学" tabindex="-1"><a class="header-anchor" href="#_23-08-29-同学" aria-hidden="true">#</a> 23.08.29 - 同学</h2>
+<h2 id="_23-08-29" tabindex="-1"><a class="header-anchor" href="#_23-08-29" aria-hidden="true">#</a> 23.08.29</h2>
 <h3 id="北京数坤科技-实习-50分钟-09zkx" tabindex="-1"><a class="header-anchor" href="#北京数坤科技-实习-50分钟-09zkx" aria-hidden="true">#</a> 北京数坤科技-实习 50分钟 - 09zkx</h3>
 <ol>
 <li>自我介绍</li>
@@ -428,7 +428,7 @@
 </ol>
 </li>
 </ol>
-<h2 id="_23-08-28-同学" tabindex="-1"><a class="header-anchor" href="#_23-08-28-同学" aria-hidden="true">#</a> 23.08.28 - 同学</h2>
+<h2 id="_23-08-28" tabindex="-1"><a class="header-anchor" href="#_23-08-28" aria-hidden="true">#</a> 23.08.28</h2>
 <h3 id="金蝶一面-tyh" tabindex="-1"><a class="header-anchor" href="#金蝶一面-tyh" aria-hidden="true">#</a> 金蝶一面 - tyh</h3>
 <ol>
 <li>自我介绍</li>
@@ -471,7 +471,7 @@
 </ul>
 </li>
 </ol>
-<h2 id="_23-08-15-校友" tabindex="-1"><a class="header-anchor" href="#_23-08-15-校友" aria-hidden="true">#</a> 23.08.15 - 校友</h2>
+<h2 id="_23-08-15-来源网络" tabindex="-1"><a class="header-anchor" href="#_23-08-15-来源网络" aria-hidden="true">#</a> 23.08.15 - 来源网络</h2>
 <h3 id="南京中盈优创" tabindex="-1"><a class="header-anchor" href="#南京中盈优创" aria-hidden="true">#</a> 南京中盈优创</h3>
 <ol>
 <li>自我介绍</li>
