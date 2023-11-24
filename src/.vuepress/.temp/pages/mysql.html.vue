@@ -218,7 +218,7 @@ flush <span class="token keyword">tables</span> <span class="token keyword">with
 <li>悲观锁：认为数据会导致冲突，所以在数据操作前会先加锁，确保数据操作的完整性。</li>
 </ul>
 <h3 id="什么是死锁-如何避免" tabindex="-1"><a class="header-anchor" href="#什么是死锁-如何避免" aria-hidden="true">#</a> 什么是死锁？如何避免？</h3>
-<p>死锁是两个或多个事务在资源上形成循环等待的情况。</p>
+<p>死锁是多个事务在资源上形成循环等待的情况。</p>
 <p>MySQL 处理死锁的方式是通过等待超时和死锁检测。</p>
 <ul>
 <li>使用锁超时，当事务等待锁超过特定时间后，事务自动回滚。</li>
