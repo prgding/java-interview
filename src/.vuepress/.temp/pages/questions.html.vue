@@ -1,4 +1,32 @@
 <template><div><h1 id="题目" tabindex="-1"><a class="header-anchor" href="#题目" aria-hidden="true">#</a> 题目</h1>
+<h2 id="_23-11-26" tabindex="-1"><a class="header-anchor" href="#_23-11-26" aria-hidden="true">#</a> 23.11.26</h2>
+<h3 id="上海同余信息科技" tabindex="-1"><a class="header-anchor" href="#上海同余信息科技" aria-hidden="true">#</a> 上海同余信息科技</h3>
+<ol>
+<li>自我介绍</li>
+<li>equals() 和 == 的区别</li>
+<li>可以用 == 比较 String 吗</li>
+<li>== 在什么情况下比较 String 是对的，什么情况下是不对的</li>
+<li>String s1 = &quot;abc&quot;; 创建了几个对象</li>
+<li>String s1; 这样写会创建对象吗</li>
+<li>可以用 == 比较包装类型吗？</li>
+<li>基本类型和包装类型的区别</li>
+<li>String 是基本类型还是引用类型</li>
+<li>String 底层数据结构</li>
+<li>JDK 9 为何要将 String 的底层实现由 char[] 改成了 byte[] ? 是特定情况下使用 byte[] 还是一直使用？</li>
+<li>西文字符和 CJK 字符的最大区别</li>
+<li>为什么 ASCII 里面没有中文？</li>
+<li>ASCII 字符集的范围是什么</li>
+<li>列举几个主流的字符集</li>
+<li>HashMap 的数据结构？它的键值对在内存中是怎么保存的？查询时间复杂度？使用场景？为什么叫做 HashMap？</li>
+<li>一句话介绍 Spring。解决了什么问题？解耦是怎样体现的？</li>
+<li>Spring 当中的事务是怎样实现的？</li>
+<li>AOP 是怎样实现的？</li>
+<li>什么叫做动态代理，这四个字怎么理解？怎么做到的动态代理的？</li>
+<li>C / Python 可以实现动态代理吗？</li>
+<li>静态语言和动态语言的主要区别？</li>
+<li>编译是在干什么？</li>
+<li>反问</li>
+</ol>
 <h2 id="_23-10-26" tabindex="-1"><a class="header-anchor" href="#_23-10-26" aria-hidden="true">#</a> 23.10.26</h2>
 <h3 id="上海协技科技" tabindex="-1"><a class="header-anchor" href="#上海协技科技" aria-hidden="true">#</a> 上海协技科技</h3>
 <ol>
@@ -170,16 +198,9 @@
 </ol>
 <p><strong>反问：</strong></p>
 <ol>
-<li>负责哪块工作
-<ol>
-<li>体检业务，跟医院，第三方体检机构去做体检系统</li>
-<li>前端忙不过来要写前端</li>
-<li>其他的常见中间件：MySQL, Redis, MongoDB 等等</li>
-</ol>
-</li>
-<li>入职培训：无，一周适应</li>
-<li>转正：表现优秀可以</li>
-<li>硬件：Windows 台式</li>
+<li>负责哪块工作</li>
+<li>入职培训</li>
+<li>转正机会</li>
 </ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
 <h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>
