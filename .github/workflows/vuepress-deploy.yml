@@ -8,9 +8,7 @@ jobs:
       uses: actions/checkout@master
 
     - name: vuepress-deploy
-      uses: jenkey2011/vuepress-deploy@master
-      with:
-        node-version: 'v18.16.0'
+      uses: prgding/vuepress-deploy@master
       env:
         ACCESS_TOKEN: ${{ secrets.SECRET }}
         TARGET_REPO: prgding/java-interview
