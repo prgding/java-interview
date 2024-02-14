@@ -61,7 +61,7 @@
 <li>可以自带电脑吗</li>
 </ol>
 <h2 id="_23-10-18" tabindex="-1"><a class="header-anchor" href="#_23-10-18" aria-hidden="true">#</a> 23.10.18</h2>
-<h3 id="微创软件" tabindex="-1"><a class="header-anchor" href="#微创软件" aria-hidden="true">#</a> 微创软件</h3>
+<h3 id="上海微创软件" tabindex="-1"><a class="header-anchor" href="#上海微创软件" aria-hidden="true">#</a> 上海微创软件</h3>
 <ol>
 <li>Hello, good morning. This is call from Wicresoft. Am I speaking with Shuai D?</li>
 <li>Okay, so are you ready for your English interview?</li>
@@ -103,7 +103,7 @@
 <li>录用的话，负责哪一部分</li>
 <li>有二面吗</li>
 </ol>
-<h3 id="中通服" tabindex="-1"><a class="header-anchor" href="#中通服" aria-hidden="true">#</a> 中通服</h3>
+<h3 id="杭州中通服" tabindex="-1"><a class="header-anchor" href="#杭州中通服" aria-hidden="true">#</a> 杭州中通服</h3>
 <ol>
 <li>自我介绍</li>
 <li>有没有意向来杭州</li>
@@ -203,7 +203,7 @@
 <li>转正机会</li>
 </ol>
 <h2 id="_23-09-20" tabindex="-1"><a class="header-anchor" href="#_23-09-20" aria-hidden="true">#</a> 23.09.20</h2>
-<h3 id="金蝶" tabindex="-1"><a class="header-anchor" href="#金蝶" aria-hidden="true">#</a> 金蝶</h3>
+<h3 id="上海金蝶" tabindex="-1"><a class="header-anchor" href="#上海金蝶" aria-hidden="true">#</a> 上海金蝶</h3>
 <ol>
 <li>自我介绍</li>
 <li>项目相关</li>
@@ -219,7 +219,7 @@
 <li>反问</li>
 </ol>
 <h2 id="_23-09-19" tabindex="-1"><a class="header-anchor" href="#_23-09-19" aria-hidden="true">#</a> 23.09.19</h2>
-<h3 id="谷泰科技" tabindex="-1"><a class="header-anchor" href="#谷泰科技" aria-hidden="true">#</a> 谷泰科技</h3>
+<h3 id="上海谷泰科技" tabindex="-1"><a class="header-anchor" href="#上海谷泰科技" aria-hidden="true">#</a> 上海谷泰科技</h3>
 <h4 id="根据项目" tabindex="-1"><a class="header-anchor" href="#根据项目" aria-hidden="true">#</a> 根据项目</h4>
 <ol>
 <li>介绍项目</li>
@@ -258,7 +258,7 @@
 <li>Linux 往日志文件写东西权限不足？chmod</li>
 <li>你的 Linux 下的根目录下的A文件拷贝到我的根目录下的一个 B 文件夹里面。cp 是机器本身的拷贝，通过什么方法可以把你的操作系统ip和密码拿过来？</li>
 <li>泛型？IO 流有几种方式啊？一个图片用什么流？要用字节流。。分为字节流和字符流</li>
-<li>场景设计：一个商品加入购物车，购买，弹出微信，支付成功，支付方可以放手，那么输完密码成功那一刻开始，系统去做了什么操作？？？</li>
+<li>场景设计：一个商品加入购物车，购买，弹出微信，支付成功，支付方可以放手，那么输完密码成功那一刻开始，系统去做了什么操作？</li>
 <li>今后个人规划？测试这一行你打算怎么做的？</li>
 <li>你有什么问我的？转正吗？工作氛围？加班吗？</li>
 </ol>
@@ -325,8 +325,7 @@
 <li>Spring 的容器启动和 <RouterLink to="/framework/spring.html#bean-%E7%9A%84%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F">Bean 加载</RouterLink>（被打断说问循环依赖和三级缓存是啥）</li>
 <li>使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?</li>
 <li>一道算法题。先减后增求最小值<br>
-类似于 <a href="https://leetcode.cn/problems/B1IidL/description/" target="_blank" rel="noopener noreferrer">LCR 069，山脉数组的峰顶索引<ExternalLinkIcon/></a><br>
-暴力 + 二分查找优化 (10分钟 A)</li>
+类似于 <a href="https://leetcode.cn/problems/B1IidL/description/" target="_blank" rel="noopener noreferrer">LCR 069，山脉数组的峰顶索引<ExternalLinkIcon/></a></li>
 <li>反问:
 <ol>
 <li>面试中有什么不足?</li>
@@ -400,13 +399,13 @@
 <ol>
 <li>自我介绍</li>
 <li>说一下 Java 面向对象的三大特征</li>
-<li>简历上看你项目使用了 Spring 微服务那些组件，能不能讲一下</li>
+<li>Spring 微服务那些组件</li>
 <li>Redis 和数据库怎么保存数据一致性</li>
 <li><RouterLink to="/java/java.html#%E9%9B%86%E5%90%88">讲一下 HashMap</RouterLink></li>
-<li>除了简历上这个项目还有其他项目吗：</li>
-<li>你现在在哪（回答深圳，讲述为什么来深圳），<br>
-我主要是学习了 Redis 和 MySQL，然后就讲自己会哪些知识点</li>
-<li>那你能不能讲一下 MySQL 的锁</li>
+<li>除了简历上这个项目还有其他项目吗</li>
+<li>你现在在哪</li>
+<li>Redis</li>
+<li>MySQL 的锁</li>
 <li>讲一下 MySQL 索引<br>
 建立索引过程<br>
 最左前缀原则<br>
@@ -585,10 +584,10 @@
 <h3 id="恒生电子" tabindex="-1"><a class="header-anchor" href="#恒生电子" aria-hidden="true">#</a> 恒生电子</h3>
 <ol>
 <li>自我介绍</li>
-<li>平时的一个学习状态（先闲聊）</li>
+<li>平时的一个学习状态</li>
 <li>针对展开项目讲讲（设计遇到的一些印象深的地方)</li>
-<li>项目文档与代码的设计有什么想法（谈到时间安排上）</li>
-<li>针对加班的看法 （接受就是）</li>
+<li>项目文档与代码的设计有什么想法</li>
+<li>针对加班的看法</li>
 <li>集合的理解</li>
 <li>多线程（实现，<RouterLink to="/java/juc.html#%E7%BA%BF%E7%A8%8B%E6%B1%A0">线程池</RouterLink>）</li>
 <li>谈谈浅拷贝和深拷贝？</li>
