@@ -60,12 +60,12 @@ icon: healthicons:4-outline
 11. Then we add an interface in `oneApp`, example like this:
 
     ```java
-    // This depend on two's 'spring.application.name'
+    // This depends on twoApp's 'spring.application.name'
     @FeignClient("twoApp")
     public interface TwoFeignController {
-        // map to two's controller mapping.
+        // Map to two's controller mapping.
         @RequestMapping("/twoUrl")
-        // function name is customizable.
+        // Function name is customizable.
         String invokeTwo();
     }
     ```
@@ -94,4 +94,4 @@ icon: healthicons:4-outline
 
 14. Open URL: `http://127.0.0.1:8848/nacos`, username/password is the same `nacos`. Go to `ServiceManagement/Service List`, we will find these two application.
 
-15. Then we can access `http://127.0.0.1:8001/one`, result will be `"From oneApp"`, means that the application is running fine. Then we access `http://127.0.0.1:8001/two`, we can see the message from the other application, it means that remote invoke successfully.
+15. Then we can access `http://127.0.0.1:8001/one`, result will be `"From oneApp"`, means that the application is running fine. Then we access `http://127.0.0.1:8001/two`, we can see the message from the other application, it means that the remote call is successful.
