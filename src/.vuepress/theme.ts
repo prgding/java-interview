@@ -14,7 +14,7 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "https://github.com/prgding/java-interview",
+  repo: "https://github.com/prgding/backend-study",
 
   docsDir: "src",
 

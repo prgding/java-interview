@@ -281,9 +281,9 @@
 1. 自我介绍
 2. 请讲讲 Spring 和 Spring Boot 的关系
 3. Spring Boot 是怎么简化 Spring 开发的
-4. [Spring Boot 的自动装配](/java-interview/framework/springboot.html#自动装配原理)
+4. [Spring Boot 的自动装配](/backend-study/framework/springboot.html#自动装配原理)
 5. Spring 中的事务失效场景
-6. [一个方法 A 被事务管理，方法 A 中调用方法 B，方法 B 也被事务管理，那 B 中出现异常是只会回滚 B 方法吗，还是会 AB 方法都回滚](/java-interview/framework/spring.html#spring-事务有哪几种传播级别)
+6. [一个方法 A 被事务管理，方法 A 中调用方法 B，方法 B 也被事务管理，那 B 中出现异常是只会回滚 B 方法吗，还是会 AB 方法都回滚](/backend-study/framework/spring.html#spring-事务有哪几种传播级别)
 7. 介绍一下你的项目
 8. 介绍一下你项目中的难点，或者说你通过项目学到了什么
 9. 请讲一下你的项目背景，为什么做这个项目
@@ -297,15 +297,15 @@
 1. 自我介绍
 2. Java 中 == 和 equals() 有什么区别
 3. Hashcode 方法，有什么作用？
-4. [用过哪些线程安全的 Map](/java-interview/java/java.html#线程安全的-list-和-map)
+4. [用过哪些线程安全的 Map](/backend-study/java/java.html#线程安全的-list-和-map)
 5. HashMap 的扩容，put 方法执行过程
-6. [ArrayList 和 LinkedList 的区别](/java-interview/java/java.html#arraylist-和-linkedlist-的区别)
-7. [MySQL 了解到哪些索引？](/java-interview/mysql.html#mysql-索引种类)
+6. [ArrayList 和 LinkedList 的区别](/backend-study/java/java.html#arraylist-和-linkedlist-的区别)
+7. [MySQL 了解到哪些索引？](/backend-study/mysql.html#mysql-索引种类)
 8. 说说你对反射的理解？
-9. 你怎么理解 Spring 的 [AOP](/java-interview/framework/spring.html#aop), [IoC](/java-interview/framework/spring.html#ioc), [DI](/java-interview/framework/spring.html#实现)?
+9. 你怎么理解 Spring 的 [AOP](/backend-study/framework/spring.html#aop), [IoC](/backend-study/framework/spring.html#ioc), [DI](/backend-study/framework/spring.html#实现)?
 10. Java 的泛型说一下
 11. GC 的新生代老年代的占比、介绍、辨析 GC 方法
-12. [说说你对线程池的了解](/java-interview/java/juc.html#线程池)
+12. [说说你对线程池的了解](/backend-study/java/juc.html#线程池)
 13. 你会怎么用数组实现的循环队列？
 14. 假如有个 ArrayList，怎么把里面的偶数全部去掉？
 15. MySQL 的 explain 字段用过吗？
@@ -313,12 +313,12 @@
 ### 知律科技实习一面 - 10lb
 
 1. Java 有哪些集合
-2. [ArrayList 和 LinkedList 区别](/java-interview/java/java.html#arraylist-和-linkedlist-的区别)
-3. 请介绍一下 Spring 的 [AOP](/java-interview/framework/spring.html#aop) 和 [IoC](/java-interview/framework/spring.html#ioc)
-4. [请介绍一下 Spring 的 Bean 生命周期](/java-interview/framework/spring.html#bean-的生命周期)
+2. [ArrayList 和 LinkedList 区别](/backend-study/java/java.html#arraylist-和-linkedlist-的区别)
+3. 请介绍一下 Spring 的 [AOP](/backend-study/framework/spring.html#aop) 和 [IoC](/backend-study/framework/spring.html#ioc)
+4. [请介绍一下 Spring 的 Bean 生命周期](/backend-study/framework/spring.html#bean-的生命周期)
 5. 介绍项目
-6. [一个 SpringBoot 项目中的常见注解](/java-interview/framework/springboot.html#spring-boot-常用注解)
-7. [SpringBoot 项目怎么使用事务，流程是怎么样](/java-interview/framework/spring.html#spring-中的实现方式)
+6. [一个 SpringBoot 项目中的常见注解](/backend-study/framework/springboot.html#spring-boot-常用注解)
+7. [SpringBoot 项目怎么使用事务，流程是怎么样](/backend-study/framework/spring.html#spring-中的实现方式)
 8. 数据库的 ACID，隔离级别
 9. MySQL 中的锁
 10. Redis 中的锁
@@ -337,7 +337,7 @@
 3. 为什么使用 ES 去优化 MySQL 查询? MySQL 模糊查询问题?
 4. Spring Boot 的特点?
 5. Spring Boot 的 starter?
-6. Spring 的容器启动和 [Bean 加载](/java-interview/framework/spring.html#bean-的生命周期)（被打断说问循环依赖和三级缓存是啥）
+6. Spring 的容器启动和 [Bean 加载](/backend-study/framework/spring.html#bean-的生命周期)（被打断说问循环依赖和三级缓存是啥）
 7. 使用过 Spring 后置处理器吗，后置处理器可以拿来干嘛?
 8. 一道算法题。先减后增求最小值
 类似于 [LCR 069，山脉数组的峰顶索引](https://leetcode.cn/problems/B1IidL/description/)
@@ -348,11 +348,11 @@
 
 ### 深圳依时货拉拉一面，实习 - 12pjl
 
-1. [SQL 优化](/java-interview/mysql.html#sql-优化)
+1. [SQL 优化](/backend-study/mysql.html#sql-优化)
 3. Spring MVC 执行过程
-4. [线程池的参数](/java-interview/java/juc.html#线程池的参数)
-5. [线程池拒绝策略](/java-interview/java/juc.html#线程池的拒绝策略)
-6. [线程池执行过程](/java-interview/java/juc.html#线程池的执行原理)
+4. [线程池的参数](/backend-study/java/juc.html#线程池的参数)
+5. [线程池拒绝策略](/backend-study/java/juc.html#线程池的拒绝策略)
+6. [线程池执行过程](/backend-study/java/juc.html#线程池的执行原理)
 7. Redis 数据结构，应用
 8. HashMap 和 HashTable 区别
 9. Feign 的原理
@@ -367,16 +367,16 @@
 
 1. 介绍项目亮点
 2. Redis 为什么快
-3. [Spring Boot 的自动装配原理](/java-interview/framework/springboot.html#自动装配原理)
+3. [Spring Boot 的自动装配原理](/backend-study/framework/springboot.html#自动装配原理)
 4. Redis 的缓存击穿和解决方案
 5. HashMap 的原理和扩容机制
-6. [介绍 JVM 的内存情况](/java-interview/java/jvm.html#运行时数据区域)
-7. [List 和 Set 的区别](/java-interview/java/java.html#两大集合以及实现类)
+6. [介绍 JVM 的内存情况](/backend-study/java/jvm.html#运行时数据区域)
+7. [List 和 Set 的区别](/backend-study/java/java.html#两大集合以及实现类)
 8. Redis 的数据类型
-9. [介绍 MySQL 的索引结构](/java-interview/mysql.html#mysql-索引种类)
-10. [索引什么时候会失效](/java-interview/mysql.html#索引失效)
+9. [介绍 MySQL 的索引结构](/backend-study/mysql.html#mysql-索引种类)
+10. [索引什么时候会失效](/backend-study/mysql.html#索引失效)
 11. 如何查询 SQL 是否命中索引
-12. [类存储在 JVM 哪一块空间](/java-interview/java/jvm.html#运行时数据区域)
+12. [类存储在 JVM 哪一块空间](/backend-study/java/jvm.html#运行时数据区域)
 13. HashMap 和 ConcurrentHashMap 的区别
 14. Redis 的数据一致性问题
 15. 介绍红黑树
@@ -389,15 +389,15 @@
 1. 自我介绍
 2. 项目
 3. 对封装. 继承. 多态怎么理解的?
-4. [Java 的集合类有哪些?](/java-interview/java/java.html#集合)
-5. [ArrayList 和 LinkedList 的区别?](/java-interview/java/java.html#arraylist-和-linkedlist-的区别)
+4. [Java 的集合类有哪些?](/backend-study/java/java.html#集合)
+5. [ArrayList 和 LinkedList 的区别?](/backend-study/java/java.html#arraylist-和-linkedlist-的区别)
 6. HashMap 说一下? (初始化，put 流程，扩容)
-7. [说下 JVM 的运行时数据区(各部分存储内容)](/java-interview/java/jvm.html#运行时数据区域)
-8. [说一下垃圾回收算法](/java-interview/java/jvm.html#垃圾回收算法)
-9. [线程池的参数](/java-interview/java/juc.html#线程池的参数)和[执行任务流程](/java-interview/java/juc.html#线程池的执行原理)
+7. [说下 JVM 的运行时数据区(各部分存储内容)](/backend-study/java/jvm.html#运行时数据区域)
+8. [说一下垃圾回收算法](/backend-study/java/jvm.html#垃圾回收算法)
+9. [线程池的参数](/backend-study/java/juc.html#线程池的参数)和[执行任务流程](/backend-study/java/juc.html#线程池的执行原理)
 10. 简单说一下 CAP 理论
-11. [Spring Bean 加载的过程](/java-interview/framework/spring.html#bean-的生命周期)
-12. [说一下 MySQL 索引有哪些?](/java-interview/mysql.html#mysql-索引种类)
+11. [Spring Bean 加载的过程](/backend-study/framework/spring.html#bean-的生命周期)
+12. [说一下 MySQL 索引有哪些?](/backend-study/mysql.html#mysql-索引种类)
 13. MQ 的消息重复消费和消息堆积问题的解决思路
 14. 反问:
     1. 对实习生的要求和培养机制?
@@ -412,7 +412,7 @@
 2. 说一下 Java 面向对象的三大特征
 3. Spring 微服务那些组件
 4. Redis 和数据库怎么保存数据一致性 
-5. [讲一下 HashMap](/java-interview/java/java.html#集合)
+5. [讲一下 HashMap](/backend-study/java/java.html#集合)
 6. 除了简历上这个项目还有其他项目吗
 7. 你现在在哪
 8. Redis
@@ -420,9 +420,9 @@
 10. 讲一下 MySQL 索引
    建立索引过程
    最左前缀原则
-   [讲一下 B+ 树](/java-interview/mysql.html#为什么-mysql-选择-b-树)
-   [讲一下索引怎么失效，以及一些处理办法](/java-interview/mysql.html#索引失效)
-11. 并发，Synchronized，Volatile，ReentrantLock，[线程池](/java-interview/java/juc.html#线程池)
+   [讲一下 B+ 树](/backend-study/mysql.html#为什么-mysql-选择-b-树)
+   [讲一下索引怎么失效，以及一些处理办法](/backend-study/mysql.html#索引失效)
+11. 并发，Synchronized，Volatile，ReentrantLock，[线程池](/backend-study/java/juc.html#线程池)
 12. 有没有了解过我们公司
 13. 反问?
       公司的业务是啥？
@@ -435,19 +435,19 @@
 
 1. 自我介绍
 2. 上段实习干啥了
-3. [MySQL 数据类型](/java-interview/mysql.html#mysql-常见字段类型)
-4. [MySQL 常用语句](/java-interview/mysql.html#mysql-常用语句)、[函数](/java-interview/mysql.html#mysql-函数)、[索引失效](/java-interview/mysql.html#索引失效)、[查询用时很长优化](/java-interview/mysql.html#慢查询优化)、[表连接查询有哪些，区别呢](/java-interview/mysql.html#表连接查询种类及区别)
+3. [MySQL 数据类型](/backend-study/mysql.html#mysql-常见字段类型)
+4. [MySQL 常用语句](/backend-study/mysql.html#mysql-常用语句)、[函数](/backend-study/mysql.html#mysql-函数)、[索引失效](/backend-study/mysql.html#索引失效)、[查询用时很长优化](/backend-study/mysql.html#慢查询优化)、[表连接查询有哪些，区别呢](/backend-study/mysql.html#表连接查询种类及区别)
 5. MyBatis Plus 多表查询 API
-6. [MyBatis XML 文件标签](/java-interview/mysql.html#mybatis-xml-标签)
+6. [MyBatis XML 文件标签](/backend-study/mysql.html#mybatis-xml-标签)
 7. [Java 数据类型及包装类](https://javaguide.cn/java/basis/java-basic-questions-01.html#java-中的几种基本数据类型了解么)
-8. [重写和重载区别](/java-interview/java/java.html#重写和重载区别)
-9. [equals() 和 == 区别](/java-interview/java/java.html#和-equals-的区别)
-10. [List 和 Set 区别](/java-interview/java/java.html#集合)
-11. [Java 实现线程几种方式](/java-interview/java/juc.html#线程的创建)
+8. [重写和重载区别](/backend-study/java/java.html#重写和重载区别)
+9. [equals() 和 == 区别](/backend-study/java/java.html#和-equals-的区别)
+10. [List 和 Set 区别](/backend-study/java/java.html#集合)
+11. [Java 实现线程几种方式](/backend-study/java/juc.html#线程的创建)
 12. Redis 说一下，几种数据结构常用 API
-13. [Spring、Spring MVC、Spring Boot、Spring Cloud](/java-interview/framework/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
-14. [Spring Boot 常用注解](/java-interview/framework/spring.html#spring-boot-常用注解)
-15. [AOP 说一下](/java-interview/framework/spring.html#aop)
+13. [Spring、Spring MVC、Spring Boot、Spring Cloud](/backend-study/framework/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
+14. [Spring Boot 常用注解](/backend-study/framework/spring.html#spring-boot-常用注解)
+15. [AOP 说一下](/backend-study/framework/spring.html#aop)
 16. Nacos，Gateway，OpenFeign 说一下 Gateway 原理
 17. RabbitMQ 原理说一下，用来干嘛了
 18. Nginx 说一下
@@ -458,9 +458,9 @@
 
 1. 自我介绍
 2. 项目背景（为什么会想做这个项目）
-3. [JVM 运行流程](/java-interview/java/jvm.html#jvm-运行流程)
-4. [Java 两大容器了解吗 (Collection 和 Map)](/java-interview/java/java.html#集合)
-5. [你学的框架之间有什么区别？](/java-interview/framework/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
+3. [JVM 运行流程](/backend-study/java/jvm.html#jvm-运行流程)
+4. [Java 两大容器了解吗 (Collection 和 Map)](/backend-study/java/java.html#集合)
+5. [你学的框架之间有什么区别？](/backend-study/framework/spring.html#spring-、spring-mvc、spring-boot、spring-cloud-简介)
 6. 了解过 SVN 吗？
 7. Linux 的常用命令
 8. 内连接和外连接有什么区别？
@@ -475,8 +475,8 @@
 1. 自我介绍
 2. MySQL
    - 为什么要用索引？
-   - [索引有哪些类型？](/java-interview/mysql.html#mysql-索引种类)你用到的是哪种？
-   - [SQL 优化，你有用过吗？](/java-interview/mysql.html#sql-优化)
+   - [索引有哪些类型？](/backend-study/mysql.html#mysql-索引种类)你用到的是哪种？
+   - [SQL 优化，你有用过吗？](/backend-study/mysql.html#sql-优化)
    - 什么是回表查询？
    - 你的项目用到过锁吗？说说你的了解
    - MySQL 的隔离级别了解吗？提升隔离级别需要注意什么？为什么提升隔离级别性能会降低？
@@ -495,16 +495,16 @@
 6. 设计模式
    - 为什么要用设计模式？
 7. JVM
-   - [JVM 垃圾回收机制了解吗？](/java-interview/java/jvm.html#垃圾回收机制)
-   - [JVM 垃圾回收算法有哪些？详细说一下](/java-interview/java/jvm.html#垃圾回收算法)
+   - [JVM 垃圾回收机制了解吗？](/backend-study/java/jvm.html#垃圾回收机制)
+   - [JVM 垃圾回收算法有哪些？详细说一下](/backend-study/java/jvm.html#垃圾回收算法)
 8. 项目负责哪部分？对前端一些技术了解多少？VUE 了解过吗？
 9. 面试官简单介绍了一下公司信息（业务和技术栈），然后问我还有什么想了解的
 
 ### 货拉拉的测开
 
-1. [AOP 的实现方式](/java-interview/framework/spring.html#实现方式)
+1. [AOP 的实现方式](/backend-study/framework/spring.html#实现方式)
 2. 有了解过用 Java Agent 实现 AOP 嘛
-3. [用 AOP 来干嘛](/java-interview/framework/spring.html#aop-能做什么)
+3. [用 AOP 来干嘛](/backend-study/framework/spring.html#aop-能做什么)
 4. IO 的方式有哪些
 5. 常用的设计模式有哪些
 6. 为什么要设计成单例
@@ -512,9 +512,9 @@
 8. 在什么样的数据结构要用到链表
 9. Java 中哪些实现用到了链表
 10. 两个有序链表合并成一个有序链表
-11. [用什么方式实现多线程](/java-interview/java/juc.html#线程的创建)
-12. [线程池拒绝策略策略有哪些](/java-interview/java/juc.html#线程池的拒绝策略)
-13. [线程安全的 List 和 Map](/java-interview/java/java.html#线程安全的-list-和-map)
+11. [用什么方式实现多线程](/backend-study/java/juc.html#线程的创建)
+12. [线程池拒绝策略策略有哪些](/backend-study/java/juc.html#线程池的拒绝策略)
+13. [线程安全的 List 和 Map](/backend-study/java/java.html#线程安全的-list-和-map)
 14. 说说 ConcurrentHashMap
 15. Java 的双亲委派
 16. 打破双亲委派的方式
@@ -537,24 +537,24 @@
 6. 注册中心如果挂了如何应对?
 7. 数据库用的啥? 为啥选择 MySQL? 大致讲一下你对 MySQL 的理解
 8. 事务隔离级别? 默认是哪种?
-9. [MySQL 索引有了解过吗?](/java-interview/mysql.html#索引)
-10. [索引的原理大致有了解吗](/java-interview/mysql.html#为什么-mysql-选择-b-树)
+9. [MySQL 索引有了解过吗?](/backend-study/mysql.html#索引)
+10. [索引的原理大致有了解吗](/backend-study/mysql.html#为什么-mysql-选择-b-树)
 11. 讲下 MySQL 主从复制
 12. MyBatis 了解过多少
 13. Gateway 网关路由控制，请求分发具体怎么实现
 14. 讲一下责任链模式
-15. [Spring 核心模块](/java-interview/framework/spring.html#spring-核心模块)
-16. [Spring 事务有了解吗](/java-interview/framework/spring.html#spring-事务)
-17. [Spring 事务有哪几种传播行为](/java-interview/framework/spring.html#spring-事务有哪几种传播行为)
-18. [讲下 IoC](/java-interview/framework/spring.html#ioc)
-19. [创建 bean 的机制](/java-interview/framework/spring.html#bean-的生命周期)
-20. [讲一下 AOP](/java-interview/framework/spring.html#aop)
-21. [AOP 缺点](/java-interview/framework/spring.html#aop-的缺点)，[具体应用](/java-interview/framework/spring.html#aop-能做什么)
+15. [Spring 核心模块](/backend-study/framework/spring.html#spring-核心模块)
+16. [Spring 事务有了解吗](/backend-study/framework/spring.html#spring-事务)
+17. [Spring 事务有哪几种传播行为](/backend-study/framework/spring.html#spring-事务有哪几种传播行为)
+18. [讲下 IoC](/backend-study/framework/spring.html#ioc)
+19. [创建 bean 的机制](/backend-study/framework/spring.html#bean-的生命周期)
+20. [讲一下 AOP](/backend-study/framework/spring.html#aop)
+21. [AOP 缺点](/backend-study/framework/spring.html#aop-的缺点)，[具体应用](/backend-study/framework/spring.html#aop-能做什么)
 22. Vue 熟悉吗
 23. 如果让你去写一个类似淘宝的电商项目你会怎么做讲一下你的思路
 24. 定时任务怎么实现
 25. 分布式锁具体讲一下
-26. [讲下 SQL 优化](/java-interview/mysql.html#sql-优化)
+26. [讲下 SQL 优化](/backend-study/mysql.html#sql-优化)
 27. Sentinel 怎么实现流量控制
 
 
@@ -567,7 +567,7 @@
 6. 调用 wait 方法会怎么样
 7. notify()和 notifyAll() 的区别
 8. 说说你使用过的 JUC 包下的类
-9. [说一下 JVM 垃圾回收](/java-interview/java/jvm.html#垃圾回收机制)
+9. [说一下 JVM 垃圾回收](/backend-study/java/jvm.html#垃圾回收机制)
 10. 说说 TCP 和 UDP 的区别
 11. 平常怎么学习?
 
@@ -579,7 +579,7 @@
 4. 项目文档与代码的设计有什么想法
 5. 针对加班的看法
 6. 集合的理解
-7. 多线程（实现，[线程池](/java-interview/java/juc.html#线程池)）
+7. 多线程（实现，[线程池](/backend-study/java/juc.html#线程池)）
 8. 谈谈浅拷贝和深拷贝？
 9. MySQL 索引
 10. 谈谈数据库设计表使用主键自增，不让主键自增？

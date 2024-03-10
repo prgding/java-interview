@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 
 export default defineUserConfig({
-  base: "/java-interview/",
+  base: "/backend-study/",
 
   lang: "zh-CN",
   title: "后端开发经验",
