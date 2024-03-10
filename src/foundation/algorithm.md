@@ -113,6 +113,7 @@ public class Sort {
 - 原理
 
 - 实现
+
 ## 搜索算法
 
 
@@ -124,4 +125,48 @@ public class Sort {
 
 
 ### 非线性结构相关
+
+## 代码随想录
+
+### day01 704.Binary Search
+
+#### Principle:
+
+1. Divide the search space into two halves by the `midIndex`.(`midIndex` equals to `(low + high) / 2`, in case of overflow, use `(high - low) / 2 + low` instead)
+2. Compare the middle element of search space with the `target`.
+3. If the `target` equals to the middle element, the process is terminated.
+    1. If the `target` is smaller than it, then the left side is used for next search. In code, the `low` is assigned to `midIndex - 1`.
+    2. If the `target` is larger than it, then the right side is used for next search. In code, the `high` is assigned to `midIndex + 1`
+    3. **Why we need to minus 1 or plus 1:**
+        1. The value of `midIndex` was compared, we don't need to compare them twice.
+        2. Avoid an endless loop when where are only 2 elements to compare, and the `target` equals to the value of the `high`.
+4. This process is continued until the `target` is found or the search space is exhausted. In code, we use `while (low <= high)`
+
+#### Code:
+
+```java
+class Solution {
+    public int search (int[] nums, int target) {
+        int low = 0;
+        int high = nums.length - 1;
+        
+        while (low <= high) {
+            int midIndex = (high - low) / 2 + low;
+            if (target == nums[midIndex]){
+                return midIndex;
+            } else if (target < nums[midIndex]) {
+                high = midIndex - 1;
+            } else {
+                low = midIndex + 1;
+            }
+        }
+        return -1;
+    }
+}
+```
+
+#### Wrong logs:
+
+1. Note the spelling of `length`.
+2. Note the default value of `high` need to minus 1.
 

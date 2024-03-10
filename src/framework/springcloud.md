@@ -7,7 +7,7 @@ icon: healthicons:4-outline
 
 ## How to create a demo?
 
-1. Use IDEA `Spring Initializr` to create a template. Just choose Maven, Ignore the version. 
+1. Use IDEA `Spring Initializr` to create a template. Just choose Maven, Ignore the version, called `cloud-study`. 
 
 2. Select `Spring Web`、`Lombok`、 `DevTools`、`MySQL Driver(Optional)`, then `create`.
 
@@ -95,3 +95,16 @@ icon: healthicons:4-outline
 14. Open URL: `http://127.0.0.1:8848/nacos`, username/password is the same `nacos`. Go to `ServiceManagement/Service List`, we will find these two application.
 
 15. Then we can access `http://127.0.0.1:8001/one`, result will be `"From oneApp"`, means that the application is running fine. Then we access `http://127.0.0.1:8001/two`, we can see the message from the other application, it means that the remote call is successful.
+
+## How to use connection pool?
+
+1. One way is that adding `feign-okhttp` dependency to caller's pom.xml.
+2. Add config `spring.cloud.openfeign.okhttp.enabled=true` to `oneApp`
+3. Check:
+    1. Add breakpoint to `execute()` in `FeignBlockingLoadBalancerClient.java`
+    2. Access feign controller, wait for IDEA to run to breakpoint, see `this -> delegate`, will find something about okhttp.
+
+## Extract feign api(A better implementation)
+
+1. New Submodule of `cloud-study`
+
