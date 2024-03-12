@@ -7,7 +7,7 @@ export default defineUserConfig({
   base: "/backend-study/",
 
   lang: "zh-CN",
-  title: "后端开发经验",
+  title: "后端开发笔记",
   description: "以 Java 为主",
 
   theme,
