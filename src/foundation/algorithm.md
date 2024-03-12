@@ -120,9 +120,11 @@ public class Sort {
 
 ## 代码随想录
 
-### day01 704.Binary Search
+### day01
 
-#### Principle:
+#### 704.Binary Search
+
+##### Principle:
 
 1. Divide the search space into two halves by the `midIndex`.(`midIndex` equals to `(low + high) / 2`, in case of overflow, use `(high - low) / 2 + low` instead)
 2. Compare the middle element of search space with the `target`.
@@ -134,7 +136,7 @@ public class Sort {
         2. Avoid an endless loop when where are only 2 elements to compare, and the `target` equals to the value of the `high`.
 4. This process is continued until the `target` is found or the search space is exhausted. In code, we use `while (low <= high)`
 
-#### Code:
+##### Code:
 
 ```java
 class Solution {
@@ -157,8 +159,12 @@ class Solution {
 }
 ```
 
-#### Wrong logs:
+##### Wrong logs:
 
 1. Note the spelling of `length`.
 2. Note the default value of `high` need to minus 1.
+
+#### 27.Remove element
+
+https://leetcode.cn/problems/remove-element/submissions/
 
