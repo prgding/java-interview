@@ -22,20 +22,10 @@ icon: healthicons:1-outline
 
       
 
-## String 为什么是不可变的？
+## String 为什么不可变
 
 1. 首先 String 类是用 final 修饰的，这说明 String 不可继承，避免子类破坏 String 不可变。
 2. 其次，String 的主力成员字段 value 的 char 数组（Java 9 之后改为使用 byte[] 存储）被 private final 修饰，并且 String 类中没有提供修改这个 char 数组的方法。
-
-
-
-## Java 9 为何要将 `String` 的底层实现由 `char[]` 改成了 `byte[]` ?
-
-1. 目的是节省空间。
-2. 原理是
-   1. 新版 String 支持 Latin-1 和 UTF-16 两个编码方案，大多数字符串只包含 Latin-1 可表示的字符。
-   2. 字符串包含的汉字在 Latin-1 范围内时，使用 Latin-1 char 需要两个字节，而 byte  只占一个字节。
-   3. 而超过 Latin-1 范围时，char 和 byte 占用的空间是一样的。
 
 
 
@@ -71,7 +61,7 @@ icon: healthicons:1-outline
 
 
 
-## 包装类型的缓存机制了解么？
+## 包装类型的缓存机制
 
 1. 目的：
    1. 提升性能
@@ -87,7 +77,7 @@ icon: healthicons:1-outline
 
 
 
-## 自动装箱与拆箱了解吗？原理是什么？
+## 自动装箱与拆箱
 
 1. 定义：
    1. 装箱：将基本类型包装起来
@@ -185,7 +175,7 @@ icon: healthicons:1-outline
   - Hashtable：数组 + 链表，线程安全
   - TreeMap：红黑树（自平衡的排序二叉树）
 
-### ArrayList 和 LinkedList 的区别?
+### ArrayList 和 LinkedList 的区别
 
 - 存储结构
   - ArrayList：Object [] 数组
